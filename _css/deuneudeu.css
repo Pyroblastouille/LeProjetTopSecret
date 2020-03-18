@@ -1,0 +1,28 @@
+.btnChar {
+    height: 150px;
+    width: 150px;
+    padding: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-radius: 150px;
+    border: 2px solid black;
+}
+
+.btnChar:hover {
+    cursor: pointer;
+}
+
+#add {
+    background-color: #fee;
+}
+
+.card {
+    margin: 5px;
+    border-radius: 100%;
+    opacity: 90%;
+}
+
+.card:hover {
+    opacity: 100%;
+    cursor: pointer;
+}

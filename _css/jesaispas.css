@@ -1,0 +1,25 @@
+.page,
+.container,
+.content {
+    width: 100%;
+    max-width: 100%;
+}
+
+img {
+    vertical-align: middle;
+    object-fit: contain;
+    height: 99%;
+    width: 99%;
+}
+
+.nsfw {
+    border: 1px solid red;
+}
+
+.sketchy {
+    border: 1px solid yellow;
+}
+
+.sfw {
+    border: 1px solid green;
+}

@@ -1,0 +1,57 @@
+{
+    "nomPerso":"",
+    "nomJoueur":"Tiago",
+
+    "FORscore":"",
+    "DEXscore":"",
+    "CONscore":"",
+    "INTscore":"",
+    "SAGscore":"",
+    "CHAscore":"",
+
+    "classeEtNiveau" :"",
+    "deDeVie":"",
+    "race":"",
+
+    "historique" :"",
+    "TraitPersonalite":"",
+    "Ideaux":"",
+    "Liens":"",
+    "defauts":"",
+    
+    "alignement":"",
+
+    "ac":"",
+    "speed":"",
+    "pvMax":"",
+    "inspiration":"",
+    "traits":"",
+    
+    "arme1":{
+        "nom":"",
+        "atk":"",
+        "deg":""
+    },"arme2":{
+        "nom":"",
+        "atk":"",
+        "deg":""
+    },"arme3":{
+        "nom":"",
+        "atk":"",
+        "deg":""
+    },
+    "weaponTextArea":"",
+    
+    "proficiencies":"",
+    
+    "skillsProf":[""], 
+    "saveProf":[""],
+    
+    "equipmentTextArea":"",
+    "pc":"",
+    "pa":"",
+    "pe":"",
+    "po":"",
+    "pp" :"",
+    "xp":""
+}

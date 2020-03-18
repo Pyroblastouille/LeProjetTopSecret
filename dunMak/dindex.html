@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <form action="#" method="GET">
+        <table>
+            <tr>
+                <th>Damage</th>
+                <td>
+                    <select name="damage" id="damage">
+                        <option value="minor" selected>Minor</option>
+                        <option value="light">Light</option>
+                        <option value="major">Major</option>
+                        <option value="lethal">Lethal</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>Difficulty</th>
+                <td>
+                    <select name="difficulty" id="difficulty">
+                        <option value="simple" selected>Simple</option>
+                        <option value="routine">Routine</option>
+                        <option value="difficult">Difficult</option>
+                        <option value="veryDifficult">Very Difficult</option>
+                        <option value="nearImpossible">Near Impossible</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>Enemy Type</th>
+                <td>
+                    <select name="enemyType" id="enemyType">
+                        <option value="beast" selected>Beast</option>
+                        <option value="denizen">Denizen</option>
+                        <option value="monster">Monsters</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>Group Sizes</th>
+                <td>
+                    <select name="groupSize" id="groupSize">
+                        <option value="lone" selected>Lone</option>
+                        <option value="pair">Pair</option>
+                        <option value="small">Small</option>
+                        <option value="equal">Equal</option>
+                        <option value="large">Large</option>
+                        <option value="veryLarge">Very Large</option>
+                        <option value="horde">Horde</option>
+                        <option value="beyondCount">Beyond Count</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>NPC Types</th>
+                <td>
+                    <select name="NPCType" id="NPCType">
+                        <option value="cleric" selected>Cleric</option>
+                        <option value="commoner">Commoner</option>
+                        <option value="performer">Performer</option>
+                        <option value="ranger">Ranger</option>
+                        <option value="rogue">Rogue</option>
+                        <option value="scholar">Scholar</option>
+                        <option value="warrior">Warrior</option>
+                        <option value="wizard">Wizard</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="button" onclick="validateChoice()" value="Validation des choix"></td>
+            </tr>
+
+        </table>
+    </form>
+    <table>
+        <tr>
+            <th>Map</th>
+            <td>Area <input oninput="changeMap()" type="number" min="1" max="1" id="actualArea" value="1">/<span
+                    id="total">0</span></td>
+        </tr>
+        <tr>
+            <td colspan="2" id="map"></td>
+        </tr>
+    </table>
+
+
+    <script src="data/func.js"></script>
+    <script src="data/layout.js"></script>
+    <script src="data/plot.js"></script>
+    <script src="data/whoHere.js"></script>
+    <script>
+        //What's the plot
+        var plotHook, location, variation, backstory;
+
+        //Who lives here
+        var boss, lair;
+        var areaId = 0;
+
+        //layout
+        var layout;
+        function validateChoice() {
+            layout = createLayout();
+            total.innerHTML = layout.length;
+            actualArea.max = layout.length;
+            console.log(layout);
+            changeMap();
+        }
+
+        function changeMap() {
+            if(actualArea.value > actualArea.max){
+                actualArea.value = actualArea.max;
+            }
+            var drawedMap = ""
+            layout[actualArea.value - 1].forEach(arrayArea => {
+                arrayArea.forEach(el => {
+                    if (el.includes("LBD")) {
+                        drawedMap += '<img class="littleDididoum" src="tiles/' + el + '.jpg" alt="' + el + '"/>';
+                    } else {
+                        drawedMap += '<img class="dididoum" src="tiles/' + el + '.jpg" alt="' + el + '"/>';
+                    }
+                });
+            });
+            map.innerHTML = drawedMap;
+        }
+    </script>
+</body>
+
+</html>

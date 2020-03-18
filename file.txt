@@ -1,0 +1,9 @@
+Le project secret
+1 il est interdit de parler du projet secret
+2 il est interdit de parler du projet secret
+3 si qq'un crie aled/police ou qq'un s'écroule ou n'en peu plus le code s'arrète tout de suite 
+4 seulement 2 codeur sur le code
+5 un seul project a la fois
+6 pas de Intelisense ou ni de localhost
+7 le code continue aussi longtemps que néssesaire
+8 et dernière règle si c'est votre premièrre session live share. vous devez coder !
