@@ -6,7 +6,7 @@ if (isset($_SESSION['logged'])) {
 } else {
     $imgUrl = getLatestSFW();
 }
-?> 
+?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -21,13 +21,14 @@ if (isset($_SESSION['logged'])) {
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
     <link rel="stylesheet" type="text/css" href="./_css/main.css" />
     <style>
-        .page{
-            background-image: url("<?=$imgUrl->path?>");
+        .page {
+            background-image: url("<?= $imgUrl->path ?>");
             background-position-x: center;
             background-repeat: no-repeat;
             background-size: contain;
         }
-        form{
+
+        form {
             margin: auto;
         }
     </style>
@@ -36,19 +37,22 @@ if (isset($_SESSION['logged'])) {
 <body>
     <div id="page" class="page  overlay-dark bg-position-middle">
         <div class="container">
-            <div class="content">
+            <div id="content">
+
                 <h1>C'est mon site à moi d'abord</h1>
                 <?php
                 $files = glob('*', GLOB_ONLYDIR);
                 foreach ($files as $key => $value) :
                     if ((substr($value, 0, 1) != '_' && substr($value, 0, 1) != '-') || (substr($value, 0, 1) == '-' && isset($_SESSION['logged']))) :
                         if ($value != 'gameDB') : ?>
-                            <a class="card" href="./<?= $value ?>"><?= $value ?></a>
+                            <a class="card" onclick="link('./<?= $value ?>');'"><?= $value ?></a>
                 <?php endif;
                     endif;
                 endforeach;
                 ?>
                 <a class="card" href="https://app.roll20.net/campaigns/details/4996081/pyropartie">Roll20</a>
+
+
             </div>
             <div class="social-links">
             </div>
@@ -63,10 +67,12 @@ if (isset($_SESSION['logged'])) {
                     <a href="#" onclick="toggleUI()">Cacher/Montrer l'UI</a>
                     -
                     <a href="#" onclick="mute()">Mute/Unmute</a>
+                    -
+                    <a onclick="link('pyroblastouille.site');">Retour à la page d'accueil</a>
                 </p>
                 <p>Si tu penses que ce fond est chaud, viens le prendre <a href="<?= $imgUrl->url ?>">à cette adresse</a>.</p>
             </div>
-            <video <?=(isset($_SESSION['mute']) && $_SESSION['mute'] ? "muted" : "" )?> class="son" hidden autoplay loop>
+            <video <?= (isset($_SESSION['mute']) && $_SESSION['mute'] ? "muted" : "") ?> class="son" hidden autoplay loop>
                 <source src="./_sounds/sweden.mp3" type="audio/mpeg" />
             </video>
         </div>

@@ -8,6 +8,12 @@ function toggleUI() {
     }
 }
 
+function link(url){
+    fetch(url).then(function(res){
+        content.innerHTML = res;
+    });
+}
+
 function getContent(url) {
     fetch(url).then(resp => resp.text()).then(function(content) {
         let contentClass = document.getElementsByClassName('content')[0];
@@ -27,4 +33,13 @@ function mute() {
         }
     }
     fetch('../_func/mute.php');
+}
+
+function addJson() {
+    let newName = prompt("Pour quel joueur ?");
+    newName = newName.replace("/[\ \-]/g", '_');
+    if (newName != null) {
+        nameInput.value = newName + '.json';
+        hiddenForm.submit();
+    }
 }
