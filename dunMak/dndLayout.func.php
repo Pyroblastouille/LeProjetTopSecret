@@ -12,7 +12,7 @@ function rollDice($dice)
 function var_dump2($var)
 {
     echo '<pre>';
-    var_dump($var);
+    var_dump($var); 
     echo '</pre>';
 }
 
