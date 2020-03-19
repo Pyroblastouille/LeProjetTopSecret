@@ -1,10 +1,10 @@
 <?php
 require_once('./_func/func.inc.php');
 
-if (isset($_SESSION['logged'])) {
-    $imgUrl = getLatestNSFW();
-} else {
-    $imgUrl = getLatestSFW();
+$imgUrl = getRandom('100');
+$link = "baseContent.php";
+if(isset($_GET['page'])){
+    $link = $_GET['page'];
 }
 ?>
 <!DOCTYPE html>
@@ -65,7 +65,7 @@ if (isset($_SESSION['logged'])) {
         </script>
         <script src="https://assets.storage.infomaniak.com/js/css_browser_selector.min.js"></script>
         <script>
-            link('baseContent.php');
+            link('<?=$link?>');
         </script>
 
 

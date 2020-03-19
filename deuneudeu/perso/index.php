@@ -32,7 +32,7 @@ if (file_exists($json)) {
     <input type="button" class="btnUI" onclick="Print()" value="Imprimer">
     <input type="button" class="btnUI" onclick="Save()" value="Enregistrer">
     <input type="button" class="btnUI" onclick="Delete()" value="Supprimer">
-    <input type="button" class="btnUI" onclick="window.location = '../index.php'; " value="Retour">
+    <input type="button" class="btnUI" onclick="window.location = 'http:\/\/pyroblastouille.site/LeProjetTopSecret/?page=deuneudeu'; " value="Retour">
   </nav>
   <!-- partial:index.partial.html -->
   <form class="charsheet sheetForm breakPage">
