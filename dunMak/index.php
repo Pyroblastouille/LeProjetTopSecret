@@ -19,6 +19,7 @@ $layoutJson = json_encode($layout);
 
 ?>
 
+<link rel="stylesheet" type="text/css" href="http://pyroblastouille.site/LeProjetTopSecret/_css/dungeonMaker.css" />
 <style>
     img {
         position: absolute;

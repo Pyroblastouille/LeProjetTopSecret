@@ -8,6 +8,7 @@ if (isset($_SESSION['logged'])) {
 }
 ?>
 
+<link rel="stylesheet" type="text/css" href="http://pyroblastouille.site/LeProjetTopSecret/_css/deuneudeu.css" />
 <h1>Caractères</h1>
 <div>
     <?php

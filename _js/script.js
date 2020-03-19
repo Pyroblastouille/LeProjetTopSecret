@@ -8,9 +8,12 @@ function toggleUI() {
     }
 }
 
-function link(url){
-    fetch(url).then(function(res){
-        content.innerHTML = res;
+function link(url) {
+    fetch(url).then(function(res) {
+        return res.text();
+    }).then(function(res2) {
+        console.log(res2);
+        content.innerHTML = res2;
     });
 }
 

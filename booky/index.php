@@ -9,6 +9,7 @@ if (isset($_SESSION['logged'])) {
 $files = glob('booked/[a-zA-Z0-9\ ]*.pdf');
 ?>
 
+<link rel="stylesheet" type="text/css" href="http://pyroblastouille.site/LeProjetTopSecret/_css/booky.css" />
 <h1>Books</h1>
 <?php
 foreach ($files as $key => $value) :
