@@ -6,7 +6,7 @@ if (isset($_SESSION['logged'])) {
 } else {
     $imgUrl = getLatestSFW();
 }
-?>
+?> 
 <!DOCTYPE html>
 <html lang="fr">
 
