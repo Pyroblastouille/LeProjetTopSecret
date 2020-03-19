@@ -45,7 +45,7 @@ if (isset($_SESSION['logged'])) {
                 foreach ($files as $key => $value) :
                     if ((substr($value, 0, 1) != '_' && substr($value, 0, 1) != '-') || (substr($value, 0, 1) == '-' && isset($_SESSION['logged']))) :
                         if ($value != 'gameDB') : ?>
-                            <a class="card" href="#" onclick="link('./<?= $value ?>');'"><?= $value ?></a>
+                            <a class="card" href="#" onclick="link('./<?= str_replace(' ','%20',$value) ?>');"><?= $value ?></a>
                 <?php endif;
                     endif;
                 endforeach;
