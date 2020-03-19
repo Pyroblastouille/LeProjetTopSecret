@@ -1,5 +1,5 @@
 function toggleUI() {
-    let ui = document.getElementsByClassName('content')[0];
+    let ui = content;
     console.log(ui.hidden);
     if (ui.hidden) {
         ui.removeAttribute('hidden');
