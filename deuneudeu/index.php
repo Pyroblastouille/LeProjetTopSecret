@@ -15,7 +15,7 @@ if (isset($_SESSION['logged'])) {
         $fileName = explode('/', $value)[1];
         $justName = explode('.', $fileName)[0];
     ?>
-        <a class="card" href="pyroblastouille.site/LeProjetTopSecret/deuneudeu/perso/?jsonFile=<?= $fileName ?>" alt="<?= $justName ?>"><?= $justName ?></a>
+        <a class="card" href="http://pyroblastouille.site/LeProjetTopSecret/deuneudeu/perso/?jsonFile=<?= $fileName ?>" alt="<?= $justName ?>"><?= $justName ?></a>
     <?php endforeach; ?>
 </div>
 

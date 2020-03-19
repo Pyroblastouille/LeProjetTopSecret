@@ -14,7 +14,7 @@ $files = glob('booked/[a-zA-Z0-9\ ]*.pdf');
 foreach ($files as $key => $value) :
     $justName = substr(substr($value, 7), 0, -4);
 ?>
-    <a class="card" href="pyroblastouille.site/LeProjetTopSecret/booky/<?= $value ?>"><?= $justName ?></a>
+    <a class="card" href="http://pyroblastouille.site/LeProjetTopSecret/booky/<?= $value ?>"><?= $justName ?></a>
 <?php
 endforeach;
 ?>
