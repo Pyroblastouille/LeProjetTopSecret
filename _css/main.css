@@ -5,16 +5,6 @@ body {
     margin: 0;
 }
 
-.card {
-    display: inline-block;
-    margin: auto;
-    height: 100px;
-    width: 100px;
-    line-height: 100px;
-    vertical-align: middle;
-    background-color: #fff;
-    color: black;
-}
 
 .error {
     color: red;
@@ -228,6 +218,16 @@ body.debug:after {
     z-index: 0
 }
 
+.card {
+    display: inline-block;
+    margin: auto;
+    height: 100px;
+    width: 200px;
+    line-height: 100px;
+    vertical-align: middle;
+    background-color: #fff;
+    color: black;
+}
 a.card {
     color: black
 }
