@@ -62,9 +62,11 @@ if (isset($_SESSION['logged'])) {
             </video>
         </div>
         <script src="./_js/script.js">
-            link('baseContent.php');
         </script>
         <script src="https://assets.storage.infomaniak.com/js/css_browser_selector.min.js"></script>
+        <script>
+            link('baseContent.php');
+        </script>
 
 
     </div>
