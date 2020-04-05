@@ -1,11 +1,6 @@
 <?php
 require_once('../_func/func.inc.php');
 $persos = glob("perso/[a-zA-Z0-9\ ]*.json");
-if (isset($_SESSION['logged'])) {
-    $imgUrl = getRandomFantasyArtNSFW();
-} else {
-    $imgUrl = getRandomDnD();
-}
 ?>
 
 <!DOCTYPE html>
@@ -13,7 +8,7 @@ if (isset($_SESSION['logged'])) {
 
 <head>
     <meta charset="UTF-8">
-    <title>Accueil</title>
+    <title>Characters Creator</title>
     <meta name="generator" content="hosting-page-builder">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="og:locale" content="fr">
@@ -23,7 +18,6 @@ if (isset($_SESSION['logged'])) {
     <link rel="stylesheet" type="text/css" href="http://pyroblastouille.site/LeProjetTopSecret/_css/main.css" />
     <style>
         .page {
-            background-image: url("<?= $imgUrl->path ?>");
             background-position-x: center;
             background-repeat: no-repeat;
             background-size: contain;

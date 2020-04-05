@@ -1,12 +1,8 @@
 <?php
 require_once('./_func/func.inc.php');
 
-$imgUrl = getRandom('100');
-$link = "baseContent.php";
-if (isset($_GET['page'])) {
-    $link = $_GET['page'];
-}
 ?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -22,7 +18,6 @@ if (isset($_GET['page'])) {
     <link rel="stylesheet" type="text/css" href="./_css/main.css" />
     <style>
         .page {
-            background-image: url("<?= $imgUrl->path ?>");
             background-position-x: center;
             background-repeat: no-repeat;
             background-size: contain;

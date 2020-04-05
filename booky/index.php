@@ -1,11 +1,5 @@
 <?php
 require_once('../_func/func.inc.php');
-if (isset($_SESSION['logged'])) {
-    $imgUrl = getRandomChubby();
-} else {
-    $imgUrl = getRandomSFW();
-}
-
 $files = glob('booked/[a-zA-Z0-9\ ]*.pdf');
 ?>
 
@@ -14,7 +8,7 @@ $files = glob('booked/[a-zA-Z0-9\ ]*.pdf');
 
 <head>
     <meta charset="UTF-8">
-    <title>Accueil</title>
+    <title>Books</title>
     <meta name="generator" content="hosting-page-builder">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="og:locale" content="fr">
@@ -24,7 +18,6 @@ $files = glob('booked/[a-zA-Z0-9\ ]*.pdf');
     <link rel="stylesheet" type="text/css" href="http://pyroblastouille.site/LeProjetTopSecret/_css/main.css" />
     <style>
         .page {
-            background-image: url("<?= $imgUrl->path ?>");
             background-position-x: center;
             background-repeat: no-repeat;
             background-size: contain;
