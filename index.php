@@ -3,7 +3,7 @@ require_once('./_func/func.inc.php');
 
 $imgUrl = getRandom('100');
 $link = "baseContent.php";
-if(isset($_GET['page'])){
+if (isset($_GET['page'])) {
     $link = $_GET['page'];
 }
 ?>
@@ -38,6 +38,28 @@ if(isset($_GET['page'])){
     <div id="page" class="page  overlay-dark bg-position-middle">
         <div class="container">
             <div id="content">
+                <?php
+                require_once('./_func/func.inc.php');
+
+                if (isset($_SESSION['logged'])) {
+                    $imgUrl = getLatestNSFW();
+                } else {
+                    $imgUrl = getLatestSFW();
+                }
+                ?>
+
+                <h1>C'est mon site à moi d'abord</h1>
+                <?php
+                $files = glob('*', GLOB_ONLYDIR);
+                foreach ($files as $key => $value) :
+                    if ((substr($value, 0, 1) != '_' && substr($value, 0, 1) != '-') || (substr($value, 0, 1) == '-' && isset($_SESSION['logged']))) :
+                        if ($value != 'gameDB') : ?>
+                            <a class="card" href="./<?= str_replace(' ', '%20', $value) ?>"><?= $value ?></a>
+                <?php endif;
+                    endif;
+                endforeach;
+                ?>
+                <a class="card" href="https://app.roll20.net/campaigns/details/4996081/pyropartie">Roll20</a>
             </div>
             <div class="social-links">
             </div>
@@ -53,7 +75,7 @@ if(isset($_GET['page'])){
                     -
                     <a href="#" onclick="mute()">Mute/Unmute</a>
                     -
-                    <a href="#" onclick="link('baseContent.php');">Retour à la page d'accueil</a>
+                    <a href="http://pyroblastouille.site">Retour à la page d'accueil</a>
                 </p>
                 <p>Si tu penses que ce fond est chaud, viens le prendre <a href="<?= $imgUrl->url ?>">à cette adresse</a>.</p>
             </div>
@@ -64,9 +86,6 @@ if(isset($_GET['page'])){
         <script src="./_js/script.js">
         </script>
         <script src="https://assets.storage.infomaniak.com/js/css_browser_selector.min.js"></script>
-        <script>
-            link('<?=$link?>');
-        </script>
 
 
     </div>
