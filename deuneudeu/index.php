@@ -80,10 +80,10 @@ if (isset($_SESSION['logged'])) {
                 <p>Si tu penses que ce fond est chaud, viens le prendre <a href="<?= $imgUrl->url ?>">à cette adresse</a>.</p>
             </div>
             <video <?= (isset($_SESSION['mute']) && $_SESSION['mute'] ? "muted" : "") ?> class="son" hidden autoplay loop>
-                <source src="http://pyroblastouille.site/_sounds/sweden.mp3" type="audio/mpeg" />
+                <source src="http://pyroblastouille.site/LeProjetTopSecret/_sounds/sweden.mp3" type="audio/mpeg" />
             </video>
         </div>
-        <script src="http://pyroblastouille.site/_js/script.js">
+        <script src="http://pyroblastouille.site/LeProjetTopSecret/_js/script.js">
         </script>
         <script src="https://assets.storage.infomaniak.com/js/css_browser_selector.min.js"></script>
     </div>
