@@ -21,7 +21,7 @@ $files = glob('[a-zA-Z0-9\ ]*.pdf');
     <meta name="og:type" content="website">
     <link rel="stylesheet" href="https://assets.storage.infomaniak.com/fonts/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
-    <link rel="stylesheet" type="text/css" href="http://pyroblastouille.site/_css/main.css" />
+    <link rel="stylesheet" type="text/css" href="http://pyroblastouille.site/LeProjetTopSecret/_css/main.css" />
     <style>
         .page {
             background-image: url("<?= $imgUrl->path ?>");
@@ -55,24 +55,24 @@ $files = glob('[a-zA-Z0-9\ ]*.pdf');
             <div class="hosting-info">
                 <p>
                     <?php if (isset($_SESSION['logged'])) : ?>
-                        <a href="http://pyroblastouille.site/_func/logout.php">Logout</a>
+                        <a href="http://pyroblastouille.site/LeProjetTopSecret/_func/logout.php">Logout</a>
                     <?php else : ?>
-                        <a href="http://pyroblastouille.site/_func/login.php">Login</a>
+                        <a href="http://pyroblastouille.site/LeProjetTopSecret/_func/login.php">Login</a>
                     <?php endif; ?>
                     -
                     <a href="#" onclick="toggleUI()">Cacher/Montrer l'UI</a>
                     -
                     <a href="#" onclick="mute()">Mute/Unmute</a>
                     -
-                    <a href="http://pyroblastouille.site">Retour à la page d'accueil</a>
+                    <a href="http://pyroblastouille.site/LeProjetTopSecret">Retour à la page d'accueil</a>
                 </p>
                 <p>Si tu penses que ce fond est chaud, viens le prendre <a href="<?= $imgUrl->url ?>">à cette adresse</a>.</p>
             </div>
             <video <?= (isset($_SESSION['mute']) && $_SESSION['mute'] ? "muted" : "") ?> class="son" hidden autoplay loop>
-                <source src="http://pyroblastouille.site/_sounds/sweden.mp3" type="audio/mpeg" />
+                <source src="http://pyroblastouille.site/LeProjetTopSecret/_sounds/sweden.mp3" type="audio/mpeg" />
             </video>
         </div>
-        <script src="http://pyroblastouille.site/_js/script.js">
+        <script src="http://pyroblastouille.site/LeProjetTopSecret/_js/script.js">
         </script>
         <script src="https://assets.storage.infomaniak.com/js/css_browser_selector.min.js"></script>
     </div>

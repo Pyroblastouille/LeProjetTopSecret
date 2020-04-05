@@ -20,7 +20,7 @@ if (isset($_SESSION['logged'])) {
     <meta name="og:type" content="website">
     <link rel="stylesheet" href="https://assets.storage.infomaniak.com/fonts/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
-    <link rel="stylesheet" type="text/css" href="http://pyroblastouille.site/_css/main.css" />
+    <link rel="stylesheet" type="text/css" href="http://pyroblastouille.site/LeProjetTopSecret/_css/main.css" />
     <style>
         .page {
             background-image: url("<?= $imgUrl->path ?>");
@@ -66,9 +66,9 @@ if (isset($_SESSION['logged'])) {
             <div class="hosting-info">
                 <p>
                     <?php if (isset($_SESSION['logged'])) : ?>
-                        <a href="http://pyroblastouille.site/_func/logout.php">Logout</a>
+                        <a href="http://pyroblastouille.site/LeProjetTopSecret/_func/logout.php">Logout</a>
                     <?php else : ?>
-                        <a href="http://pyroblastouille.site/_func/login.php">Login</a>
+                        <a href="http://pyroblastouille.site/LeProjetTopSecret/_func/login.php">Login</a>
                     <?php endif; ?>
                     -
                     <a href="#" onclick="toggleUI()">Cacher/Montrer l'UI</a>
