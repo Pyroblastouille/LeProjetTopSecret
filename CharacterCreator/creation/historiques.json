@@ -1,0 +1,482 @@
+{
+    "Acolyte": {
+        "maitrises": [
+            "Perspicacité",
+            "Religion"
+        ],
+        "equipement": "un symbole sacré (un cadeau qui vous a été offert quand vous êtes entré dans les ordres), un livre de prières ou un moulin à prières, 5 bâtons d'encens, des habits de cérémonie, des habits courants et une bourse contenant 15 po.",
+        "choix": [
+            {
+                "langues": [
+                    "Commun",
+                    "Elfique",
+                    "Géant",
+                    "Gnome",
+                    "Gobelin",
+                    "Halfelin",
+                    "Nain",
+                    "Orque",
+                    "Abyssal",
+                    "Céleste",
+                    "Commun des profondeurs",
+                    "Draconique",
+                    "Infernal",
+                    "Primordial",
+                    "Profond",
+                    "Sylvain"
+                ],
+                "nombre": 2
+            }
+        ]
+    },
+    "Artisan de guilde": {
+        "maitrises": [
+            "Perspicacité",
+            "Persuasion"
+        ],
+        "equipement": "un ensemble d'outils d'artisan (de votre choix), une lettre d'introduction émanant de votre guilde, une tenue de voyageur et une bourse contenant 15 po.",
+        "choix": [
+            {
+                "langues": [
+                    "Commun",
+                    "Elfique",
+                    "Géant",
+                    "Gnome",
+                    "Gobelin",
+                    "Halfelin",
+                    "Nain",
+                    "Orque",
+                    "Abyssal",
+                    "Céleste",
+                    "Commun des profondeurs",
+                    "Draconique",
+                    "Infernal",
+                    "Primordial",
+                    "Profond",
+                    "Sylvain"
+                ],
+                "nombre": 1
+            },
+            {
+                "outils d'artisan": [
+                    "Matériel d'alchimiste",
+                    "Matériel de brasseur",
+                    "Matériel de calligraphe",
+                    "Matériel de peintre",
+                    "Outils de bijoutier",
+                    "Outils de bricoleur",
+                    "Outils de cartographe",
+                    "Outils de charpentier",
+                    "Outils de cordonnier",
+                    "Outils de forgeron",
+                    "Outils de maçon",
+                    "Outils de menuisier",
+                    "Outils de potier",
+                    "Outils de souffleur de verre",
+                    "Outils de tanneur",
+                    "Outils de tisserand",
+                    "Ustensiles de cuisine"
+                ],
+                "nombre": 1
+            }
+        ]
+    },
+    "Artiste": {
+        "maitrises": [
+            "Acrobaties",
+            "Représentation"
+        ],
+        "outils": [
+            "accessoires de déguisement"
+        ],
+        "equipement": "un instrument de musique (de votre choix), la faveur d'un admirateur (une lettre d'amour, une mèche de cheveux ou un colifichet), un costume et une bourse contenant 15 po.",
+        "choix": [
+            {
+                "outils": [
+                    "Chalemie",
+                    "Cor",
+                    "Cornemuse",
+                    "Flûte",
+                    "Flûte de pan",
+                    "Luth",
+                    "Lyre",
+                    "Tambour",
+                    "Tympanon",
+                    "Viole"
+                ],
+                "nombre": 1
+            }
+        ]
+    },
+    "Charlatan": {
+        "maitrises": [
+            "Escamotage",
+            "Supercherie"
+        ],
+        "outils": [
+            "accessoires de déguisement",
+            "matériel de contrefaçon"
+        ],
+        "equipement": "de beaux habits, des accessoires de déguisement, des outils d'escroc de votre choix (dix bouteilles scellées remplies de liquide coloré, un jeu de dés pipés, un jeu de cartes truquées ou la chevalière d'un duc imaginaire) et une bourse contenant 15 po."
+    },
+    "Criminel": {
+        "maitrises": [
+            "Discrétion",
+            "Supercherie"
+        ],
+        "choix": [
+            {
+                "outils": [
+                    "Dés",
+                    "Jeu d'échecs draconiques",
+                    "Jeu de cartes",
+                    "Jeu des Dragons"
+                ],
+                "nombre": 1
+            }
+        ],
+        "outils": [
+            "outils de voleur"
+        ],
+        "equipement": "un pied-de-biche, des habits courants sombres avec une capuche, et une bourse contenant 15 po."
+    },
+    "Enfant des rues": {
+        "maitrises": [
+            "Discrétion",
+            "Escamotage"
+        ],
+        "outils": [
+            "accessoires de déguisement",
+            "outils de voleur"
+        ],
+        "equipement": "un petit couteau, une carte de la ville dans laquelle vous avez grandi, une souris domestiquée, un souvenir de vos parents, des habits courants et une bourse contenant 10 po."
+    },
+    "Ermite": {
+        "maitrises": [
+            "Médecine",
+            "Religion"
+        ],
+        "outils": [
+            "matériel d'herboristerie"
+        ],
+        "choix": [
+            {
+                "langues": [
+                    "Commun",
+                    "Elfique",
+                    "Géant",
+                    "Gnome",
+                    "Gobelin",
+                    "Halfelin",
+                    "Nain",
+                    "Orque",
+                    "Abyssal",
+                    "Céleste",
+                    "Commun des profondeurs",
+                    "Draconique",
+                    "Infernal",
+                    "Primordial",
+                    "Profond",
+                    "Sylvain"
+                ],
+                "nombre": 1
+            }
+        ],
+        "equipement": "un étui à parchemins rempli de notes sur vos études ou vos prières, une couverture d'hiver, des habits courants, du matériel d'herboriste et 5 po."
+    },
+    "Héros du peuple": {
+        "maitrises": [
+            "Dressage",
+            "Survie"
+        ],
+        "outils": [
+            "véhicules(terrestres)"
+        ],
+        "equipement": "un ensemble d'outils d'artisan (de votre choix), une pelle, une marmite, des habits courants et une bourse contenant 10 po.",
+        "choix": [
+            {
+                "outils": [
+                    "Matériel d'alchimiste",
+                    "Matériel de brasseur",
+                    "Matériel de calligraphe",
+                    "Matériel de peintre",
+                    "Outils de bijoutier",
+                    "Outils de bricoleur",
+                    "Outils de cartographe",
+                    "Outils de charpentier",
+                    "Outils de cordonnier",
+                    "Outils de forgeron",
+                    "Outils de maçon",
+                    "Outils de menuisier",
+                    "Outils de potier",
+                    "Outils de souffleur de verre",
+                    "Outils de tanneur",
+                    "Outils de tisserand",
+                    "Ustensiles de cuisine"
+                ],
+                "nombre": 1
+            }
+        ]
+    },
+    "Marin": {
+        "maitrises": [
+            "Athlétisme",
+            "Perception"
+        ],
+        "outils": [
+            "outils de navigateur",
+            "véhicules(aquatique)"
+        ],
+        "equipement": "cabillot (gourdin), 15 mètres de corde de soie, un porte-bonheur (comme une patte de lapin ou une petite pierre avec un trou en son centre ou bien un objet tiré au dé dans la table Babioles du chapitre 5), des habits courants et une bourse contenant 10 po."
+    },
+    "Noble": {
+        "maitrises": [
+            "Histoire",
+            "Persuasion"
+        ],
+        "equipement": "de beaux habits, une chevalière, un arbre généalogique et une bourse contenant 25 po.",
+        "choix": [
+            {
+                "langues": [
+                    "Commun",
+                    "Elfique",
+                    "Géant",
+                    "Gnome",
+                    "Gobelin",
+                    "Halfelin",
+                    "Nain",
+                    "Orque",
+                    "Abyssal",
+                    "Céleste",
+                    "Commun des profondeurs",
+                    "Draconique",
+                    "Infernal",
+                    "Primordial",
+                    "Profond",
+                    "Sylvain"
+                ],
+                "nombre": 1
+            },
+            {
+                "outils": [
+                    "Dés",
+                    "Jeu d'échecs draconiques",
+                    "Jeu de cartes",
+                    "Jeu des Dragons"
+                ],
+                "nombre": 1
+            }
+        ]
+    },
+    "Sage": {
+        "maitrises": [
+            "Acranes",
+            "Histoire"
+        ],
+        "equipement": "une bouteille d'encre noire, une plume, un petit couteau, une lettre émanant d'un collègue décédé vous posant une question à laquelle vous n'avez pas encore trouvé de réponse, des habits courants et une bourse contenant 10 po.",
+        "choix": [
+            {
+                "langues": [
+                    "Commun",
+                    "Elfique",
+                    "Géant",
+                    "Gnome",
+                    "Gobelin",
+                    "Halfelin",
+                    "Nain",
+                    "Orque",
+                    "Abyssal",
+                    "Céleste",
+                    "Commun des profondeurs",
+                    "Draconique",
+                    "Infernal",
+                    "Primordial",
+                    "Profond",
+                    "Sylvain"
+                ],
+                "nombre": 2
+            }
+        ]
+    },
+    "Sauvageon": {
+        "maitrises": [
+            "Athlétisme",
+            "Survie"
+        ],
+        "equipement": "un bâton, un piège à mâchoires, un trophée pris sur un animal que vous avez tué, une tenue de voyageur et une bourse avec 10 po",
+        "choix": [
+            {
+                "outils": [
+                    "Chalemie",
+                    "Cor",
+                    "Cornemuse",
+                    "Flûte",
+                    "Flûte de pan",
+                    "Luth",
+                    "Lyre",
+                    "Tambour",
+                    "Tympanon",
+                    "Viole"
+                ],
+                "nombre": 1
+            },
+            {
+                "langues": [
+                    "Commun",
+                    "Elfique",
+                    "Géant",
+                    "Gnome",
+                    "Gobelin",
+                    "Halfelin",
+                    "Nain",
+                    "Orque",
+                    "Abyssal",
+                    "Céleste",
+                    "Commun des profondeurs",
+                    "Draconique",
+                    "Infernal",
+                    "Primordial",
+                    "Profond",
+                    "Sylvain"
+                ],
+                "nombre": 1
+            }
+        ]
+    },
+    "Soldat": {
+        "maitrises": [
+            "Athlétisme",
+            "Intimidation"
+        ],
+        "outils": [
+            "véhicules(terrestres)"
+        ],
+        "equipement": "un insigne de grade, un trophée prélevé sur un ennemi tombé (une dague, une épée brisée ou une bannière), des dés en os ou un jeu de cartes, des habits courants et une bourse contenant 10 po.",
+        "choix": [
+            {
+                "outils": [
+                    "Dés",
+                    "Jeu d'échecs draconiques",
+                    "Jeu de cartes",
+                    "Jeu des Dragons"
+                ],
+                "nombre": 1
+            }
+        ]
+    },
+    "Académicien cloitré": {
+        "maitrises": [
+            "Histoire"
+        ],
+        "choix": [
+            {
+                "maitrises": [
+                    "Arcanes",
+                    "Nature",
+                    "Religion"
+                ],
+                "nombre": 1
+            },
+            {
+                "langues": [
+                    "Commun",
+                    "Elfique",
+                    "Géant",
+                    "Gnome",
+                    "Gobelin",
+                    "Halfelin",
+                    "Nain",
+                    "Orque",
+                    "Abyssal",
+                    "Céleste",
+                    "Commun des profondeurs",
+                    "Draconique",
+                    "Infernal",
+                    "Primordial",
+                    "Profond",
+                    "Sylvain"
+                ],
+                "nombre": 2
+            }
+        ],
+        "equipement": "la tenue d'érudit de votre cloître. une trousse d'écriture (une petite trousse contenant une plume , de l'encre, des feuilles de parchemin pliées et un petit canif), un livre emprunté traitant du sujet de vos études actuelles, et une bourse contenant 10 po"
+    },
+    "Chevalier de l'ordre": {
+        "maitrises": [
+            "Persuasion"
+        ],
+        "choix": [
+            {
+                "langues": [
+                    "Commun",
+                    "Elfique",
+                    "Géant",
+                    "Gnome",
+                    "Gobelin",
+                    "Halfelin",
+                    "Nain",
+                    "Orque",
+                    "Abyssal",
+                    "Céleste",
+                    "Commun des profondeurs",
+                    "Draconique",
+                    "Infernal",
+                    "Primordial",
+                    "Profond",
+                    "Sylvain"
+                ],
+                "nombre": 1
+            },
+            {
+                "maitrises": [
+                    "Arcanes",
+                    "Histoire",
+                    "Nature",
+                    "Religion"
+                ],
+                "nombre": 1
+            },
+            {
+                "outils": [
+                    "Chalemie",
+                    "Cor",
+                    "Cornemuse",
+                    "Flûte",
+                    "Flûte de pan",
+                    "Luth",
+                    "Lyre",
+                    "Tambour",
+                    "Tympanon",
+                    "Viole",
+                    "Dés",
+                    "Jeu d'échecs draconiques",
+                    "Jeu de cartes",
+                    "Jeu des Dragons"
+                ],
+                "nombre": 1
+            }
+        ],
+        "equipement": "une tenue de voyageur, une chevalière, une bannière ou un sceau qui représente votre place ou votre rang dans l'ordre, et une bourse contenant 10 po"
+    },
+    "Mercenaire vétéran": {
+        "maitrises": [
+            "Athlétisme",
+            "Persuasion"
+        ],
+        "outils": [
+            "véhicules(terrestres)"
+        ],
+        "choix": [
+            {
+                "outils": [
+                    "Dés",
+                    "Jeu d'échecs draconiques",
+                    "Jeu de cartes",
+                    "Jeu des Dragons"
+                ],
+                "nombre": 1
+            }
+        ],
+        "equipement": "un uniforme de votre compagnie (de même qualité qu'une tenue de voyageur), un insigne de votre rang, une boîte de jeu de votre choix, une bourse contenant ce qui reste de votre dernière solde (10 po)"
+    }
+}

@@ -1,0 +1,779 @@
+{
+    "Elfe": {
+        "vitesse": 9,
+        "bonus": {
+            "DEX": 2
+        },
+        "maitrises": [
+            "Perception"
+        ],
+        "langues": [
+            "Commun",
+            "Elfique"
+        ],
+        "traits": {
+            "Vision dans le noir": "Habitué à la pénombre des forêts et au ciel nocturne, vous avez une vision supérieure dans l'obscurité et dans la lumière faible. Dans un rayon de 18 mètres, vous pouvez voir dans une zone de lumière faible comme s'il s'agissait d'une lumière vive et dans l'obscurité comme s'il s'agissait d'une lumière faible. Par contre, vous ne distinguez pas les couleurs dans l'obscurité, seulement des nuances de gris.",
+            "Ascendance féérique": "Vous êtes avantagé sur les jets de sauvegarde contre l'effet charmé et vous ne pouvez être contraint à dormir par la magie.",
+            "Transe": "Les elfes n'ont pas besoin de dormir. À la place,ils passent 4 heures par jour dans un état de méditation profonde, tout en restant semi-conscients. (Le mot qui décrit cette méditation en langage commun est « transe».) Pendant cette méditation, vous pouvez faire une sorte de rêves. De tels « rêves » sont en réalité des exercices mentaux qui sont devenus des réflexes au bout de plusieurs années de pratique. En vous reposant ainsi, vous bénéficiez des mêmes avantages conférés à un humain par 8 heures de sommeil."
+        },
+        "variantes": {
+            "Haut-elfe": {
+                "choix": [
+                    {
+                        "langues": [
+                            "Géant",
+                            "Gnome",
+                            "Gobelin",
+                            "Halfelin",
+                            "Nain",
+                            "Orque",
+                            "Abyssal",
+                            "Céleste",
+                            "Commun des profondeurs",
+                            "Draconique",
+                            "Infernal",
+                            "Primordial",
+                            "Profond",
+                            "Sylvain"
+                        ],
+                        "nombre": 1
+                    }
+                ],
+                "bonus": {
+                    "INT": 1
+                },
+                "armes": [
+                    "épées longues",
+                    "épées courtes",
+                    "arcs longs",
+                    "arcs courts"
+                ],
+                "traits": {
+                    "Tour de magie": "Vous connaissez un tour de magie de votre choix parmi la liste de sorts de magicien. Votre caractéristique d'incantation pour ce tour de magie est !'Intelligence."
+                }
+            },
+            "Elfe sylvestre": {
+                "bonus": {
+                    "SAG": 1
+                },
+                "armes": [
+                    "épées longues",
+                    "épées courtes",
+                    "arcs longs",
+                    "arcs courts"
+                ],
+                "vitesse": 10,
+                "traits": {
+                    "Cachette naturelle": "Vous pouvez tenter de vous cacher même quand la visibilité n'est que légèrement réduite du fait des frondaisons, d'une forte pluie, de chutes de neige, d'une nappe de brume ou tout autre phénomène naturel."
+                }
+            },
+            "Elfe noir (drow)": {
+                "bonus": {
+                    "CHA": 1
+                },
+                "armes": [
+                    "rapière",
+                    "épées courtes",
+                    "arbalètes de poing"
+                ],
+                "traits": {
+                    "Vision dans le noir supérieure": "Votre vision dans le noir fonctionne dans un rayon de 36 mètres",
+                    "Sensibilité à la lumière du soleil": "Vous êtes désavantagé lors des jets d'attaque et des tests de Sagesse (Perception) basés sur la vue lorsque vous, votre cible ou ce que vous tentez de percevoir se trouve sous la lumière directe du soleil.",
+                    "Magie drow": "Vous connaissez le tour de magie lumières dansantes. Quand vous atteignez le niveau 3, vous pouvez aussi lancer lueurs féeriques. Vous devez terminer un long repos avant de pouvoir relancer ce sort ainsi. Quand vous atteignez le niveau 5, vous pouvez également lancer ténèbres. Vous devez terminer un long repos avant de pouvoir relancer ce sort ainsi. Vous utilisez le Charisme comme caractéristique incantatoire pour tous ces sorts."
+                }
+            }
+        }
+    },
+    "Halfelin": {
+        "bonus": {
+            "DEX": 2
+        },
+        "vitesse": 7.5,
+        "traits": {
+            "Chanceux": "Quand vous faites un 1 avec le d20 d'un jet d'attaque, d'un test de caractéristique ou d'un jet de sauvegarde, vous pouvez relancer le dé. Mais vous devez utiliser le nouveau résultat du jet.",
+            "Brave": "Vous êtes avantagé sur les jets de sauvegarde contre la terreur.",
+            "Agilité halfeline": "Vous pouvez traverser n'importe quel emplacement occupé par une créature d'au moins une catégorie de taille de plus que vous."
+        },
+        "langues": [
+            "Commun",
+            "Halfelin"
+        ],
+        "variantes": {
+            "Halfelin Pied-léger": {
+                "bonus": {
+                    "CHA": 1
+                },
+                "traits": {
+                    "Discretion naturelle": "Vous pouvez tenter de vous cacher même quand vous êtes seulement dissimulé par une créature d'au moins une catégorie de taille de plus que vous."
+                }
+            },
+            "Halfelin Robuste": {
+                "bonus": {
+                    "CON": 1
+                },
+                "traits": {
+                    "Résilience des robustes": "Vous êtes avantagé lors des jets de sauvegarde contre le poison et vous êtes résistant aux dégâts de poison."
+                }
+            }
+        }
+    },
+    "Humain": {
+        "choix": [
+            {
+                "langues": [
+                    "Elfique",
+                    "Géant",
+                    "Gnome",
+                    "Gobelin",
+                    "Halfelin",
+                    "Nain",
+                    "Orque",
+                    "Abyssal",
+                    "Céleste",
+                    "Commun des profondeurs",
+                    "Draconique",
+                    "Infernal",
+                    "Primordial",
+                    "Profond",
+                    "Sylvain"
+                ],
+                "nombre": 1
+            }
+        ],
+        "bonus": {
+            "CHA": 1,
+            "DEX": 1,
+            "CON": 1,
+            "INT": 1,
+            "SAG": 1,
+            "FOR": 1
+        },
+        "vitesse": 9,
+        "langues": [
+            "Commun"
+        ]
+    },
+    "Nain": {
+        "bonus": {
+            "CON": 2
+        },
+        "vitesse": 7.5,
+        "traits": {
+            "Vision dans Je noir": "Habitué à la vie souterraine, vous avez une vision supérieure dans l'obscurité et dans la lumière faible. Dans un rayon de 18 mètres, vous pouvez voir dans une zone de lumière faible comme s'il s'agissait d'une lumière vive et dans l'obscurité comme s'il s'agissait d'une lumière faible. Par contre, vous ne distinguez pas les couleurs dans l'obscurité, seulement des nuances de gris.",
+            "Résistance naine": "Vous êtes avantagé sur vos jets de sauvegarde contre le poison et vous possédez une résistance contre les dégâts de poison",
+            "Connaissance de la pierre": "Quand vous faites un test d'Intelligence (Histoire) relatif au travail de la pierre, vous considérez que vous possédez la maîtrise de la compétence Histoire et vous ajoutez le double de votre bonus de maîtrise au résultat du test au lieu de votre bonus de maîtrise normal."
+        },
+        "armes": [
+            "haches de guerre",
+            "hachettes",
+            "marteaux légers",
+            "marteaux de guerre"
+        ],
+        "choix": [
+            {
+                "outils": [
+                    "outils de forgeron",
+                    "matériel de brasseur",
+                    "outils de maçon"
+                ]
+            }
+        ],
+        "langues": [
+            "Commun",
+            "Nain"
+        ],
+        "variantes": {
+            "Nain des collines": {
+                "bonus": {
+                    "SAG": 1
+                },
+                "traits": {
+                    "Ténacité naine": "Votre nombre maximum de points de vie augmente de 1. li augmente de nouveau de 1 chaque fois que vous gagnez un niveau."
+                }
+            },
+            "Nain des montagnes": {
+                "bonus": {
+                    "FOR": 2
+                },
+                "armures": [
+                    "légères",
+                    "intermédiaires"
+                ]
+            },
+            "Nain gris (duergar)": {
+                "bonus": {
+                    "FOR": 1
+                },
+                "traits": {
+                    "Vision dans le noir supérieure": "Votre vision dans le noir fonctionne dans un rayon de 36 mètres",
+                    "Magie duergare": "Quand vous atteignez le niveau 3, vous pouvez lancer une fois le sort agrandir/rétrécir en vous prenant pour cible et en utilisant l'option agrandir du sort. Quand vous atteignez le niveau 5, ce trait vous permet de lancer une fois le sort invisibilité en vous prenant pour cible. Vous n'avez besoin de composante matérielle pour aucun de ces sorts, mais vous ne pouvez pas les lancer si vous vous trouvez à la lumière du soleil (cette dernière n'a cependant aucun effet sur les sorts une fois qu'ils ont été lancés). Vous pouvez de nouveau lancer ces sorts une fois que vous avez terminé un long repos. Votre caractéristique d'incantation pour ces sorts est l'Intelligence.",
+                    "Sensibilité à la lumière du soleil": "Vous êtes désavantagé lors des jets d'attaque et des tests de Sagesse (Perception) basés sur la vue lorsque vous, votre cible ou ce que vous tentez de percevoir se trouve sous la lumière directe du soleil.",
+                    "Résilience des duergars": "Vous êtes avantagé lors des jets de sauvegarde contre les illusions et contre les états charmé et paralysé."
+                }
+            }
+        }
+    },
+    "Demi-elfe": {
+        "choix": [
+            {
+                "bonus": [
+                    "SAG",
+                    "INT",
+                    "CHA",
+                    "FOR",
+                    "CON",
+                    "DEX"
+                ],
+                "taux": 1,
+                "nombre": 2
+            },
+            {
+                "maitrises": [
+                    "Acrobaties",
+                    "Arcanes",
+                    "Athlétisme",
+                    "Discrétion",
+                    "Dressage",
+                    "Escamotage",
+                    "Histoire",
+                    "Intimidation",
+                    "Investigation",
+                    "Médecine",
+                    "Nature",
+                    "Perception",
+                    "Perspicacité",
+                    "Persuasion",
+                    "Religion",
+                    "Représentation",
+                    "Survie",
+                    "Tromperie"
+                ],
+                "nombre": 2
+            },
+            {
+                "langues": [
+                    "Commun",
+                    "Elfique",
+                    "Géant",
+                    "Gnome",
+                    "Gobelin",
+                    "Halfelin",
+                    "Nain",
+                    "Orque",
+                    "Abyssal",
+                    "Céleste",
+                    "Commun des profondeurs",
+                    "Draconique",
+                    "Infernal",
+                    "Primordial",
+                    "Profond",
+                    "Sylvain"
+                ],
+                "nombre": 1
+            }
+        ],
+        "bonus": {
+            "CHA": 2
+        },
+        "vitesse": 9,
+        "traits": {
+            "Vision dans le noir": "Grâce à votre sang elfique, vous avez hérité d'une vision supérieure dans l'obscurité et dans la lumière faible. Dans un rayon de 18 mètres, vous pouvez voir dans une zone de lumière faible comme s'il s'agissait d'une lumière vive et dans l'obscurité comme s'il s'agissait d'une lumière faible. Par contre, vous ne distinguez pas les couleurs dans l'obscurité, seulement des nuances de gris.",
+            "Ascendance féérique": "Vous êtes avantagé sur les jets de sauvegarde contre l'effet charmé et vous ne pouvez être contraint à dormir par la magie."
+        },
+        "langues": [
+            "Commun",
+            "Elfique"
+        ]
+    },
+    "Demi-orc": {
+        "bonus": {
+            "FOR": 2,
+            "CON": 1
+        },
+        "vitesse": 9,
+        "traits": {
+            "Vision dans le noir": "Grâce à votre sang ore, vous avez hérité d'une vision supérieure dans l'obscurité et dans la lumière faible. Dans un rayon de 18 mètres, vous pouvez voir dans une zone de lumière faible comme s'il s'agissait d'une lumière vive et dans l'obscurité comme s'il s'agissait d'une lumière faible. Par contre, vous ne distinguez pas les couleurs dans l'obscurité, seulement des nuances de gris",
+            "Acharnement": "Quand vous vous retrouvez à O point de vie mais que vous n'êtes pas tué sur le coup, vous pouvez choisir d'être réduit à 1 point de vie à la place. Vous ne pouvez pas réutiliser cette aptitude tant que vous n'avez pas terminé un repos long.",
+            "Sauvagerie": "Quand vous réussissez un coup critique avec une attaque de corps à corps, vous pouvez relancer l'un des dés de dégâts de l'arme et ajouter son résultat aux dégâts supplémentaires du coup critique"
+        },
+        "maitrises": [
+            "Intimidation"
+        ],
+        "langues": [
+            "Commun",
+            "Orque"
+        ]
+    },
+    "Gnome": {
+        "bonus": {
+            "INT": 2
+        },
+        "vitesse": 7.5,
+        "traits": {
+            "Ruse gnome": "Vous êtes avantagé pour tous les jets de sauvegarde d'lntelligence, de Sagesse et de Charisme contre la magie."
+        },
+        "langues": [
+            "Commun",
+            "Gnome"
+        ],
+        "variantes": {
+            "Gnome des forêts": {
+                "bonus": {
+                    "DEX": 1
+                },
+                "traits": {
+                    "Illusionniste-né": "Vous connaissez le tour de magie illusion mineure et utilisez l'Intelligence comme caractéristique d'incantation pour le lancer.",
+                    "Communication avec les petits animaux": "À l'aide de bruits et de gestes, vous arrivez à transmettre des concepts simples à des bêtes de taille Petite ou inférieure. Les gnomes des forêts aiment les animaux et ont souvent des écureuils, des blaireaux, des lapins, des taupes, des pics-verts et d'autres créatures comme compagnons."
+                }
+            },
+            "Gnome des roches": {
+                "bonus": {
+                    "CON": 1
+                },
+                "traits": {
+                    "Connaissance en ingénierie": "",
+                    "Bricoleur": "Vous maîtrisez les outils d'artisans (outils de bricoleur). Grâce à ces outils, vous pouvez passer 1 heure et dépenser 10 po de matériaux pour construire un mécanisme de taille Très Petite (CA 5, 1 pv). Ce mécanisme cesse de fonctionner au bout de 24 heures (sauf si vous passez 1 heure à le réparer) ou si vous utilisez une action pour le démanteler. Vous pouvez alors récupérer les matériaux qui ont servi à sa construction. Vous pouvez avoir jusqu'à trois mécanismes fonctionnant en même temps. Quand vous créez un mécanisme, vous avez le choix entre trois options : \n\tBoîte à musique. Quand elle est ouverte, la boîte à musique joue une mélodie à un volume modéré. La boîte redevient silencieuse à la fin de la mélodie ou quand elle est fermée. \n\tBriquet. Ce mécanisme produit une petite flamme qui peut être utilisée pour allumer une bougie, une torche ou un feu de camp. I:utilisation du briquet coûte une action. \n\tJouet mécanique. Ce jouet est un animal, un monstre ou une personne mécanique. Une grenouille, une souris, un dragon ou un soldat, par exemple. Quand il est placé sur le sol, le jouet peut se déplacer de 1,50 mètre dans une direction aléatoire à chacun de vos tours. Il fait un bruit correspondant à la créature qu'il représente"
+                },
+                "outils": [
+                    "outils de bricoleur"
+                ]
+            },
+            "Gnome des profondeurs (svirfneblins)": {
+                "bonus": {
+                    "DEX": 1
+                },
+                "traits": {
+                    "Vision dans le noir supérieure": "Votre vision dans le noir fonctionne dans un rayon de 36 mètres",
+                    "Camouflage dans la rocaille": "Vous êtes avantagé lors des tests de Dextérité (Discrétion) destinés à vous cacher dans un terrain rocheux."
+                },
+                "langues": [
+                    "Commun des profondeurs"
+                ]
+            }
+        }
+    },
+    "Sangdragon": {
+        "bonus": {
+            "FOR": 2,
+            "CHA": 1
+        },
+        "vitesse": 9,
+        "langues": [
+            "Commun",
+            "Draconique"
+        ],
+        "variantes": {
+            "Sangdragon d'airin": {
+                "traits": {
+                    "Résistance aux dégats": "Votre ascendance draconique vous confère une résistance aux dégats de feu",
+                    "Souffle": "Vous pouvez utiliser votre action pour exhaler une vague d'énergie destructrice. Ligne de 1,5 sur 9 mètres (jet de sauvegarde de Dex.).\n Quand vous utilisez votre souffle, chaque créature qui se trouve dans la zone affectée doit faire un jet de sauvegarde de Dex. Le DD de ce jet de sauvegarde est égal à 8 + votre modificateur de Constitution + votre bonus de maîtrise. Une créature qui ne réussit pas son jet de sauvegarde subit 2d6 dégâts. Elle n'en subit que la moitié si elle réussit son jet de sauvegarde. La quantité de dégâts que vous infligez augmente avec votre niveau pour atteindre 3d6 au rùveau 6, 4d6 au niveau 11 et 5d6 au niveau 16.\n Une fois que vous avez utilisé votre souffle, vous ne pouvez plus l'utiliser avant d'avoir terminé un repos court ou un repos long."
+                }
+            },
+            "Sangdragon d'argent": {
+                "traits": {
+                    "Résistance aux dégats": "Votre ascendance draconique vous confère une résistance aux dégats de froid",
+                    "Souffle": "Vous pouvez utiliser votre action pour exhaler une vague d'énergie destructrice. Cône de 4.5m (jet de sauvegarde de Con.).\n Quand vous utilisez votre souffle, chaque créature qui se trouve dans la zone affectée doit faire un jet de sauvegarde de Con. Le DD de ce jet de sauvegarde est égal à 8 + votre modificateur de Constitution + votre bonus de maîtrise. Une créature qui ne réussit pas son jet de sauvegarde subit 2d6 dégâts. Elle n'en subit que la moitié si elle réussit son jet de sauvegarde. La quantité de dégâts que vous infligez augmente avec votre niveau pour atteindre 3d6 au rùveau 6, 4d6 au niveau 11 et 5d6 au niveau 16.\n Une fois que vous avez utilisé votre souffle, vous ne pouvez plus l'utiliser avant d'avoir terminé un repos court ou un repos long."
+                }
+            },
+            "Sangdragon blanc": {
+                "traits": {
+                    "Résistance aux dégats": "Votre ascendance draconique vous confère une résistance aux dégats de froid",
+                    "Souffle": "Vous pouvez utiliser votre action pour exhaler une vague d'énergie destructrice. Cône de 4.5m (jet de sauvegarde de Con.).\n Quand vous utilisez votre souffle, chaque créature qui se trouve dans la zone affectée doit faire un jet de sauvegarde de Con. Le DD de ce jet de sauvegarde est égal à 8 + votre modificateur de Constitution + votre bonus de maîtrise. Une créature qui ne réussit pas son jet de sauvegarde subit 2d6 dégâts. Elle n'en subit que la moitié si elle réussit son jet de sauvegarde. La quantité de dégâts que vous infligez augmente avec votre niveau pour atteindre 3d6 au rùveau 6, 4d6 au niveau 11 et 5d6 au niveau 16.\n Une fois que vous avez utilisé votre souffle, vous ne pouvez plus l'utiliser avant d'avoir terminé un repos court ou un repos long."
+                }
+            },
+            "Sangdragon bleu": {
+                "traits": {
+                    "Résistance aux dégats": "Votre ascendance draconique vous confère une résistance aux dégats de foudre",
+                    "Souffle": "Vous pouvez utiliser votre action pour exhaler une vague d'énergie destructrice. Ligne de 1,5 sur 9 mètres (jet de sauvegarde de Dex.).\n Quand vous utilisez votre souffle, chaque créature qui se trouve dans la zone affectée doit faire un jet de sauvegarde de Dex. Le DD de ce jet de sauvegarde est égal à 8 + votre modificateur de Constitution + votre bonus de maîtrise. Une créature qui ne réussit pas son jet de sauvegarde subit 2d6 dégâts. Elle n'en subit que la moitié si elle réussit son jet de sauvegarde. La quantité de dégâts que vous infligez augmente avec votre niveau pour atteindre 3d6 au rùveau 6, 4d6 au niveau 11 et 5d6 au niveau 16.\n Une fois que vous avez utilisé votre souffle, vous ne pouvez plus l'utiliser avant d'avoir terminé un repos court ou un repos long."
+                }
+            },
+            "Sangdragon de bronze": {
+                "traits": {
+                    "Résistance aux dégats": "Votre ascendance draconique vous confère une résistance aux dégats de foudre",
+                    "Souffle": "Vous pouvez utiliser votre action pour exhaler une vague d'énergie destructrice. Ligne de 1,5 sur 9 mètres (jet de sauvegarde de Dex.).\n Quand vous utilisez votre souffle, chaque créature qui se trouve dans la zone affectée doit faire un jet de sauvegarde de Dex. Le DD de ce jet de sauvegarde est égal à 8 + votre modificateur de Constitution + votre bonus de maîtrise. Une créature qui ne réussit pas son jet de sauvegarde subit 2d6 dégâts. Elle n'en subit que la moitié si elle réussit son jet de sauvegarde. La quantité de dégâts que vous infligez augmente avec votre niveau pour atteindre 3d6 au rùveau 6, 4d6 au niveau 11 et 5d6 au niveau 16.\n Une fois que vous avez utilisé votre souffle, vous ne pouvez plus l'utiliser avant d'avoir terminé un repos court ou un repos long."
+                }
+            },
+            "Sangdragon de cuivre": {
+                "traits": {
+                    "Résistance aux dégats": "Votre ascendance draconique vous confère une résistance aux dégats d'acide",
+                    "Souffle": "Vous pouvez utiliser votre action pour exhaler une vague d'énergie destructrice. Ligne de 1,5 sur 9 mètres (jet de sauvegarde de Dex.).\n Quand vous utilisez votre souffle, chaque créature qui se trouve dans la zone affectée doit faire un jet de sauvegarde de Dex. Le DD de ce jet de sauvegarde est égal à 8 + votre modificateur de Constitution + votre bonus de maîtrise. Une créature qui ne réussit pas son jet de sauvegarde subit 2d6 dégâts. Elle n'en subit que la moitié si elle réussit son jet de sauvegarde. La quantité de dégâts que vous infligez augmente avec votre niveau pour atteindre 3d6 au rùveau 6, 4d6 au niveau 11 et 5d6 au niveau 16.\n Une fois que vous avez utilisé votre souffle, vous ne pouvez plus l'utiliser avant d'avoir terminé un repos court ou un repos long."
+                }
+            },
+            "Sangdragon noir": {
+                "traits": {
+                    "Résistance aux dégats": "Votre ascendance draconique vous confère une résistance aux dégats d'acide",
+                    "Souffle": "Vous pouvez utiliser votre action pour exhaler une vague d'énergie destructrice. Ligne de 1,5 sur 9 mètres (jet de sauvegarde de Dex.).\n Quand vous utilisez votre souffle, chaque créature qui se trouve dans la zone affectée doit faire un jet de sauvegarde de Dex. Le DD de ce jet de sauvegarde est égal à 8 + votre modificateur de Constitution + votre bonus de maîtrise. Une créature qui ne réussit pas son jet de sauvegarde subit 2d6 dégâts. Elle n'en subit que la moitié si elle réussit son jet de sauvegarde. La quantité de dégâts que vous infligez augmente avec votre niveau pour atteindre 3d6 au rùveau 6, 4d6 au niveau 11 et 5d6 au niveau 16.\n Une fois que vous avez utilisé votre souffle, vous ne pouvez plus l'utiliser avant d'avoir terminé un repos court ou un repos long."
+                }
+            },
+            "Sangdragon d'or": {
+                "traits": {
+                    "Résistance aux dégats": "Votre ascendance draconique vous confère une résistance aux dégats de feu",
+                    "Souffle": "Vous pouvez utiliser votre action pour exhaler une vague d'énergie destructrice. Cône de 4.5m (jet de sauvegarde de Dex.).\n Quand vous utilisez votre souffle, chaque créature qui se trouve dans la zone affectée doit faire un jet de sauvegarde de Dex. Le DD de ce jet de sauvegarde est égal à 8 + votre modificateur de Constitution + votre bonus de maîtrise. Une créature qui ne réussit pas son jet de sauvegarde subit 2d6 dégâts. Elle n'en subit que la moitié si elle réussit son jet de sauvegarde. La quantité de dégâts que vous infligez augmente avec votre niveau pour atteindre 3d6 au rùveau 6, 4d6 au niveau 11 et 5d6 au niveau 16.\n Une fois que vous avez utilisé votre souffle, vous ne pouvez plus l'utiliser avant d'avoir terminé un repos court ou un repos long."
+                }
+            },
+            "Sangdragon rouge": {
+                "traits": {
+                    "Résistance aux dégats": "Votre ascendance draconique vous confère une résistance aux dégats de feu",
+                    "Souffle": "Vous pouvez utiliser votre action pour exhaler une vague d'énergie destructrice. Cône de 4.5m (jet de sauvegarde de Dex.).\n Quand vous utilisez votre souffle, chaque créature qui se trouve dans la zone affectée doit faire un jet de sauvegarde de Dex. Le DD de ce jet de sauvegarde est égal à 8 + votre modificateur de Constitution + votre bonus de maîtrise. Une créature qui ne réussit pas son jet de sauvegarde subit 2d6 dégâts. Elle n'en subit que la moitié si elle réussit son jet de sauvegarde. La quantité de dégâts que vous infligez augmente avec votre niveau pour atteindre 3d6 au rùveau 6, 4d6 au niveau 11 et 5d6 au niveau 16.\n Une fois que vous avez utilisé votre souffle, vous ne pouvez plus l'utiliser avant d'avoir terminé un repos court ou un repos long."
+                }
+            },
+            "Sangdragon vert": {
+                "traits": {
+                    "Résistance aux dégats": "Votre ascendance draconique vous confère une résistance aux dégats de poison",
+                    "Souffle": "Vous pouvez utiliser votre action pour exhaler une vague d'énergie destructrice. Cône de 4.5m (jet de sauvegarde de Con.).\n Quand vous utilisez votre souffle, chaque créature qui se trouve dans la zone affectée doit faire un jet de sauvegarde de Con. Le DD de ce jet de sauvegarde est égal à 8 + votre modificateur de Constitution + votre bonus de maîtrise. Une créature qui ne réussit pas son jet de sauvegarde subit 2d6 dégâts. Elle n'en subit que la moitié si elle réussit son jet de sauvegarde. La quantité de dégâts que vous infligez augmente avec votre niveau pour atteindre 3d6 au rùveau 6, 4d6 au niveau 11 et 5d6 au niveau 16.\n Une fois que vous avez utilisé votre souffle, vous ne pouvez plus l'utiliser avant d'avoir terminé un repos court ou un repos long."
+                }
+            }
+        }
+    },
+    "Tieffelin": {
+        "bonus": {
+            "CHA": 2,
+            "INT": 1
+        },
+        "vitesse": 9,
+        "traits": {
+            "Vision dans le noir": "Grâce à votre ascendance infernale, vous avez hérité d'une vision supérieure dans l'obscurité et dans la lumière faible. Dans un rayon de 18 mètres, vous pouvez voir dans une zone de lumière faible comme s'il s'agissait d'une lumière vive et dans l'obscurité comme s'il s'agissait d'une lumière faible. Par contre, vous ne distinguez pas les couleurs dans l'obscurité, seulement des nuances de gris.",
+            "Résistance infernale": "Vous êtes résistant aux dégâts de feu",
+            "Ascendance infernale": "Vous connaissez le tour de magie thaumaturgie. Quand vous atteignez le niveau 3, vous pouvez lancer une fois le sort représailles infernales comme sort de niveau 2 grâce à ce trait. Pour pouvoir lancer de nouveau ce sort, vous devez finir un repos long. À partir du niveau 5, vous pouvez lancer une fois le sort ténèbres grâce à ce trait. Pour pouvoir lancer de nouveau ce sort, vous devez finir un repos long. Votre caractéristique d'incantation pour lancer ces sorts est le Charisme."
+        },
+        "langues": [
+            "Commun",
+            "Infernal"
+        ]
+    },
+    "Aasimar": {
+        "bonus": {
+            "CHA": 2
+        },
+        "vitesse": 9,
+        "traits": {
+            "Vision dans le noir": "Dans un rayon de 18 mètres, vous pouvez voir dans une zone de lumière faible comme s'il s'agissait d'une lumière vive et dans l'obscurité comme s'il s'agissait d'une lumière faible. Par contre, vous ne distinguez pas les couleurs dans l'obscurité, seulement des nuances de gris.",
+            "Résistance céleste": "Vous êtes résistant aux dégâts nécrotiques et radiants",
+            "Main guerrisseuse": "En tant qu'action, vous pouvez toucher une créature et lui faire regagner un nombre de points de vie égales à votre niveau. Pour pouvoir lancer de nouveau ce sort, vous devez finir un repos long.",
+            "Porteur de lumière": "Vous connaissez le tour de magie lumière. La caractéristique d'incantation est le charisme."
+        },
+        "langues": [
+            "Commun",
+            "Céleste"
+        ],
+        "variantes": {
+            "Aasimar protecteur": {
+                "bonus": {
+                    "SAG": 1
+                },
+                "traits": {
+                    "Ame radiante": "A partir du niveau 3, vous pouvez utiliser une action pour déchainer votre energie divine ce qui rend vos yeux brillants et fait apparaitre des ailes de lumière dans votre dos. Cette transformation dure 1 minute ou jusqu'à annulation en action bonus. Pendant la transformation, vous pouvez volez sur 9m et ,une fois par tour, vous pouvez rajouter votre niveau aux dégats que vous infligez en dégats radiants. Pour pouvoir utiliser ce trait à nouveau, vous devez finir un repos long."
+                }
+            },
+            "Aasimar du fléau": {
+                "bonus": {
+                    "CON": 1
+                },
+                "traits": {
+                    "Consommation radiante": "A partir du niveau 3, vous pouvez utiliser une action pour déchainer votre energie divine ce qui fait radier une intense lumière de vous, sortant de vos yeux et votre bouche menacant de vous carboniser. Cette transformation dure 1 minute ou jusqu'à annulation en action bonus. Pendant la transformation, vous illuminer fortement sur 3 mètres puis plus légèrement sur 3 autres mètres.A la fin de chaque tour, vous et chaque créature dans les 3 mètres prenez des dégats radiants égales à la moitié de votre niveau (arrondi au dessus). De plus, une fois par tour, vous pouvez rajouter votre niveau aux dégats que vous infligez en dégats radiants. Pour pouvoir utiliser ce trait à nouveau, vous devez finir un repos long."
+                }
+            },
+            "Aasimar déchu": {
+                "bonus": {
+                    "FOR": 1
+                },
+                "traits": {
+                    "Voile nécrotique": "A partir du niveau 3, vous pouvez utiliser une action pour déchainer votre energie divine ce qui rend vos yeux noirs comme les tenebres et fait apparaitres deux ailes squelettiques et fantomatique dans votre dos. Au moment de votre transformation, toute créature à moins de 3 mètres de vous qui vous voit doit faire un jet de sauvegarde de Charisme (DD8 + maitrise + modificateur de Charisme) ou être effrayé par vous jusqu'à la fin de votre prochain tour. Cette transformation dure 1 minute ou jusqu'à annulation en action bonus. Pendant la transformation, une fois par tour, vous pouvez rajouter votre niveau aux dégats que vous infligez en dégats nécrotique. Pour pouvoir utiliser ce trait à nouveau, vous devez finir un repos long."
+                }
+            }
+        }
+    },
+    "Firbolg": {
+        "bonus": {
+            "SAG": 2,
+            "FOR": 1
+        },
+        "vitesse": 9,
+        "traits": {
+            "Magie firbolg": "Vous pouvez lancer Detection de magie et Déguisement avec ce trait en utilisant la Sagesse comme caractéristique d'incantation. Une fois l'un des sorts utilisé, vous devez finir un repos court ou long pour le relancer. En utilisant cette version de Déguisement, vous pouvez paraitre 90cm plus petit ou plus grand",
+            "Marche invisible": "En action bonus, vous pouvez magiquement vous rendre invisible jusqu'au début de votre prochain tour ou jusqu'à une attaque, un lancer de dégat ou forcer une personne à faire un jet de sauvegarde. Une fois ce trait utilisé, vous ne pouvez pas l'utiliser avant d'avoir fini un repos long ou court.",
+            "Carrure lourde": "Vous comptez une taille plus grande quand il s'agit de capacité de port ou du poids que vous pouvez pousser,tirer ou soulever.",
+            "Langage de la forêt": "Vous pouvez communiquez de manière limitée avec les plantes et les animaux. Ils peuvent comprendre ce que vous dites mais vous ne pouvez pas les comprendre en retour. Vous avez l'avantage sur les jets de charismes pour les influencer."
+        },
+        "langues": [
+            "Commun",
+            "Elfique",
+            "Géant"
+        ]
+    },
+    "Goliath": {
+        "bonus": {
+            "FOR": 2,
+            "CON": 1
+        },
+        "vitesse": 9,
+        "maitrises": [
+            "Athlétisme"
+        ],
+        "traits": {
+            "Endurance de pierre": "Vous pouvez vous concentrer pour éviter occasionnellement une blessure. Lorsque vous subissez des dégâts, vous pouvez utiliser votre réaction pour lancer un d12. Ajoutez votre modificateur de Constitution au nombre obtenu, et réduisez les dommages de ce total. Après avoir utilisé ce trait, vous devez terminer un repos court ou long avant de pouvoir le réutiliser.",
+            "Carrure lourde": "Vous comptez une taille plus grande quand il s'agit de capacité de port ou du poids que vous pouvez pousser,tirer ou soulever.",
+            "Né des montagnes": "Vous êtes acclimaté aux hautes altitudes, incluant des elevation au dessus de 6000m. Vous êtes aussi naturellement adapté aux climats froids."
+        },
+        "langues": [
+            "Commun",
+            "Géant"
+        ]
+    },
+    "Kenku": {
+        "choix": [
+            {
+                "maitrises": [
+                    "Acrobaties",
+                    "Discrétion",
+                    "Escamotage",
+                    "Tromperie"
+                ],
+                "nombre": 2
+            }
+        ],
+        "bonus": {
+            "DEX": 2,
+            "SAG": 1
+        },
+        "vitesse": 9,
+        "traits": {
+            "Expert falsificateur": "Vous pouvez dupliquer les créations et l'ecritures d'autres créatures. Vous avez l'avantages sur les jets pour produire des faux ou des duplicats d'objets existants.",
+            "Imitation": "Vous pouvez reproduire tout son que vous avez entendu, dont les voix. Une créature qui entend ces sons peut dire qu'il s'agit d'imitation en réussissant un jet de Sagesse (Perspicacité) opposé à votre jet de Charisme (Tromperie)."
+        },
+        "langues": [
+            "Commun",
+            "Céleste"
+        ]
+    },
+    "Lezard": {
+        "choix": [
+            {
+                "maitrises": [
+                    "Dressage",
+                    "Nature",
+                    "Perception",
+                    "Survie",
+                    "Discrétion"
+                ],
+                "nombre": 2
+            }
+        ],
+        "bonus": {
+            "CON": 2,
+            "SAG": 1
+        },
+        "vitesse": 9,
+        "nage": 9,
+        "traits": {
+            "Morsure": "Attaque au corps à corps avec les dents : d20+(maitrise + Modif For) pour toucher. Si touché, (1d6 + Modificateur de Force) dégâts perforants.",
+            "Artisan habile": "Pendant un repos court, vous pouvez récolter des os et du cuir d'une bête,construction,dragon,monstruosité,ou une plante de taille Petite ou plus grande pour créer un des objets suivant : Un bouclier, une masse, un javelin ou 1d4 flechettes. Pour utiliser ce trait, vous devez avoir une lame comme une dague ou les outils d'artisan appropriés comme les outils de tanneur.",
+            "Retenir son souffle": "Vous pouvez retenir votre souffle pendant 15 minutes",
+            "Armure naturelle": "Vos écailles vous donnent une CA de 13+modificateur de Dexterité sans armure. Vous pouvez choisir votre armure naturelle si votre armure vous donne une CA plus basse. Les bénéfices d'un bouclier s'appliquent normalement avec votre armure naturelle",
+            "Machoires affamées": "En combat, vous pouvez vous jeter dans une frénésie vicieuse d'alimentation. En action bonus, vous pouvez faire une attaque spéciale avec votre Morsure. Si l'attaque touche, elle fait les dégats normaux et vous regagner des points de vies temporaires égales à votre modificateur de Constitution (minimum 1). Après avoir utilisé ce trait, vous devez finir un repos court ou long pour l'utiliser à nouveau."
+        },
+        "langues": [
+            "Commun",
+            "Draconique"
+        ]
+    },
+    "Tabaxi": {
+        "choix": [
+            {
+                "langues": [
+                    "Commun",
+                    "Elfique",
+                    "Géant",
+                    "Gnome",
+                    "Gobelin",
+                    "Halfelin",
+                    "Nain",
+                    "Orque",
+                    "Abyssal",
+                    "Céleste",
+                    "Commun des profondeurs",
+                    "Draconique",
+                    "Infernal",
+                    "Primordial",
+                    "Profond",
+                    "Sylvain"
+                ],
+                "nombre": 1
+            }
+        ],
+        "bonus": {
+            "DEX": 2,
+            "CHA": 1
+        },
+        "vitesse": 9,
+        "traits": {
+            "Vision dans le noir": "Dans un rayon de 18 mètres, vous pouvez voir dans une zone de lumière faible comme s'il s'agissait d'une lumière vive et dans l'obscurité comme s'il s'agissait d'une lumière faible. Par contre, vous ne distinguez pas les couleurs dans l'obscurité, seulement des nuances de gris.",
+            "Agilité féline": "Vos reflexes et votre agilité vous permet de doubler votre vitesse pendant votre tour. Après avoir utilisé ce trait, vous ne pouvez pas le réuitiliser avant d'être rester statique pendant votre tour",
+            "Griffes félines": "Grâce à vos griffes, vous pouvez grimper avec une vitesse de 6m. De plus, vos griffes sont des armes naturelles que vous pouvez utilisés sans être armé. Si vous touchez, vous faites 1d4 + modificateur de Force dégats contondants"
+        },
+        "maitrises": [
+            "Perception",
+            "Discrétion"
+        ],
+        "langues": [
+            "Commun"
+        ]
+    },
+    "Triton": {
+        "bonus": {
+            "FOR": 1,
+            "CON": 1,
+            "CHA": 1
+        },
+        "vitesse": 9,
+        "nage": 9,
+        "traits": {
+            "Amphibie": "Vous pouvez respirer dans l'eau et l'air",
+            "Controle de l'air et de l'eau": "Avec ce trait, vous pouvez lancer Nappe de brouillard. Au niveau 3, vous pouvez lancer Bourrasque avec ce trait. Au niveau 5, vous pouvez lancer Mur d'eau avec ce trait. Après avoir lancer un sort avec ce trait, vous devez finir un repos long avant de pouvoir en relancer un. Le Charisme est utilisé comme caractéristique d'incantation pour ces sorts.",
+            "Emissaire de la mer": "Les créatures aquatiques peuvent vous comprendre mais vous ne pouvez pas les comprendre.",
+            "Gardien des profondeurs": "Vous êtes résistant aux dégats de froid et ignorez les désavantages d'environnement profondément sous l'eau."
+        },
+        "langues": [
+            "Commun",
+            "Primordial"
+        ]
+    },
+    "Gobelours": {
+        "bonus": {
+            "FOR": 2,
+            "DEX": 1
+        },
+        "vitesse": 9,
+        "traits": {
+            "Vision dans le noir": "Dans un rayon de 18 mètres, vous pouvez voir dans une zone de lumière faible comme s'il s'agissait d'une lumière vive et dans l'obscurité comme s'il s'agissait d'une lumière faible. Par contre, vous ne distinguez pas les couleurs dans l'obscurité, seulement des nuances de gris.",
+            "Grande allonge": "Vous pouvez toucher de 1.5 mètres de plus que normal.",
+            "Carrure lourde": "Vous comptez une taille plus grande quand il s'agit de capacité de port ou du poids que vous pouvez pousser,tirer ou soulever.",
+            "Attaque surprise": "Si vous surprenez une créature et la touchez pendant votre premier tour de combat, l'attaque fait 2d6 dégats en plus. Peut être utilisé une fois par combat."
+        },
+        "langues": [
+            "Commun",
+            "Gobelin"
+        ],
+        "maitrises": [
+            "Discrétion"
+        ]
+    },
+    "Gobelin": {
+        "bonus": {
+            "DEX": 2,
+            "CON": 1
+        },
+        "vitesse": 9,
+        "langues": [
+            "Commun",
+            "Gobelin"
+        ],
+        "traits": {
+            "Vision dans le noir": "Dans un rayon de 18 mètres, vous pouvez voir dans une zone de lumière faible comme s'il s'agissait d'une lumière vive et dans l'obscurité comme s'il s'agissait d'une lumière faible. Par contre, vous ne distinguez pas les couleurs dans l'obscurité, seulement des nuances de gris.",
+            "Fureur des petits": "Quand vous faites des dégats à une créature Moyenne ou plus, vous pouvez ajouter votre niveau aux dégats. Une fois ce trait utilisé, vous devez finir un repos court ou long pour le réutiliser.",
+            "Fuite agile": "Vous pouvez vous désengagez ou vous cacher en tant qu'action bonus à chaque tour."
+        }
+    },
+    "Hobgobelin": {
+        "choix": [
+            {
+                "armes": [
+                    "cimeterre",
+                    "coutille",
+                    "épée à deux mains",
+                    "épée courtes",
+                    "épée longues",
+                    "fléau d'armes",
+                    "fouet",
+                    "hache à deux mains",
+                    "hache d'armes",
+                    "hallebarde",
+                    "lance d'arçon",
+                    "maillet",
+                    "marteau de guerre",
+                    "morgenstern",
+                    "pic de guerre",
+                    "pique",
+                    "rapière",
+                    "trident",
+                    "arbalète de poing",
+                    "arbalète lourde",
+                    "arc long",
+                    "filet",
+                    "sarbacane"
+                ],
+                "nombre": 2
+            }
+        ],
+        "bonus": {
+            "CON": 2,
+            "INT": 1
+        },
+        "vitesse": 9,
+        "langues": [
+            "Commun",
+            "Gobelin"
+        ],
+        "traits": {
+            "Vision dans le noir": "Dans un rayon de 18 mètres, vous pouvez voir dans une zone de lumière faible comme s'il s'agissait d'une lumière vive et dans l'obscurité comme s'il s'agissait d'une lumière faible. Par contre, vous ne distinguez pas les couleurs dans l'obscurité, seulement des nuances de gris.",
+            "Sauver la face": "Si vous ratez un jet d'attaque, un jet de caractéristique ou un jet de sauvegarde, vous pouvez rajouter au jet un bonus égal au nombre d'alliés que vous voyez dans les 9 mètres (avec un maximum de 5). Une fois ce trait utilisé, vous devez faire un repos court ou long pour le réutiliser."
+        },
+        "armures": [
+            "légères"
+        ]
+    },
+    "Kobold": {
+        "bonus": {
+            "DEX": 2,
+            "FOR": -2
+        },
+        "vitesse": 9,
+        "traits": {
+            "Vision dans le noir": "Dans un rayon de 18 mètres, vous pouvez voir dans une zone de lumière faible comme s'il s'agissait d'une lumière vive et dans l'obscurité comme s'il s'agissait d'une lumière faible. Par contre, vous ne distinguez pas les couleurs dans l'obscurité, seulement des nuances de gris.",
+            "Ramper, Se tapir, Prier": "En action, vous pouvez vous tapir pour attirer les ennemis. Jusqu'à la fin de votre prochain tour, les alliés gagnent un avantages sur les enemis à moins de 3m qui peuvent vous voir. Une fois ce trait utilisé, vous devez faire un repos court ou long pour le réutiliser.",
+            "Sensibilité à la lumière du soleil": "Vous êtes désavantagé lors des jets d'attaque et des tests de Sagesse (Perception) basés sur la vue lorsque vous, votre cible ou ce que vous tentez de percevoir se trouve sous la lumière directe du soleil.",
+            "Tactique de groupe": "Vous êtes avantagés sur les jets d'attaques contre les créatures si au moins 1 allié se trouve à 1.5 mètres de la créature et si cet allié n'est pas incapacité."
+        },
+        "langues": [
+            "Commun",
+            "Draconique"
+        ]
+    },
+    "Orc": {
+        "bonus": {
+            "FOR": 2,
+            "CON": 1,
+            "INT": -2
+        },
+        "vitesse": 9,
+        "traits": {
+            "Vision dans le noir": "Dans un rayon de 18 mètres, vous pouvez voir dans une zone de lumière faible comme s'il s'agissait d'une lumière vive et dans l'obscurité comme s'il s'agissait d'une lumière faible. Par contre, vous ne distinguez pas les couleurs dans l'obscurité, seulement des nuances de gris.",
+            "Aggressif": "En action bonus, vous pouvez vous déplacer de votre vitesse jusqu'à un ennemi de votre choix que vous pouvez voir ou entendre. Vous devez finir votre mouvement plus proche de l'ennemi qu'au début du mouvement."
+        },
+        "maitrises": [
+            "Intimidation"
+        ],
+        "langues": [
+            "Commun",
+            "Orque"
+        ]
+    },
+    "Yuan-Ti": {
+        "bonus": {
+            "CHA": 2,
+            "INT": 1
+        },
+        "vitesse": 9,
+        "traits": {
+            "Vision dans le noir": "Dans un rayon de 18 mètres, vous pouvez voir dans une zone de lumière faible comme s'il s'agissait d'une lumière vive et dans l'obscurité comme s'il s'agissait d'une lumière faible. Par contre, vous ne distinguez pas les couleurs dans l'obscurité, seulement des nuances de gris.",
+            "Lanceur de sort inné": "Vous connaissez le tour de magie Bouffée de poison. Vous pouvez lancer Amitié avec les animaux de façon ilimité avec ce trait mais seulement en visant des serpents. Au niveau 3, vous pouvez aussi lancer Suggestion avec ce trait. Une fois un sort lancé avec ce trait, vous devez finir un repos long pour le réutiliser. Le Charisme est la caractéristique d'incantation pour ses sorts.",
+            "Resistance magique": "Vous êtes avantagé sur les jets de sauvegarde contre les sorts ou autres effet magiques.",
+            "Immunité au poison": "Vous êtes immunisé au dégats de poison et à l'état empoisonné."
+        },
+        "langues": [
+            "Commun",
+            "Abyssal",
+            "Draconique"
+        ]
+    }
+}

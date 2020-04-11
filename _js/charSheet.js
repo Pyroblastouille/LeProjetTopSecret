@@ -1,6 +1,5 @@
 $('.stat').bind('input', changeBonuses)
 $('.profCheck').bind('change', changeBonuses);
-$('.weightChange').bind('input', changeBonuses);
 $('.nomPerso').bind('input', function() {
     $('.nomPerso').val($(this).val());
 })
@@ -28,92 +27,6 @@ function parseNewFloat(val) {
         return 0.0;
     }
     return ret;
-}
-
-function checkWeight() {
-    let weightEquipment = 0.0;
-    let weightWeapon = 0.0;
-    let weightPieces = 0.0;
-    let weightTresors = 0.0;
-
-    //check pieces weight
-    let pc = parseNewInt($('#pc').val());
-    let pa = parseNewInt($('#pa').val());
-    let pe = parseNewInt($('#pe').val());
-    let po = parseNewInt($('#po').val());
-    let pp = parseNewInt($('#pp').val());
-    weightPieces = (pc + pa + pe + po + pp) / 100;
-
-    //create a regex for finding weight
-    let regex = new RegExp('([0-9\\.,]*)+');
-
-    //check weapons
-    let textWeapon = $('.weaponTextArea').val();
-    textWeapon = textWeapon.split('kg');
-
-    for (let i = 0; i < textWeapon.length; i++) {
-        const element = textWeapon[i];
-
-        let num = element.split(' ');
-        num = num[num.length - 1];
-
-        let singleWeight = parseNewFloat(num);
-        weightWeapon += singleWeight;
-    }
-
-    //check equipment
-    let textEquipment = $('.equipmentTextArea').val()
-    textEquipment = textEquipment.split('kg');
-    for (let i = 0; i < textEquipment.length; i++) {
-        const element = textEquipment[i];
-
-        let num = element.split(' ');
-        num = num[num.length - 1];
-
-        let singleWeight = parseNewFloat(num);
-        weightEquipment += singleWeight;
-    }
-
-    //check treasures
-    let textTresors = $('[name=tresor]').val();
-    textTresors = textTresors.split('kg');
-
-    for (let i = 0; i < textTresors.length; i++) {
-        const element = textTresors[i];
-
-        let num = element.split(' ');
-        num = num[num.length - 1];
-
-        let singleWeight = parseNewFloat(num);
-        weightTresors += singleWeight;
-    }
-
-    //check total weight
-    let totalWeight = weightPieces + weightWeapon + weightEquipment + weightTresors;
-    let weightAmount = $("[name=Forcescore]").val() * WEIGHT_PER_FORCE;
-    if (weightAmount + WEIGHT_PER_FORCE * 2 <= totalWeight) {
-        $(".weightModif").addClass("overweight");
-        $(".weightModif").removeClass("slightlyOverweight");
-        $(".weightModif").removeClass("almostOverweight");
-    } else if (weightAmount <= totalWeight) {
-        $(".weightModif").removeClass("overweight");
-        $(".weightModif").addClass("slightlyOverweight");
-        $(".weightModif").removeClass("almostOverweight");
-    } else if (weightAmount - WEIGHT_PER_FORCE * 2 <= totalWeight) {
-        $(".weightModif").removeClass("overweight");
-        $(".weightModif").removeClass("slightlyOverweight");
-        $(".weightModif").addClass("almostOverweight");
-    } else {
-        $(".weightModif").removeClass("overweight");
-        $(".weightModif").removeClass("slightlyOverweight");
-        $(".weightModif").removeClass("almostOverweight");
-    }
-    //console.log(totalWeight+'='+weightPieces+'+'+weightWeapon+'+'+weightEquipment);
-
-    $('.maxWeight')[0].innerText = ($(".FORscore").val() * WEIGHT_PER_FORCE).toFixed(0);
-    $('.actualWeight')[0].innerText = totalWeight.toFixed(2);
-    return totalWeight;
-
 }
 
 function changeBonuses() {
@@ -167,7 +80,6 @@ function changeBonuses() {
             for (let i = 0; i < childs.length; i++) {
                 const ch = childs[i];
                 let isProficientChild = $('[name=' + ch.name + '-prof]');
-                console.log(ch.name);
                 if (isProficientChild.is(':checked')) {
                     if (ch.name == "Perception") {
 
@@ -182,7 +94,6 @@ function changeBonuses() {
             $(".initiative").val($(".DEX").val());
         }
     });
-    checkWeight();
     checkPassivePercep();
 }
 
@@ -397,8 +308,6 @@ function importJSON(filename) {
             $(".sort-8").val(json.sorts.lvl8);
             $(".sort-9").val(json.sorts.lvl9);
         }
-
-        checkWeight();
     });
 }
 

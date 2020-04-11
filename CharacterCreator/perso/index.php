@@ -350,32 +350,32 @@ if (file_exists($json)) {
                 </tr>
               </tbody>
             </table>
-            <textarea class="weightChange weaponTextArea"><?= $char->weaponTextArea ?></textarea>
+            <textarea class="weaponTextArea"><?= $char->weaponTextArea ?></textarea>
           </div>
         </section>
         <section class="equipment">
           <div>
-            <label>équipement - <span><span class="weightModif actualWeight"></span>/<span class="maxWeight"></span>kg</span></label>
+            <label>équipement</label>
             <div class="money">
               <ul>
                 <li>
-                  <label for="pc">pc</label><input value="<?= $char->pc ?>" class="weightChange" name="pc" class="pc" />
+                  <label for="pc">pc</label><input value="<?= $char->pc ?>" name="pc" class="pc" />
                 </li>
                 <li>
-                  <label for="pa">pa</label><input value="<?= $char->pa ?>" class="weightChange pa" name="pa" />
+                  <label for="pa">pa</label><input value="<?= $char->pa ?>" class="pa" name="pa" />
                 </li>
                 <li>
-                  <label for="pe">pe</label><input value="<?= $char->pe ?>" class="weightChange pe" name="pe" />
+                  <label for="pe">pe</label><input value="<?= $char->pe ?>" class="pe" name="pe" />
                 </li>
                 <li>
-                  <label for="po">po</label><input value="<?= $char->po ?>" class="weightChange po" name="po" />
+                  <label for="po">po</label><input value="<?= $char->po ?>" class="po" name="po" />
                 </li>
                 <li>
-                  <label for="pp">pp</label><input value="<?= $char->pp ?>" class="weightChange pp" name="pp" />
+                  <label for="pp">pp</label><input value="<?= $char->pp ?>" class="pp" name="pp" />
                 </li>
               </ul>
             </div>
-            <textarea class="weightChange equipmentTextArea" placeholder="Liste d&#39;équipement ici"><?= $char->equipmentTextArea ?></textarea>
+            <textarea class="equipmentTextArea" placeholder="Liste d&#39;équipement ici"><?= $char->equipmentTextArea ?></textarea>
           </div>
         </section>
       </section>
@@ -549,7 +549,7 @@ if (file_exists($json)) {
     </main>
   </form>
   <video <?= (isset($_SESSION['mute']) && $_SESSION['mute'] ? "muted" : "") ?> class="son" hidden autoplay>
-    <source src="../_sounds/lol.mp3" type="audio/mpeg" />
+    <source src="../../_sounds/lol.mp3" type="audio/mpeg" />
   </video>
   <!-- partial -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
@@ -562,7 +562,7 @@ if (file_exists($json)) {
       fetch("../../_func/saveJson.php", {
         method: "POST",
         body: JSON.stringify({
-          "file": '../deuneudeu/perso/<?= $json ?>',
+          "file": '../CharacterCreator/perso/<?= $json ?>',
           'data': objCurrent
         })
       }).then(function(res) {
@@ -575,7 +575,7 @@ if (file_exists($json)) {
         fetch("../../_func/deleteJson.php", {
           method: "POST",
           body: JSON.stringify({
-            "file": '../deuneudeu/perso/<?= $json ?>'
+            "file": '../CharacterCreator/perso/<?= $json ?>'
           })
         }).then(function(res) {
           window.location = "../index.php";

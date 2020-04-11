@@ -69,10 +69,7 @@ require_once('./_func/func.inc.php');
                     <a href="#" onclick="toggleUI()">Cacher/Montrer l'UI</a>
                     -
                     <a href="#" onclick="mute()">Mute/Unmute</a>
-                    -
-                    <a href="http://pyroblastouille.site">Retour à la page d'accueil</a>
                 </p>
-                <p>Si tu penses que ce fond est chaud, viens le prendre <a href="<?= $imgUrl->url ?>">à cette adresse</a>.</p>
             </div>
             <video <?= (isset($_SESSION['mute']) && $_SESSION['mute'] ? "muted" : "") ?> class="son" hidden autoplay loop>
                 <source src="./_sounds/sweden.mp3" type="audio/mpeg" />

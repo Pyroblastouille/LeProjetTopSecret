@@ -1,1 +1,29 @@
-{"nomPerso":"","nomJoueur":"Terence","FORscore":"14","DEXscore":"13","CONscore":"13","INTscore":"12","SAGscore":"10","CHAscore":"9","classeEtNiveau":"Guerrier 1","deDeVie":"","race":"","historique":"","TraitPersonalite":"","Ideaux":"","Liens":"","defauts":"","alignement":"","ac":"","speed":"","pvMax":"","inspiration":"","traits":"","arme1":{"nom":"","atk":"","deg":""},"arme2":{"nom":"","atk":"","deg":""},"arme3":{"nom":"","atk":"","deg":""},"weaponTextArea":"","proficiencies":"","skillsProf":[],"saveProf":[],"equipmentTextArea":"","pc":"","pa":"","pe":"","po":"","pp":"","xp":""}
+{"nomPerso":"","nomJoueur":"Terence","FORscore":"14","DEXscore":"13","CONscore":"13","INTscore":"12","SAGscore":"10","CHAscore":"9","classeEtNiveau":"Guerrier 1","deDeVie":"","race":"","historique":"","TraitPersonalite":"","Ideaux":"","Liens":"","defauts":"","alignement":"","ac":"","speed":"","pvMax":"","inspiration":"","traits":"","arme1":{"nom":"","atk":"","deg":""},"arme2":{"nom":"","atk":"","deg":""},"arme3":{"nom":"","atk":"","deg":""},"weaponTextArea":"","proficiencies":"","skillsProf":[],"saveProf":[],"equipmentTextArea":"","pc":"","pa":"","pe":"","po":"","pp":"","xp":"",
+
+    "apparence": "",
+    "histoire": "",
+    "allies": "",
+    "traitsSup": "",
+    "tresor": "",
+
+    "age": "",
+    "yeux": "",
+    "taille": "",
+    "poids": "",
+    "cheveux": "",
+    "peau": "",
+    "caracIncantation": "",
+    "ddSauvegardeSort": "",
+    "bonusAttaqueSort": "",
+    "sorts": {
+        "lvl0": "",
+        "lvl1": "",
+        "lvl2": "",
+        "lvl3": "",
+        "lvl4": "",
+        "lvl5": "",
+        "lvl6": "",
+        "lvl7": "",
+        "lvl8": "",
+        "lvl9": ""
+    }}

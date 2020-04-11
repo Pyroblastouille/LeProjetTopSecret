@@ -44,8 +44,8 @@
     
     "proficiencies":"",
     
-    "skillsProf":[""], 
-    "saveProf":[""],
+    "skillsProf":[], 
+    "saveProf":[],
     
     "equipmentTextArea":"",
     "pc":"",
@@ -53,5 +53,33 @@
     "pe":"",
     "po":"",
     "pp" :"",
-    "xp":""
+    "xp":"",
+
+    "apparence": "",
+    "histoire": "",
+    "allies": "",
+    "traitsSup": "",
+    "tresor": "",
+
+    "age": "",
+    "yeux": "",
+    "taille": "",
+    "poids": "",
+    "cheveux": "",
+    "peau": "",
+    "caracIncantation": "",
+    "ddSauvegardeSort": "",
+    "bonusAttaqueSort": "",
+    "sorts": {
+        "lvl0": "",
+        "lvl1": "",
+        "lvl2": "",
+        "lvl3": "",
+        "lvl4": "",
+        "lvl5": "",
+        "lvl6": "",
+        "lvl7": "",
+        "lvl8": "",
+        "lvl9": ""
+    }
 }

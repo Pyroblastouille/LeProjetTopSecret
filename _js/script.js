@@ -1,6 +1,5 @@
 function toggleUI() {
     let ui = content;
-    console.log(ui.hidden);
     if (ui.hidden) {
         ui.removeAttribute('hidden');
     } else {
@@ -41,7 +40,7 @@ function addJson() {
     let newName = prompt("Pour quel joueur ?");
     newName = newName.replace("/[\ \-]/g", '_');
     if (newName != null) {
-        nameInput.value = newName + '.json';
+        nameInput.value = newName;
         hiddenForm.submit();
     }
 }

@@ -1,0 +1,191 @@
+{
+    "Barbare": {
+        "deDeVie": 12,
+        "sauvegarde": [
+            "Force",
+            "Constitution"
+        ],
+        "armures": [
+            "légères",
+            "intermédiaires",
+            "bouclier"
+        ],
+        "armes": [
+            "courantes",
+            "de guerre"
+        ]
+    },
+    "Barde": {
+        "deDeVie": 8,
+        "sauvegarde": [
+            "Dextérité",
+            "Charisme"
+        ],
+        "armures": [
+            "légères"
+        ],
+        "armes": [
+            "courantes",
+            "arbalète de poing",
+            "épée longue",
+            "rapière",
+            "épée courte"
+        ]
+    },
+    "Clerc": {
+        "deDeVie": 8,
+        "sauvegarde": [
+            "Sagesse",
+            "Charisme"
+        ],
+        "armures": [
+            "légères",
+            "intermédiaires",
+            "bouclier"
+        ],
+        "armes": [
+            "courantes"
+        ]
+    },
+    "Druide": {
+        "deDeVie": 8,
+        "sauvegarde": [
+            "Sagesse",
+            "Intelligence"
+        ],
+        "armures": [
+            "légères",
+            "intermédiaires (jamais en métal)",
+            "bouclier (jamais en métal)"
+        ],
+        "armes": [
+            "gourdin",
+            "fléchette",
+            "javeline",
+            "masse d'armes",
+            "bâton",
+            "cimeterre",
+            "serpe",
+            "fronde",
+            "lance"
+        ]
+    },
+    "Ensorceleur": {
+        "deDeVie": 6,
+        "sauvegarde": [
+            "Charisme",
+            "Constitution"
+        ],
+        "armures": [],
+        "armes": [
+            "dague",
+            "fléchette",
+            "fronde",
+            "bâton",
+            "arbalète légère"
+        ]
+    },
+    "Guerrier": {
+        "deDeVie": 10,
+        "sauvegarde": [
+            "Force",
+            "Constitution"
+        ],
+        "armures": [
+            "toutes",
+            "bouclier"
+        ],
+        "armes": [
+            "courantes",
+            "de guerre"
+        ]
+    },
+    "Magicien": {
+        "deDeVie": 6,
+        "sauvegarde": [
+            "Intelligence",
+            "Sagesse"
+        ],
+        "armures": [],
+        "armes": [
+            "dague",
+            "fléchette",
+            "fronde",
+            "bâton",
+            "arbalète légère"
+        ]
+    },
+    "Moine": {
+        "deDeVie": 8,
+        "sauvegarde": [
+            "Force",
+            "Dextérité"
+        ],
+        "armures": [],
+        "armes": [
+            "courantes",
+            "épée courte"
+        ]
+    },
+    "Paladin": {
+        "deDeVie": 10,
+        "sauvegarde": [
+            "Sagesse",
+            "Charisme"
+        ],
+        "armures": [
+            "toutes",
+            "bouclier"
+        ],
+        "armes": [
+            "courantes",
+            "de guerre"
+        ]
+    },
+    "Rôdeur": {
+        "deDeVie": 10,
+        "sauvegarde": [
+            "Force",
+            "Dextérité"
+        ],
+        "armures": [
+            "légères",
+            "intermédiaires",
+            "bouclier"
+        ],
+        "armes": [
+            "courantes",
+            "de guerre"
+        ]
+    },
+    "Roublard": {
+        "deDeVie": 8,
+        "sauvegarde": [
+            "Dextérité",
+            "Intelligence"
+        ],
+        "armures": [
+            "légères"
+        ],
+        "armes": [
+            "courantes",
+            "arbalète de poing",
+            "épée longue",
+            "rapière",
+            "épée courte"
+        ]
+    },
+    "Sorcier": {
+        "deDeVie": 8,
+        "sauvegarde": [
+            "Sagesse",
+            "Charisme"
+        ],
+        "armures": [
+            "légères"
+        ],
+        "armes": [
+            "courantes"
+        ]
+    }
+}

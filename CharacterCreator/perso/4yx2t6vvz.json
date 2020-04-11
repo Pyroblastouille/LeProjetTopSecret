@@ -1,0 +1,29 @@
+{"nomPerso":"mini","nomJoueur":"mono","FORscore":"15","DEXscore":"13","CONscore":"15","INTscore":"11","SAGscore":"10","CHAscore":"10","classeEtNiveau":"Barbare 1","deDeVie":"1d12","race":"Haut-elfe","historique":"Chevalier de l'ordre","TraitPersonalite":"","Ideaux":"","Liens":"","defauts":"","alignement":"","ac":"10","speed":"9m","pvMax":"14","inspiration":"","traits":"Vision dans le noir.Habitu\u00e9 \u00e0 la p\u00e9nombre des for\u00eats et au ciel nocturne, vous avez une vision sup\u00e9rieure dans l'obscurit\u00e9 et dans la lumi\u00e8re faible. Dans un rayon de 18 m\u00e8tres, vous pouvez voir dans une zone de lumi\u00e8re faible comme s'il s'agissait d'une lumi\u00e8re vive et dans l'obscurit\u00e9 comme s'il s'agissait d'une lumi\u00e8re faible. Par contre, vous ne distinguez pas les couleurs dans l'obscurit\u00e9, seulement des nuances de gris.\n\nAscendance f\u00e9\u00e9rique.Vous \u00eates avantag\u00e9 sur les jets de sauvegarde contre l'effet charm\u00e9 et vous ne pouvez \u00eatre contraint \u00e0 dormir par la magie.\n\nTranse.Les elfes n'ont pas besoin de dormir. \u00c0 la place,ils passent 4 heures par jour dans un \u00e9tat de m\u00e9ditation profonde, tout en restant semi-conscients. (Le mot qui d\u00e9crit cette m\u00e9ditation en langage commun est \u00ab transe\u00bb.) Pendant cette m\u00e9ditation, vous pouvez faire une sorte de r\u00eaves. De tels \u00ab r\u00eaves \u00bb sont en r\u00e9alit\u00e9 des exercices mentaux qui sont devenus des r\u00e9flexes au bout de plusieurs ann\u00e9es de pratique. En vous reposant ainsi, vous b\u00e9n\u00e9ficiez des m\u00eames avantages conf\u00e9r\u00e9s \u00e0 un humain par 8 heures de sommeil.\n\nTour de magie.Vous connaissez un tour de magie de votre choix parmi la liste de sorts de magicien. Votre caract\u00e9ristique d'incantation pour ce tour de magie est !'Intelligence.\n\n","arme1":{"nom":"","atk":"","deg":""},"arme2":{"nom":"","atk":"","deg":""},"arme3":{"nom":"","atk":"","deg":""},"weaponTextArea":"","proficiencies":"armes : courantes,de guerre\narmures : l\u00e9g\u00e8res,interm\u00e9diaires,bouclier\noutils : langues : Commun,Elfique","skillsProf":["Arcanes","Perception","Persuasion"],"saveProf":["Force","Constitution"],"equipmentTextArea":"une tenue de voyageur, une chevali\u00e8re, une banni\u00e8re ou un sceau qui repr\u00e9sente votre place ou votre rang dans l'ordre, et une bourse contenant 10 po","pc":"","pa":"","pe":"","po":"30","pp":"","xp":"",
+
+    "apparence": "",
+    "histoire": "",
+    "allies": "",
+    "traitsSup": "",
+    "tresor": "",
+
+    "age": "",
+    "yeux": "",
+    "taille": "",
+    "poids": "",
+    "cheveux": "",
+    "peau": "",
+    "caracIncantation": "",
+    "ddSauvegardeSort": "",
+    "bonusAttaqueSort": "",
+    "sorts": {
+        "lvl0": "",
+        "lvl1": "",
+        "lvl2": "",
+        "lvl3": "",
+        "lvl4": "",
+        "lvl5": "",
+        "lvl6": "",
+        "lvl7": "",
+        "lvl8": "",
+        "lvl9": ""
+    }}
