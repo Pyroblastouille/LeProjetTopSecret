@@ -1,7 +1,6 @@
 <?php
 require_once('../_func/func.inc.php');
 $persos = glob("perso/[a-zA-Z0-9\ ]*.json");
-var_dump($persos);
 ?>
 
 <!DOCTYPE html>
