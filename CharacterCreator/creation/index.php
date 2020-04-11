@@ -307,47 +307,147 @@ $classes = json_decode(file_get_contents("classes.json"));
                 step4.removeAttribute('hidden');
                 myHistorique = historiques[historique.value];
                 let choix = [];
+                let nbChoix = 0;
+                let str = "";
+                if (thisRace.choix != undefined) {
 
-                if (thisRace.choix != undefined)
-                    choix = choix.concat(thisRace.choix);
-                if (myHistorique.choix != undefined)
-                    choix = choix.concat(myHistorique.choix);
-                if (myClass.choix != undefined)
-                    choix = choix.concat(myClass.choix);
-                if (choix.length == 0) {
+                    str += "<h2>Choix de race</h2>";
+                    thisRace.choix.forEach(ch => {
+                        let nb = ch.nombre;
+                        let name = Object.keys(ch)[0];
+                        if (!allChoix.includes(name)) {
+                            allChoix.push(name);
+                        }
+                        for (let i = 0; i < nb; i++) {
+                            let opt = "";
+                            console.log(name);
+                            if (name == "bonus") {
+                                ch[name].forEach(el => {
+                                    if (!((myClass[name] != undefined && myClass[name][el] != undefined) ||
+                                            (myHistorique[name] != undefined && myHistorique[name][el] != undefined) ||
+                                            (thisRace[name] != undefined && thisRace[name][el] != undefined))) {
+                                        opt += "<option value=\"" + el + "\">" + el + "</option>";
+                                    }
+
+                                });
+                            } else {
+                                ch[name].forEach(el => {
+                                    if (!((myClass[name] != undefined && myClass[name].includes(el)) ||
+                                            (myHistorique[name] != undefined && myHistorique[name].includes(el)) ||
+                                            (thisRace[name] != undefined && thisRace[name].includes(el)))) {
+                                        opt += "<option value=\"" + el + "\">" + el + "</option>";
+                                    }
+
+                                });
+                            }
+                            if (opt.length != 0) {
+                                str += "<div>" + name;
+                                str += " :  <select name=\"" + name + "\" ";
+                                if (ch.taux != undefined) {
+                                    str += "taux=\"" + ch.taux + "\"";
+                                }
+                                str += " >";
+                                str += opt;
+                                str += "</select></div>";
+                            }
+                        }
+                    });
+                    nbChoix += thisRace.choix.length;
+                }
+                if (myClass.choix != undefined) {
+
+                    str += "<h2>Choix de classe</h2>";
+                    myClass.choix.forEach(ch => {
+                        let nb = ch.nombre;
+                        let name = Object.keys(ch)[0];
+                        if (!allChoix.includes(name)) {
+                            allChoix.push(name);
+                        }
+                        for (let i = 0; i < nb; i++) {
+                            let opt = "";
+                            console.log(name);
+                            if (name == "bonus") {
+                                ch[name].forEach(el => {
+                                    if (!((myClass[name] != undefined && myClass[name][el] != undefined) ||
+                                            (myHistorique[name] != undefined && myHistorique[name][el] != undefined) ||
+                                            (thisRace[name] != undefined && thisRace[name][el] != undefined))) {
+                                        opt += "<option value=\"" + el + "\">" + el + "</option>";
+                                    }
+
+                                });
+                            } else {
+                                ch[name].forEach(el => {
+                                    if (!((myClass[name] != undefined && myClass[name].includes(el)) ||
+                                            (myHistorique[name] != undefined && myHistorique[name].includes(el)) ||
+                                            (thisRace[name] != undefined && thisRace[name].includes(el)))) {
+                                        opt += "<option value=\"" + el + "\">" + el + "</option>";
+                                    }
+
+                                });
+                            }
+                            if (opt.length != 0) {
+                                str += "<div>" + name;
+                                str += " :  <select name=\"" + name + "\" ";
+                                if (ch.taux != undefined) {
+                                    str += "taux=\"" + ch.taux + "\"";
+                                }
+                                str += " >";
+                                str += opt;
+                                str += "</select></div>";
+                            }
+                        }
+                    });
+                    nbChoix += myClass.choix.length;
+                }
+                if (myHistorique.choix != undefined) {
+
+                    str += "<h2>Choix d'historique</h2>";
+                    myHistorique.choix.forEach(ch => {
+                        let nb = ch.nombre;
+                        let name = Object.keys(ch)[0];
+                        if (!allChoix.includes(name)) {
+                            allChoix.push(name);
+                        }
+                        for (let i = 0; i < nb; i++) {
+                            let opt = "";
+                            console.log(name);
+                            if (name == "bonus") {
+                                ch[name].forEach(el => {
+                                    if (!((myClass[name] != undefined && myClass[name][el] != undefined) ||
+                                            (myHistorique[name] != undefined && myHistorique[name][el] != undefined) ||
+                                            (thisRace[name] != undefined && thisRace[name][el] != undefined))) {
+                                        opt += "<option value=\"" + el + "\">" + el + "</option>";
+                                    }
+
+                                });
+                            } else {
+                                ch[name].forEach(el => {
+                                    if (!((myClass[name] != undefined && myClass[name].includes(el)) ||
+                                            (myHistorique[name] != undefined && myHistorique[name].includes(el)) ||
+                                            (thisRace[name] != undefined && thisRace[name].includes(el)))) {
+                                        opt += "<option value=\"" + el + "\">" + el + "</option>";
+                                    }
+
+                                });
+                            }
+                            if (opt.length != 0) {
+                                str += "<div>" + name;
+                                str += " :  <select name=\"" + name + "\" ";
+                                if (ch.taux != undefined) {
+                                    str += "taux=\"" + ch.taux + "\"";
+                                }
+                                str += " >";
+                                str += opt;
+                                str += "</select></div>";
+                            }
+                        }
+                    });
+                    nbChoix += myHistorique.choix.length;
+                }
+                if (nbChoix == 0) {
                     switchToStep5();
                 }
-                let str = "";
-                choix.forEach(ch => {
-                    let nb = ch.nombre;
-                    let OrName = Object.keys(ch)[0];
-                    for (let i = 0; i < nb; i++) {
-                        let name = OrName;
-                        let opt = "";
-                        ch[OrName].forEach(el => {
-                            if (!((myClass[OrName] != undefined && myClass[OrName].includes(el)) ||
-                                    (myHistorique[OrName] != undefined && myHistorique[OrName].includes(el)) ||
-                                    (thisRace[OrName] != undefined && thisRace[OrName].includes(el)))) {
-                                opt += "<option value=\"" + el + "\">" + el + "</option>";
-                            }
 
-                        });
-                        if (opt.length != 0) {
-                            while (allChoix.includes(name)) {
-                                name += "-";
-                            }
-                            allChoix.push(name);
-                            str += "<div>" + OrName;
-                            str += " :  <select name=\"" + OrName + "\" ";
-                            if (ch.taux != undefined) {
-                                str += "taux=\"" + ch.taux + "\"";
-                            }
-                            str += " id=\"" + name + "\">";
-                            str += opt;
-                            str += "</select></div>";
-                        }
-                    }
-                });
                 choices.innerHTML = str;
             }
             let allChoix = [];
@@ -355,35 +455,18 @@ $classes = json_decode(file_get_contents("classes.json"));
             function switchToStep5() {
                 //verify values
                 let good = true;
-                let selectedChoices = [];
-                allChoix.forEach(ch => {
+                allChoix.forEach(nm => {
                     if (good) {
-                        let el = document.getElementById(ch);
-                        let val = el.value;
-                        if (selectedChoices.includes(val)) {
-                            good = false;
-                            alert('Il faut avoir que des choix différents (plusieurs fois "' + val + '")');
-                        } else {
-                            selectedChoices.push(val);
-                            if (myClass[el.name] != undefined) {
-                                if (myClass[el.name].includes(val)) {
-                                    good = false;
-                                    alert(el.name + ' "' + val + '" déjà connu grâce à la classe.');
-                                }
+                        let elements = document.getElementsByName(nm);
+                        let values = [];
+                        elements.forEach(el => {
+                            if (values.includes(el.value)) {
+                                good = false;
+                                alert(nm + ' - La valeur "' + el.value + '" a été affectée 2 fois');
+                            } else {
+                                values.push(el.value);
                             }
-                            if (myHistorique[el.name] != undefined) {
-                                if (myHistorique[el.name].includes(val)) {
-                                    good = false;
-                                    alert(el.name + ' "' + val + '" déjà connu grâce à l\'historique.');
-                                }
-                            }
-                            if (thisRace[el.name] != undefined) {
-                                if (thisRace[el.name].includes(val)) {
-                                    good = false;
-                                    alert(el.name + ' "' + val + '" déjà connu grâce à la race.');
-                                }
-                            }
-                        }
+                        });
                     }
                 });
                 if (good) {
@@ -436,7 +519,7 @@ $classes = json_decode(file_get_contents("classes.json"));
                             char.traits += el + "." + thisRace.traits[el] + "\n\n";
                         });
 
-                        //proficiencies
+                        //armes,armures,outils,langues
                         if (thisRace.armes != undefined) {
                             char.proficiencies += thisRace.armes.toString();
                         }
@@ -468,6 +551,7 @@ $classes = json_decode(file_get_contents("classes.json"));
                             char.proficiencies += myHistorique.langues.toString();
                         }
 
+                        //maitrises
                         document.getElementsByName('maitrises').forEach(el => {
                             char.skillsProf.push(el.value);
                         });
@@ -477,13 +561,14 @@ $classes = json_decode(file_get_contents("classes.json"));
                             char.skillsProf = char.skillsProf.concat(myHistorique.maitrises);
                         char.saveProf = myClass.sauvegarde;
 
-                        if(myClass.equipement != undefined)
+                        //equipements
+                        if (myClass.equipement != undefined)
                             char.equipmentTextArea = myClass.equipement;
-                        document.getElementsByName('equipement').forEach(el =>{
-                            char.equipmentTextArea += ", "+el.value;
+                        document.getElementsByName('equipement').forEach(el => {
+                            char.equipmentTextArea += ", " + el.value;
                         });
-                        char.equipmentTextArea += ","+myHistorique.equipement;
-                        
+                        char.equipmentTextArea += "," + myHistorique.equipement;
+
 
                         switch (classe.value) {
                             case "Barbare":
@@ -530,7 +615,7 @@ $classes = json_decode(file_get_contents("classes.json"));
                             method: "POST",
                             body: JSON.stringify({
                                 "file": '../CharacterCreator/perso/' + fileName + '.json',
-                                "create":true,
+                                "create": true,
                                 "data": char
                             })
                         }).then(function(res) {
