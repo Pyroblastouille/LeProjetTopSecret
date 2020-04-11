@@ -207,10 +207,10 @@ if (file_exists($json)) {
                   <label for="Représentation">Représentation <span class="skill unselectable">(CHA)</span></label><input class="CHAMod" name="Représentation" placeholder="+0" type="text" /><input <?= is_prof('Représentation', $char->skillsProf) ?> name="Représentation-prof" class="profCheck Représentation-prof" type="checkbox" />
                 </li>
                 <li>
-                  <label for="Survie">Survie <span class="skill unselectable">(SAG)</span></label><input class="SAGMod" name="Survie" placeholder="+0" type="text" /><input <?= is_prof('Survie', $char->skillsProf) ?> name="Survie-prof" class="profCheck Survie-prof" type="checkbox" />
+                  <label for="Supercherie">Supercherie <span class="skill unselectable">(CHA)</span></label><input class="CHAMod" name="Supercherie" placeholder="+0" type="text" /><input <?= is_prof('Supercherie', $char->skillsProf) ?> name="Supercherie-prof" class="profCheck Supercherie-prof" type="checkbox" />
                 </li>
                 <li>
-                  <label for="Tromperie">Tromperie <span class="skill unselectable">(CHA)</span></label><input class="CHAMod" name="Tromperie" placeholder="+0" type="text" /><input <?= is_prof('Tromperie', $char->skillsProf) ?> name="Tromperie-prof" class="profCheck Tromperie-prof" type="checkbox" />
+                  <label for="Survie">Survie <span class="skill unselectable">(SAG)</span></label><input class="SAGMod" name="Survie" placeholder="+0" type="text" /><input <?= is_prof('Survie', $char->skillsProf) ?> name="Survie-prof" class="profCheck Survie-prof" type="checkbox" />
                 </li>
               </ul>
               <div class="label">

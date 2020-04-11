@@ -4,7 +4,8 @@
             "Perspicacité",
             "Religion"
         ],
-        "equipement": "un symbole sacré (un cadeau qui vous a été offert quand vous êtes entré dans les ordres), un livre de prières ou un moulin à prières, 5 bâtons d'encens, des habits de cérémonie, des habits courants et une bourse contenant 15 po.",
+        "equipement": "un symbole sacré, un livre de prières , 5 bâtons d'encens, des habits de cérémonie et des habits courants.",
+        "po": 15,
         "choix": [
             {
                 "langues": [
@@ -34,7 +35,8 @@
             "Perspicacité",
             "Persuasion"
         ],
-        "equipement": "un ensemble d'outils d'artisan (de votre choix), une lettre d'introduction émanant de votre guilde, une tenue de voyageur et une bourse contenant 15 po.",
+        "equipement": "un ensemble d'outils d'artisan (de votre choix), une lettre d'introduction émanant de votre guilde, une tenue de voyageur.",
+        "po": 15,
         "choix": [
             {
                 "langues": [
@@ -89,7 +91,8 @@
         "outils": [
             "accessoires de déguisement"
         ],
-        "equipement": "un instrument de musique (de votre choix), la faveur d'un admirateur (une lettre d'amour, une mèche de cheveux ou un colifichet), un costume et une bourse contenant 15 po.",
+        "equipement": "un instrument de musique (de votre choix), la faveur d'un admirateur, un costume",
+        "po": 15,
         "choix": [
             {
                 "outils": [
@@ -117,7 +120,8 @@
             "accessoires de déguisement",
             "matériel de contrefaçon"
         ],
-        "equipement": "de beaux habits, des accessoires de déguisement, des outils d'escroc de votre choix (dix bouteilles scellées remplies de liquide coloré, un jeu de dés pipés, un jeu de cartes truquées ou la chevalière d'un duc imaginaire) et une bourse contenant 15 po."
+        "equipement": "de beaux habits, des accessoires de déguisement, des outils d'escroc de votre choix ",
+        "po": 15
     },
     "Criminel": {
         "maitrises": [
@@ -138,7 +142,8 @@
         "outils": [
             "outils de voleur"
         ],
-        "equipement": "un pied-de-biche, des habits courants sombres avec une capuche, et une bourse contenant 15 po."
+        "equipement": "un pied-de-biche, des habits courants sombres avec une capuche",
+        "po": 15
     },
     "Enfant des rues": {
         "maitrises": [
@@ -149,7 +154,8 @@
             "accessoires de déguisement",
             "outils de voleur"
         ],
-        "equipement": "un petit couteau, une carte de la ville dans laquelle vous avez grandi, une souris domestiquée, un souvenir de vos parents, des habits courants et une bourse contenant 10 po."
+        "equipement": "un petit couteau, une carte de votre ville natale, une souris domestiquée, un souvenir de vos parents, des habits courants",
+        "po": 10
     },
     "Ermite": {
         "maitrises": [
@@ -182,7 +188,8 @@
                 "nombre": 1
             }
         ],
-        "equipement": "un étui à parchemins rempli de notes sur vos études ou vos prières, une couverture d'hiver, des habits courants, du matériel d'herboriste et 5 po."
+        "equipement": "un étui à parchemins rempli de notes, une couverture d'hiver, des habits courants, du matériel d'herboriste",
+        "po": 5
     },
     "Héros du peuple": {
         "maitrises": [
@@ -192,7 +199,8 @@
         "outils": [
             "véhicules(terrestres)"
         ],
-        "equipement": "un ensemble d'outils d'artisan (de votre choix), une pelle, une marmite, des habits courants et une bourse contenant 10 po.",
+        "equipement": "un ensemble d'outils d'artisan (de votre choix), une pelle, une marmite, des habits courants",
+        "po": 10,
         "choix": [
             {
                 "outils": [
@@ -227,14 +235,16 @@
             "outils de navigateur",
             "véhicules(aquatique)"
         ],
-        "equipement": "cabillot (gourdin), 15 mètres de corde de soie, un porte-bonheur (comme une patte de lapin ou une petite pierre avec un trou en son centre ou bien un objet tiré au dé dans la table Babioles du chapitre 5), des habits courants et une bourse contenant 10 po."
+        "equipement": "cabillot (gourdin), 15 mètres de corde de soie, un porte-bonheur , des habits courants",
+        "po": 10
     },
     "Noble": {
         "maitrises": [
             "Histoire",
             "Persuasion"
         ],
-        "equipement": "de beaux habits, une chevalière, un arbre généalogique et une bourse contenant 25 po.",
+        "equipement": "de beaux habits, une chevalière, un arbre généalogique",
+        "po": 25,
         "choix": [
             {
                 "langues": [
@@ -273,7 +283,8 @@
             "Acranes",
             "Histoire"
         ],
-        "equipement": "une bouteille d'encre noire, une plume, un petit couteau, une lettre émanant d'un collègue décédé vous posant une question à laquelle vous n'avez pas encore trouvé de réponse, des habits courants et une bourse contenant 10 po.",
+        "equipement": "un nécessaire d'ecriture, un petit couteau, une lettre d'un collègue mort avec une question sans réponse, des habits courants ",
+        "po": 10,
         "choix": [
             {
                 "langues": [
@@ -303,7 +314,8 @@
             "Athlétisme",
             "Survie"
         ],
-        "equipement": "un bâton, un piège à mâchoires, un trophée pris sur un animal que vous avez tué, une tenue de voyageur et une bourse avec 10 po",
+        "equipement": "un bâton, un piège à mâchoires, un trophée pris sur un animal tué, une tenue de voyageur",
+        "po": 10,
         "choix": [
             {
                 "outils": [
@@ -351,7 +363,8 @@
         "outils": [
             "véhicules(terrestres)"
         ],
-        "equipement": "un insigne de grade, un trophée prélevé sur un ennemi tombé (une dague, une épée brisée ou une bannière), des dés en os ou un jeu de cartes, des habits courants et une bourse contenant 10 po.",
+        "equipement": "un insigne de grade, un trophée prélevé sur un ennemi tombé, des habits courants ",
+        "po": 10,
         "choix": [
             {
                 "outils": [
@@ -399,7 +412,8 @@
                 "nombre": 2
             }
         ],
-        "equipement": "la tenue d'érudit de votre cloître. une trousse d'écriture (une petite trousse contenant une plume , de l'encre, des feuilles de parchemin pliées et un petit canif), un livre emprunté traitant du sujet de vos études actuelles, et une bourse contenant 10 po"
+        "equipement": "la tenue d'érudit de votre cloître. une trousse d'écriture (nécessaire d'écriture), un livre emprunté traitant du sujet de vos études actuelles, ",
+        "po": 10
     },
     "Chevalier de l'ordre": {
         "maitrises": [
@@ -456,7 +470,8 @@
                 "nombre": 1
             }
         ],
-        "equipement": "une tenue de voyageur, une chevalière, une bannière ou un sceau qui représente votre place ou votre rang dans l'ordre, et une bourse contenant 10 po"
+        "equipement": "une tenue de voyageur, une chevalière, une bannière ou un sceau qui représente votre place ou votre rang dans l'ordre",
+        "po": 10
     },
     "Mercenaire vétéran": {
         "maitrises": [
@@ -477,6 +492,7 @@
                 "nombre": 1
             }
         ],
-        "equipement": "un uniforme de votre compagnie (de même qualité qu'une tenue de voyageur), un insigne de votre rang, une boîte de jeu de votre choix, une bourse contenant ce qui reste de votre dernière solde (10 po)"
+        "equipement": "un uniforme de votre compagnie (de même qualité qu'une tenue de voyageur), un insigne de votre rang",
+        "po": 10
     }
 }

@@ -31,7 +31,7 @@
                 "Religion",
                 "Représentation",
                 "Survie",
-                "Tromperie"
+                "Supercherie"
             ],
             "nombre": 2
         },
@@ -101,6 +101,24 @@
                 "Jeu des Dragons"
             ],
             "nombre": 1
+        },
+        {
+            "arme courante": [
+                "Bâton",
+                "Dague",
+                "Gourdin",
+                "Hachette",
+                "Javeline",
+                "Lance",
+                "Marteau léger",
+                "Masse d'armes",
+                "Massue",
+                "Serpe",
+                "Arbalète légère",
+                "Arc court",
+                "Fléchette",
+                "Fronde"
+            ]
         }
     ]
 }

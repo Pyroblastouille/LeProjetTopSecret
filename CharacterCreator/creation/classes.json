@@ -13,6 +13,34 @@
         "armes": [
             "courantes",
             "de guerre"
+        ],
+        "equipement":"un paquetage d'explorateur et quatre javelines",
+        "choix": [
+            {
+                "maitrises": [
+                    "Athlétisme",
+                    "Dressage",
+                    "Intimidation",
+                    "Nature",
+                    "Perception",
+                    "Survie"
+                ],
+                "nombre": 2
+            },
+            {
+                "equipement":[
+                    "une hache à deux mains",
+                    "une arme de guerre de corps à corps"
+                ],
+                "nombre":1
+            },
+            {
+                "equipement":[
+                    "deux hachettes",
+                    "une arme courante"
+                ],
+                "nombre":1
+            }
         ]
     },
     "Barde": {
@@ -30,6 +58,77 @@
             "épée longue",
             "rapière",
             "épée courte"
+        ],
+        "equipement":"une armure de cuir et une dague",
+        "choix": [
+            {
+                "outils": [
+                    "Chalemie",
+                    "Cor",
+                    "Cornemuse",
+                    "Flûte",
+                    "Flûte de pan",
+                    "Luth",
+                    "Lyre",
+                    "Tambour",
+                    "Tympanon",
+                    "Viole"
+                ],
+                "nombre": 3
+            },
+            {
+                "maitrises": [
+                    "Acrobaties",
+                    "Arcanes",
+                    "Athlétisme",
+                    "Discrétion",
+                    "Dressage",
+                    "Escamotage",
+                    "Histoire",
+                    "Intimidation",
+                    "Investigation",
+                    "Médecine",
+                    "Nature",
+                    "Perception",
+                    "Perspicacité",
+                    "Persuasion",
+                    "Religion",
+                    "Représentation",
+                    "Survie",
+                    "Supercherie"
+                ],
+                "nombre": 3
+            },
+            {
+                "equipement":[
+                    "une rapière",
+                    "une épée longue",
+                    "une arme courante"
+                ],
+                "nombre":1
+            },
+            {
+                "equipement":[
+                    "un paquetage de diplomate",
+                    "un paquetage d'artiste"
+                ],
+                "nombre":1
+            },
+            {
+                "equipement":[
+                    "Chalemie",
+                    "Cor",
+                    "Cornemuse",
+                    "Flûte",
+                    "Flûte de pan",
+                    "Luth",
+                    "Lyre",
+                    "Tambour",
+                    "Tympanon",
+                    "Viole"                    
+                ],
+                "nombre":1
+            }
         ]
     },
     "Clerc": {
@@ -45,6 +144,48 @@
         ],
         "armes": [
             "courantes"
+        ],
+        "equipement":"un bouclier et un symbole sacré",
+        "choix": [
+            {
+                "maitrises": [
+                    "Histoire",
+                    "Médecine",
+                    "Perspicacité",
+                    "Persuasion",
+                    "Religion"
+                ],
+                "nombre": 2
+            },
+            {
+                "equipement":[
+                    "une masse d'armes",
+                    "un marteau de guerre(si maitrisé)"
+                ],
+                "nombre":1
+            },
+            {
+                "equipement":[
+                    "une armure de cuir",
+                    "une armure d'écailles",
+                    "une cotte de maille(si maitrisé)"
+                ],
+                "nombre":1
+            },
+            {
+                "equipement":[
+                    "une arbalète légère et 20 carreaux",
+                    "une arme courante"
+                ],
+                "nombre":1
+            },
+            {
+                "equipement":[
+                    "un paquetage d'ecclésiastique",
+                    "un paquetage d'explorateur"
+                ],
+                "nombre":1
+            }
         ]
     },
     "Druide": {
@@ -68,6 +209,39 @@
             "serpe",
             "fronde",
             "lance"
+        ],
+        "outils": [
+            "matériel d'herboriste"
+        ],
+        "equipement":"une armure de cuir, un paquetage d'explorateur et un focaliseur druidique",
+        "choix": [
+            {
+                "maitrises": [
+                    "Arcanes",
+                    "Dressage",
+                    "Médecine",
+                    "Nature",
+                    "Perception",
+                    "Perspicacité",
+                    "Religion",
+                    "Survie"
+                ],
+                "nombre": 2
+            },
+            {
+                "equipement":[
+                    "un bouclier en bois",
+                    "une arme courante"    
+                ],
+                "nombre":1
+            },
+            {
+                "equipement":[
+                    "un cimeterre",
+                    "une arme de corps à corps courante"
+                ],
+                "nombre":1
+            }
         ]
     },
     "Ensorceleur": {
@@ -83,6 +257,40 @@
             "fronde",
             "bâton",
             "arbalète légère"
+        ],
+        "equipement":"deux dagues",
+        "choix": [
+            {
+                "maitrises": [
+                    "Arcanes",
+                    "Intimidation",
+                    "Persuasion",
+                    "Religion",
+                    "Supercherie"
+                ],
+                "nombre": 2
+            },
+            {
+                "equipement":[
+                    "une arbalète légère et 20 carreaux",
+                    "une arme courante"
+                ],
+                "nombre":1
+            },
+            {
+                "equipement":[
+                    "une sacoche à composantes",
+                    "un focaliseur arcanique"
+                ],
+                "nombre":1
+            },
+            {
+                "equipement":[
+                    "un paquetage d'exploration souterraine",
+                    "un paquetage d'explorateur"
+                ],
+                "nombre":1
+            }
         ]
     },
     "Guerrier": {
@@ -98,6 +306,49 @@
         "armes": [
             "courantes",
             "de guerre"
+        ],
+        "choix": [
+            {
+                "maitrises": [
+                    "Acrobaties",
+                    "Athlétisme",
+                    "Dressage",
+                    "Histoire",
+                    "Intimidation",
+                    "Perception",
+                    "Perspicacité",
+                    "Survie"
+                ],
+                "nombre": 2
+            },
+            {
+                "equipement":[
+                    "une cotte de maille",
+                    "une armure de cuir,un arc long et 20 flèches"
+                ],
+                "nombre":1
+            },
+            {
+                "equipement":[
+                    "une arme de guerre et un bouclier",
+                    "deux armes de guerre"
+                ],
+                "nombre":1
+            },
+            {
+                "equipement":[
+                    "une arbalète légère et 20 carreaux",
+                    "deux hachettes"
+                ],
+                "nombre":1
+            },
+            {
+                "equipement":[
+                    "un paquetage d'exploration souterraine",
+                    "un paquetage d'explorateur"
+                ],
+                "nombre":1
+            }
         ]
     },
     "Magicien": {
@@ -113,6 +364,41 @@
             "fronde",
             "bâton",
             "arbalète légère"
+        ],
+        "equipement":"un grimoire",
+        "choix": [
+            {
+                "maitrises": [
+                    "Arcanes",
+                    "Histoire",
+                    "Investigation",
+                    "Médecine",
+                    "Perspicacité",
+                    "Religion"
+                ],
+                "nombre": 2
+            },
+            {
+                "equipement":[
+                    "un bâton",
+                    "une dague"
+                ],
+                "nombre":1
+            },
+            {
+                "equipement":[
+                    "une sacoche à composantes",
+                    "un focaliseur arcanique"
+                ],
+                "nombre":1
+            },
+            {
+                "equipement":[
+                    "un paquetage d'érudit",
+                    "un paquetage d'explorateur"
+                ],
+                "nombre":1
+            }
         ]
     },
     "Moine": {
@@ -125,6 +411,66 @@
         "armes": [
             "courantes",
             "épée courte"
+        ],
+        "equipement":"10 fléchettes",
+        "choix": [
+            {
+                "outils": [
+                    "Matériel d'alchimiste",
+                    "Matériel de brasseur",
+                    "Matériel de calligraphe",
+                    "Matériel de peintre",
+                    "Outils de bijoutier",
+                    "Outils de bricoleur",
+                    "Outils de cartographe",
+                    "Outils de charpentier",
+                    "Outils de cordonnier",
+                    "Outils de forgeron",
+                    "Outils de maçon",
+                    "Outils de menuisier",
+                    "Outils de potier",
+                    "Outils de souffleur de verre",
+                    "Outils de tanneur",
+                    "Outils de tisserand",
+                    "Ustensiles de cuisine",
+                    "Chalemie",
+                    "Cor",
+                    "Cornemuse",
+                    "Flûte",
+                    "Flûte de pan",
+                    "Luth",
+                    "Lyre",
+                    "Tambour",
+                    "Tympanon",
+                    "Viole"
+                ],
+                "nombre": 1
+            },
+            {
+                "maitrises": [
+                    "Acrobaties",
+                    "Athlétisme",
+                    "Histoire",
+                    "Perspicacité",
+                    "Religion",
+                    "Discrétion"
+                ],
+                "nombre": 2
+            },
+            {
+                "equipement":[
+                    "une épée courte",
+                    "une arme courante"
+                ],
+                "nombre":1
+            },
+            {
+                "equipement":[
+                    "un paquetage d'exploration souterraine",
+                    "un paquetage d'explorateur"
+                ],
+                "nombre":1
+            }
         ]
     },
     "Paladin": {
@@ -140,6 +486,41 @@
         "armes": [
             "courantes",
             "de guerre"
+        ],
+        "equipement":"une cotte de mailles et un symbole sacré",
+        "choix": [
+            {
+                "maitrises": [
+                    "Athlétisme",
+                    "Intimidation",
+                    "Médecine",
+                    "Perspicacité",
+                    "Persuasion",
+                    "Religion"
+                ],
+                "nombre": 2
+            },
+            {
+                "equipement":[
+                    "une arme de guerre et un bouclier",
+                    "deux armes de guerre"
+                ],
+                "nombre":1
+            },
+            {
+                "equipement":[
+                    "cinq javelines",
+                    "une arme de corps à corps courante"
+                ],
+                "nombre":1
+            },
+            {
+                "equipement":[
+                    "un paquetage d'ecclésiastique",
+                    "un paquetage d'explorateur"
+                ],
+                "nombre":1
+            }
         ]
     },
     "Rôdeur": {
@@ -156,6 +537,43 @@
         "armes": [
             "courantes",
             "de guerre"
+        ],
+        "equipement":"un arc long et un carquois contenant 20 flèches",
+        "choix": [
+            {
+                "maitrises": [
+                    "Athlétisme",
+                    "Discrétion",
+                    "Dressage",
+                    "Investigation",
+                    "Nature",
+                    "Perception",
+                    "Perspicacité",
+                    "Survie"
+                ],
+                "nombre": 3
+            },
+            {
+                "equipement":[
+                    "une armure d'écailles",
+                    "une armure de cuir"
+                ],
+                "nombre":1
+            },
+            {
+                "equipement":[
+                    "2 épées courte",
+                    "2 armes courantes de corps à corps"
+                ],
+                "nombre":1
+            },
+            {
+                "equipement":[
+                    "un paquetage d'exploration souterraine",
+                    "un paquetage d'explorateur"
+                ],
+                "nombre":1
+            }
         ]
     },
     "Roublard": {
@@ -173,6 +591,50 @@
             "épée longue",
             "rapière",
             "épée courte"
+        ],
+        "outils": [
+            "Outils de voleur"
+        ],
+        "equipement":"une armure de cuir, deux dagues et des outils de voleur",
+        "choix": [
+            {
+                "maitrises": [
+                    "Acrobaties",
+                    "Athlétisme",
+                    "Discrétion",
+                    "Escamotage",
+                    "Intimidation",
+                    "Investigation",
+                    "Perception",
+                    "Perspicacité",
+                    "Persuasion",
+                    "Représentation",
+                    "Supercherie"
+                ],
+                "nombre": 4
+            },
+            {
+                "equipement":[
+                    "une rapière",
+                    "une épée courte"
+                ],
+                "nombre":1
+            },
+            {
+                "equipement":[
+                    "un arc court et un carquois avec 20 flèches",
+                    "une épée courte"
+                ],
+                "nombre":1
+            },
+            {
+                "equipement":[
+                    "une paquetage de cambrioleur",
+                    "un paquetage d'exploration souterraine",
+                    "un paquetage d'explorateur"
+                ],
+                "nombre":1
+            }
         ]
     },
     "Sorcier": {
@@ -186,6 +648,61 @@
         ],
         "armes": [
             "courantes"
+        ],
+        "equipement":"une armure de cuir",
+        "choix": [
+            {
+                "maitrises": [
+                    "Arcanes",
+                    "Histoire",
+                    "Intimidation",
+                    "Investigation",
+                    "Nature",
+                    "Religion",
+                    "Supercherie"
+                ],
+                "nombre": 2
+            },
+            {
+                "equipement": [
+                    "une arbalète légère et 20 carreaux",
+                    "une arme courante"
+                ],
+                "nombre":1
+            },
+            {
+                "equipement": [
+                    "une sacoche à composantes",
+                    "un focaliseur arcanique"
+                ],
+                "nombre":1
+            },
+            {
+                "equipement": [
+                    "un paquetage d'érudit",
+                    "un paquetage d'exploration souterraine"
+                ],
+                "nombre":1
+            },
+            {
+                "equipement": [
+                    "Bâton",
+                    "Dague",
+                    "Gourdin",
+                    "Hachette",
+                    "Javeline",
+                    "Lance",
+                    "Marteau léger",
+                    "Masse d'armes",
+                    "Massue",
+                    "Serpe",
+                    "Arbalète légère",
+                    "Arc court",
+                    "Fléchette",
+                    "Fronde"
+                ],
+                "nombre":1
+            }
         ]
     }
 }

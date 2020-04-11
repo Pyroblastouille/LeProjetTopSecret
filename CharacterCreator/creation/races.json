@@ -12,9 +12,9 @@
             "Elfique"
         ],
         "traits": {
-            "Vision dans le noir": "Habitué à la pénombre des forêts et au ciel nocturne, vous avez une vision supérieure dans l'obscurité et dans la lumière faible. Dans un rayon de 18 mètres, vous pouvez voir dans une zone de lumière faible comme s'il s'agissait d'une lumière vive et dans l'obscurité comme s'il s'agissait d'une lumière faible. Par contre, vous ne distinguez pas les couleurs dans l'obscurité, seulement des nuances de gris.",
+            "Vision dans le noir": "Dans un rayon de 18 mètres, vous pouvez voir dans une zone de lumière faible comme s'il s'agissait d'une lumière vive et dans l'obscurité comme s'il s'agissait d'une lumière faible. Par contre, vous ne distinguez pas les couleurs dans l'obscurité, seulement des nuances de gris.",
             "Ascendance féérique": "Vous êtes avantagé sur les jets de sauvegarde contre l'effet charmé et vous ne pouvez être contraint à dormir par la magie.",
-            "Transe": "Les elfes n'ont pas besoin de dormir. À la place,ils passent 4 heures par jour dans un état de méditation profonde, tout en restant semi-conscients. (Le mot qui décrit cette méditation en langage commun est « transe».) Pendant cette méditation, vous pouvez faire une sorte de rêves. De tels « rêves » sont en réalité des exercices mentaux qui sont devenus des réflexes au bout de plusieurs années de pratique. En vous reposant ainsi, vous bénéficiez des mêmes avantages conférés à un humain par 8 heures de sommeil."
+            "Transe": "Peut méditer dans une transe au lieu de dormir. 4 heures de méditations équivaut à 8 heures de sommeil"
         },
         "variantes": {
             "Haut-elfe": {
@@ -159,7 +159,7 @@
         },
         "vitesse": 7.5,
         "traits": {
-            "Vision dans Je noir": "Habitué à la vie souterraine, vous avez une vision supérieure dans l'obscurité et dans la lumière faible. Dans un rayon de 18 mètres, vous pouvez voir dans une zone de lumière faible comme s'il s'agissait d'une lumière vive et dans l'obscurité comme s'il s'agissait d'une lumière faible. Par contre, vous ne distinguez pas les couleurs dans l'obscurité, seulement des nuances de gris.",
+            "Vision dans le noir": "Dans un rayon de 18 mètres, vous pouvez voir dans une zone de lumière faible comme s'il s'agissait d'une lumière vive et dans l'obscurité comme s'il s'agissait d'une lumière faible. Par contre, vous ne distinguez pas les couleurs dans l'obscurité, seulement des nuances de gris.",
             "Résistance naine": "Vous êtes avantagé sur vos jets de sauvegarde contre le poison et vous possédez une résistance contre les dégâts de poison",
             "Connaissance de la pierre": "Quand vous faites un test d'Intelligence (Histoire) relatif au travail de la pierre, vous considérez que vous possédez la maîtrise de la compétence Histoire et vous ajoutez le double de votre bonus de maîtrise au résultat du test au lieu de votre bonus de maîtrise normal."
         },
@@ -246,7 +246,7 @@
                     "Religion",
                     "Représentation",
                     "Survie",
-                    "Tromperie"
+                    "Supercherie"
                 ],
                 "nombre": 2
             },
@@ -277,7 +277,7 @@
         },
         "vitesse": 9,
         "traits": {
-            "Vision dans le noir": "Grâce à votre sang elfique, vous avez hérité d'une vision supérieure dans l'obscurité et dans la lumière faible. Dans un rayon de 18 mètres, vous pouvez voir dans une zone de lumière faible comme s'il s'agissait d'une lumière vive et dans l'obscurité comme s'il s'agissait d'une lumière faible. Par contre, vous ne distinguez pas les couleurs dans l'obscurité, seulement des nuances de gris.",
+            "Vision dans le noir": "Dans un rayon de 18 mètres, vous pouvez voir dans une zone de lumière faible comme s'il s'agissait d'une lumière vive et dans l'obscurité comme s'il s'agissait d'une lumière faible. Par contre, vous ne distinguez pas les couleurs dans l'obscurité, seulement des nuances de gris.",
             "Ascendance féérique": "Vous êtes avantagé sur les jets de sauvegarde contre l'effet charmé et vous ne pouvez être contraint à dormir par la magie."
         },
         "langues": [
@@ -292,8 +292,8 @@
         },
         "vitesse": 9,
         "traits": {
-            "Vision dans le noir": "Grâce à votre sang ore, vous avez hérité d'une vision supérieure dans l'obscurité et dans la lumière faible. Dans un rayon de 18 mètres, vous pouvez voir dans une zone de lumière faible comme s'il s'agissait d'une lumière vive et dans l'obscurité comme s'il s'agissait d'une lumière faible. Par contre, vous ne distinguez pas les couleurs dans l'obscurité, seulement des nuances de gris",
-            "Acharnement": "Quand vous vous retrouvez à O point de vie mais que vous n'êtes pas tué sur le coup, vous pouvez choisir d'être réduit à 1 point de vie à la place. Vous ne pouvez pas réutiliser cette aptitude tant que vous n'avez pas terminé un repos long.",
+            "Vision dans le noir": "Dans un rayon de 18 mètres, vous pouvez voir dans une zone de lumière faible comme s'il s'agissait d'une lumière vive et dans l'obscurité comme s'il s'agissait d'une lumière faible. Par contre, vous ne distinguez pas les couleurs dans l'obscurité, seulement des nuances de gris.",
+            "Acharnement": "Quand vous vous retrouvez à 0 point de vie mais que vous n'êtes pas tué sur le coup, vous pouvez choisir d'être réduit à 1 point de vie à la place. Vous ne pouvez pas réutiliser cette aptitude tant que vous n'avez pas terminé un repos long.",
             "Sauvagerie": "Quand vous réussissez un coup critique avec une attaque de corps à corps, vous pouvez relancer l'un des dés de dégâts de l'arme et ajouter son résultat aux dégâts supplémentaires du coup critique"
         },
         "maitrises": [
@@ -365,62 +365,62 @@
         "variantes": {
             "Sangdragon d'airin": {
                 "traits": {
-                    "Résistance aux dégats": "Votre ascendance draconique vous confère une résistance aux dégats de feu",
-                    "Souffle": "Vous pouvez utiliser votre action pour exhaler une vague d'énergie destructrice. Ligne de 1,5 sur 9 mètres (jet de sauvegarde de Dex.).\n Quand vous utilisez votre souffle, chaque créature qui se trouve dans la zone affectée doit faire un jet de sauvegarde de Dex. Le DD de ce jet de sauvegarde est égal à 8 + votre modificateur de Constitution + votre bonus de maîtrise. Une créature qui ne réussit pas son jet de sauvegarde subit 2d6 dégâts. Elle n'en subit que la moitié si elle réussit son jet de sauvegarde. La quantité de dégâts que vous infligez augmente avec votre niveau pour atteindre 3d6 au rùveau 6, 4d6 au niveau 11 et 5d6 au niveau 16.\n Une fois que vous avez utilisé votre souffle, vous ne pouvez plus l'utiliser avant d'avoir terminé un repos court ou un repos long."
+                    "Résistance aux dégats": "résistant aux dégats de feu",
+                    "Souffle": "Avec une action, Ligne de 1,5 sur 9 mètres (jet de sauvegarde de Dex.).\n Chaque créature dans la zone doit faire un JdS de Dex DD 8 + votre modif de Con + votre bonus de maîtrise. En cas d'echec, subit 2d6 dégâts. En cas de réussite, n'en subit que la moitié. Les dégats passent à  3d6 au niveau 6, 4d6 au niveau 11 et 5d6 au niveau 16.\n Une fois que vous avez utilisé votre souffle, vous ne pouvez plus l'utiliser avant d'avoir terminé un repos court ou un repos long."
                 }
             },
             "Sangdragon d'argent": {
                 "traits": {
-                    "Résistance aux dégats": "Votre ascendance draconique vous confère une résistance aux dégats de froid",
-                    "Souffle": "Vous pouvez utiliser votre action pour exhaler une vague d'énergie destructrice. Cône de 4.5m (jet de sauvegarde de Con.).\n Quand vous utilisez votre souffle, chaque créature qui se trouve dans la zone affectée doit faire un jet de sauvegarde de Con. Le DD de ce jet de sauvegarde est égal à 8 + votre modificateur de Constitution + votre bonus de maîtrise. Une créature qui ne réussit pas son jet de sauvegarde subit 2d6 dégâts. Elle n'en subit que la moitié si elle réussit son jet de sauvegarde. La quantité de dégâts que vous infligez augmente avec votre niveau pour atteindre 3d6 au rùveau 6, 4d6 au niveau 11 et 5d6 au niveau 16.\n Une fois que vous avez utilisé votre souffle, vous ne pouvez plus l'utiliser avant d'avoir terminé un repos court ou un repos long."
+                    "Résistance aux dégats": "résistant aux dégats de froid",
+                    "Souffle": "Avec une action, Cône de 4.5m (jet de sauvegarde de Con.).\n Chaque créature dans la zone doit faire un JdS de Con DD 8 + votre modif de Con + votre bonus de maîtrise. En cas d'echec, subit 2d6 dégâts. En cas de réussite, n'en subit que la moitié. Les dégats passent à  3d6 au niveau 6, 4d6 au niveau 11 et 5d6 au niveau 16.\n Une fois que vous avez utilisé votre souffle, vous ne pouvez plus l'utiliser avant d'avoir terminé un repos court ou un repos long."
                 }
             },
             "Sangdragon blanc": {
                 "traits": {
-                    "Résistance aux dégats": "Votre ascendance draconique vous confère une résistance aux dégats de froid",
-                    "Souffle": "Vous pouvez utiliser votre action pour exhaler une vague d'énergie destructrice. Cône de 4.5m (jet de sauvegarde de Con.).\n Quand vous utilisez votre souffle, chaque créature qui se trouve dans la zone affectée doit faire un jet de sauvegarde de Con. Le DD de ce jet de sauvegarde est égal à 8 + votre modificateur de Constitution + votre bonus de maîtrise. Une créature qui ne réussit pas son jet de sauvegarde subit 2d6 dégâts. Elle n'en subit que la moitié si elle réussit son jet de sauvegarde. La quantité de dégâts que vous infligez augmente avec votre niveau pour atteindre 3d6 au rùveau 6, 4d6 au niveau 11 et 5d6 au niveau 16.\n Une fois que vous avez utilisé votre souffle, vous ne pouvez plus l'utiliser avant d'avoir terminé un repos court ou un repos long."
+                    "Résistance aux dégats": "résistant aux dégats de froid",
+                    "Souffle": "Avec une action, Cône de 4.5m (jet de sauvegarde de Con.).\n Chaque créature dans la zone doit faire un JdS de Con DD 8 + votre modif de Con + votre bonus de maîtrise. En cas d'echec, subit 2d6 dégâts. En cas de réussite, n'en subit que la moitié. Les dégats passent à  3d6 au niveau 6, 4d6 au niveau 11 et 5d6 au niveau 16.\n Une fois que vous avez utilisé votre souffle, vous ne pouvez plus l'utiliser avant d'avoir terminé un repos court ou un repos long."
                 }
             },
             "Sangdragon bleu": {
                 "traits": {
-                    "Résistance aux dégats": "Votre ascendance draconique vous confère une résistance aux dégats de foudre",
-                    "Souffle": "Vous pouvez utiliser votre action pour exhaler une vague d'énergie destructrice. Ligne de 1,5 sur 9 mètres (jet de sauvegarde de Dex.).\n Quand vous utilisez votre souffle, chaque créature qui se trouve dans la zone affectée doit faire un jet de sauvegarde de Dex. Le DD de ce jet de sauvegarde est égal à 8 + votre modificateur de Constitution + votre bonus de maîtrise. Une créature qui ne réussit pas son jet de sauvegarde subit 2d6 dégâts. Elle n'en subit que la moitié si elle réussit son jet de sauvegarde. La quantité de dégâts que vous infligez augmente avec votre niveau pour atteindre 3d6 au rùveau 6, 4d6 au niveau 11 et 5d6 au niveau 16.\n Une fois que vous avez utilisé votre souffle, vous ne pouvez plus l'utiliser avant d'avoir terminé un repos court ou un repos long."
+                    "Résistance aux dégats": "résistant aux dégats de foudre",
+                    "Souffle": "Avec une action, Ligne de 1,5 sur 9 mètres (jet de sauvegarde de Dex.).\n Chaque créature dans la zone doit faire un JdS de Dex DD 8 + votre modif de Con + votre bonus de maîtrise. En cas d'echec, subit 2d6 dégâts. En cas de réussite, n'en subit que la moitié. Les dégats passent à  3d6 au niveau 6, 4d6 au niveau 11 et 5d6 au niveau 16.\n Une fois que vous avez utilisé votre souffle, vous ne pouvez plus l'utiliser avant d'avoir terminé un repos court ou un repos long."
                 }
             },
             "Sangdragon de bronze": {
                 "traits": {
-                    "Résistance aux dégats": "Votre ascendance draconique vous confère une résistance aux dégats de foudre",
-                    "Souffle": "Vous pouvez utiliser votre action pour exhaler une vague d'énergie destructrice. Ligne de 1,5 sur 9 mètres (jet de sauvegarde de Dex.).\n Quand vous utilisez votre souffle, chaque créature qui se trouve dans la zone affectée doit faire un jet de sauvegarde de Dex. Le DD de ce jet de sauvegarde est égal à 8 + votre modificateur de Constitution + votre bonus de maîtrise. Une créature qui ne réussit pas son jet de sauvegarde subit 2d6 dégâts. Elle n'en subit que la moitié si elle réussit son jet de sauvegarde. La quantité de dégâts que vous infligez augmente avec votre niveau pour atteindre 3d6 au rùveau 6, 4d6 au niveau 11 et 5d6 au niveau 16.\n Une fois que vous avez utilisé votre souffle, vous ne pouvez plus l'utiliser avant d'avoir terminé un repos court ou un repos long."
+                    "Résistance aux dégats": "résistant aux dégats de foudre",
+                    "Souffle": "Avec une action, Ligne de 1,5 sur 9 mètres (jet de sauvegarde de Dex.).\n Chaque créature dans la zone doit faire un JdS de Dex DD 8 + votre modif de Con + votre bonus de maîtrise. En cas d'echec, subit 2d6 dégâts. En cas de réussite, n'en subit que la moitié. Les dégats passent à  3d6 au niveau 6, 4d6 au niveau 11 et 5d6 au niveau 16.\n Une fois que vous avez utilisé votre souffle, vous ne pouvez plus l'utiliser avant d'avoir terminé un repos court ou un repos long."
                 }
             },
             "Sangdragon de cuivre": {
                 "traits": {
-                    "Résistance aux dégats": "Votre ascendance draconique vous confère une résistance aux dégats d'acide",
-                    "Souffle": "Vous pouvez utiliser votre action pour exhaler une vague d'énergie destructrice. Ligne de 1,5 sur 9 mètres (jet de sauvegarde de Dex.).\n Quand vous utilisez votre souffle, chaque créature qui se trouve dans la zone affectée doit faire un jet de sauvegarde de Dex. Le DD de ce jet de sauvegarde est égal à 8 + votre modificateur de Constitution + votre bonus de maîtrise. Une créature qui ne réussit pas son jet de sauvegarde subit 2d6 dégâts. Elle n'en subit que la moitié si elle réussit son jet de sauvegarde. La quantité de dégâts que vous infligez augmente avec votre niveau pour atteindre 3d6 au rùveau 6, 4d6 au niveau 11 et 5d6 au niveau 16.\n Une fois que vous avez utilisé votre souffle, vous ne pouvez plus l'utiliser avant d'avoir terminé un repos court ou un repos long."
+                    "Résistance aux dégats": "résistant aux dégats d'acide",
+                    "Souffle": "Avec une action, Ligne de 1,5 sur 9 mètres (jet de sauvegarde de Dex.).\n Chaque créature dans la zone doit faire un JdS de Dex DD 8 + votre modif de Con + votre bonus de maîtrise. En cas d'echec, subit 2d6 dégâts. En cas de réussite, n'en subit que la moitié. Les dégats passent à  3d6 au niveau 6, 4d6 au niveau 11 et 5d6 au niveau 16.\n Une fois que vous avez utilisé votre souffle, vous ne pouvez plus l'utiliser avant d'avoir terminé un repos court ou un repos long."
                 }
             },
             "Sangdragon noir": {
                 "traits": {
-                    "Résistance aux dégats": "Votre ascendance draconique vous confère une résistance aux dégats d'acide",
-                    "Souffle": "Vous pouvez utiliser votre action pour exhaler une vague d'énergie destructrice. Ligne de 1,5 sur 9 mètres (jet de sauvegarde de Dex.).\n Quand vous utilisez votre souffle, chaque créature qui se trouve dans la zone affectée doit faire un jet de sauvegarde de Dex. Le DD de ce jet de sauvegarde est égal à 8 + votre modificateur de Constitution + votre bonus de maîtrise. Une créature qui ne réussit pas son jet de sauvegarde subit 2d6 dégâts. Elle n'en subit que la moitié si elle réussit son jet de sauvegarde. La quantité de dégâts que vous infligez augmente avec votre niveau pour atteindre 3d6 au rùveau 6, 4d6 au niveau 11 et 5d6 au niveau 16.\n Une fois que vous avez utilisé votre souffle, vous ne pouvez plus l'utiliser avant d'avoir terminé un repos court ou un repos long."
+                    "Résistance aux dégats": "résistant aux dégats d'acide",
+                    "Souffle": "Avec une action, Ligne de 1,5 sur 9 mètres (jet de sauvegarde de Dex.).\n Chaque créature dans la zone doit faire un JdS de Dex DD 8 + votre modif de Con + votre bonus de maîtrise. En cas d'echec, subit 2d6 dégâts. En cas de réussite, n'en subit que la moitié. Les dégats passent à  3d6 au niveau 6, 4d6 au niveau 11 et 5d6 au niveau 16.\n Une fois que vous avez utilisé votre souffle, vous ne pouvez plus l'utiliser avant d'avoir terminé un repos court ou un repos long."
                 }
             },
             "Sangdragon d'or": {
                 "traits": {
-                    "Résistance aux dégats": "Votre ascendance draconique vous confère une résistance aux dégats de feu",
-                    "Souffle": "Vous pouvez utiliser votre action pour exhaler une vague d'énergie destructrice. Cône de 4.5m (jet de sauvegarde de Dex.).\n Quand vous utilisez votre souffle, chaque créature qui se trouve dans la zone affectée doit faire un jet de sauvegarde de Dex. Le DD de ce jet de sauvegarde est égal à 8 + votre modificateur de Constitution + votre bonus de maîtrise. Une créature qui ne réussit pas son jet de sauvegarde subit 2d6 dégâts. Elle n'en subit que la moitié si elle réussit son jet de sauvegarde. La quantité de dégâts que vous infligez augmente avec votre niveau pour atteindre 3d6 au rùveau 6, 4d6 au niveau 11 et 5d6 au niveau 16.\n Une fois que vous avez utilisé votre souffle, vous ne pouvez plus l'utiliser avant d'avoir terminé un repos court ou un repos long."
+                    "Résistance aux dégats": "résistant aux dégats de feu",
+                    "Souffle": "Avec une action, Cône de 4.5m (jet de sauvegarde de Dex.).\n Chaque créature dans la zone doit faire un JdS de Dex DD 8 + votre modif de Con + votre bonus de maîtrise. En cas d'echec, subit 2d6 dégâts. En cas de réussite, n'en subit que la moitié. Les dégats passent à  3d6 au niveau 6, 4d6 au niveau 11 et 5d6 au niveau 16.\n Une fois que vous avez utilisé votre souffle, vous ne pouvez plus l'utiliser avant d'avoir terminé un repos court ou un repos long."
                 }
             },
             "Sangdragon rouge": {
                 "traits": {
-                    "Résistance aux dégats": "Votre ascendance draconique vous confère une résistance aux dégats de feu",
-                    "Souffle": "Vous pouvez utiliser votre action pour exhaler une vague d'énergie destructrice. Cône de 4.5m (jet de sauvegarde de Dex.).\n Quand vous utilisez votre souffle, chaque créature qui se trouve dans la zone affectée doit faire un jet de sauvegarde de Dex. Le DD de ce jet de sauvegarde est égal à 8 + votre modificateur de Constitution + votre bonus de maîtrise. Une créature qui ne réussit pas son jet de sauvegarde subit 2d6 dégâts. Elle n'en subit que la moitié si elle réussit son jet de sauvegarde. La quantité de dégâts que vous infligez augmente avec votre niveau pour atteindre 3d6 au rùveau 6, 4d6 au niveau 11 et 5d6 au niveau 16.\n Une fois que vous avez utilisé votre souffle, vous ne pouvez plus l'utiliser avant d'avoir terminé un repos court ou un repos long."
+                    "Résistance aux dégats": "résistant aux dégats de feu",
+                    "Souffle": "Avec une action, Cône de 4.5m (jet de sauvegarde de Dex.).\n Chaque créature dans la zone doit faire un JdS de Dex DD 8 + votre modif de Con + votre bonus de maîtrise. En cas d'echec, subit 2d6 dégâts. En cas de réussite, n'en subit que la moitié. Les dégats passent à  3d6 au niveau 6, 4d6 au niveau 11 et 5d6 au niveau 16.\n Une fois que vous avez utilisé votre souffle, vous ne pouvez plus l'utiliser avant d'avoir terminé un repos court ou un repos long."
                 }
             },
             "Sangdragon vert": {
                 "traits": {
-                    "Résistance aux dégats": "Votre ascendance draconique vous confère une résistance aux dégats de poison",
-                    "Souffle": "Vous pouvez utiliser votre action pour exhaler une vague d'énergie destructrice. Cône de 4.5m (jet de sauvegarde de Con.).\n Quand vous utilisez votre souffle, chaque créature qui se trouve dans la zone affectée doit faire un jet de sauvegarde de Con. Le DD de ce jet de sauvegarde est égal à 8 + votre modificateur de Constitution + votre bonus de maîtrise. Une créature qui ne réussit pas son jet de sauvegarde subit 2d6 dégâts. Elle n'en subit que la moitié si elle réussit son jet de sauvegarde. La quantité de dégâts que vous infligez augmente avec votre niveau pour atteindre 3d6 au rùveau 6, 4d6 au niveau 11 et 5d6 au niveau 16.\n Une fois que vous avez utilisé votre souffle, vous ne pouvez plus l'utiliser avant d'avoir terminé un repos court ou un repos long."
+                    "Résistance aux dégats": "résistant aux dégats de poison",
+                    "Souffle": "Avec une action, Cône de 4.5m (jet de sauvegarde de Con.).\n Chaque créature dans la zone doit faire un JdS de Con DD 8 + votre modif de Con + votre bonus de maîtrise. En cas d'echec, subit 2d6 dégâts. En cas de réussite, n'en subit que la moitié. Les dégats passent à  3d6 au niveau 6, 4d6 au niveau 11 et 5d6 au niveau 16.\n Une fois que vous avez utilisé votre souffle, vous ne pouvez plus l'utiliser avant d'avoir terminé un repos court ou un repos long."
                 }
             }
         }
@@ -432,7 +432,7 @@
         },
         "vitesse": 9,
         "traits": {
-            "Vision dans le noir": "Grâce à votre ascendance infernale, vous avez hérité d'une vision supérieure dans l'obscurité et dans la lumière faible. Dans un rayon de 18 mètres, vous pouvez voir dans une zone de lumière faible comme s'il s'agissait d'une lumière vive et dans l'obscurité comme s'il s'agissait d'une lumière faible. Par contre, vous ne distinguez pas les couleurs dans l'obscurité, seulement des nuances de gris.",
+            "Vision dans le noir": "Dans un rayon de 18 mètres, vous pouvez voir dans une zone de lumière faible comme s'il s'agissait d'une lumière vive et dans l'obscurité comme s'il s'agissait d'une lumière faible. Par contre, vous ne distinguez pas les couleurs dans l'obscurité, seulement des nuances de gris.",
             "Résistance infernale": "Vous êtes résistant aux dégâts de feu",
             "Ascendance infernale": "Vous connaissez le tour de magie thaumaturgie. Quand vous atteignez le niveau 3, vous pouvez lancer une fois le sort représailles infernales comme sort de niveau 2 grâce à ce trait. Pour pouvoir lancer de nouveau ce sort, vous devez finir un repos long. À partir du niveau 5, vous pouvez lancer une fois le sort ténèbres grâce à ce trait. Pour pouvoir lancer de nouveau ce sort, vous devez finir un repos long. Votre caractéristique d'incantation pour lancer ces sorts est le Charisme."
         },
@@ -478,7 +478,7 @@
                     "FOR": 1
                 },
                 "traits": {
-                    "Voile nécrotique": "A partir du niveau 3, vous pouvez utiliser une action pour déchainer votre energie divine ce qui rend vos yeux noirs comme les tenebres et fait apparaitres deux ailes squelettiques et fantomatique dans votre dos. Au moment de votre transformation, toute créature à moins de 3 mètres de vous qui vous voit doit faire un jet de sauvegarde de Charisme (DD8 + maitrise + modificateur de Charisme) ou être effrayé par vous jusqu'à la fin de votre prochain tour. Cette transformation dure 1 minute ou jusqu'à annulation en action bonus. Pendant la transformation, une fois par tour, vous pouvez rajouter votre niveau aux dégats que vous infligez en dégats nécrotique. Pour pouvoir utiliser ce trait à nouveau, vous devez finir un repos long."
+                    "Voile nécrotique": "A partir du niveau 3, vous pouvez utiliser une action pour déchainer votre energie divine ce qui rend vos yeux noirs comme les tenebres et fait apparaitres deux ailes squelettiques et fantomatique dans votre dos. Au moment de votre transformation, toute créature à moins de 3 mètres de vous qui vous voit doit faire un jet de sauvegarde de Charisme (DD8 + maitrise + modif de Charisme) ou être effrayé par vous jusqu'à la fin de votre prochain tour. Cette transformation dure 1 minute ou jusqu'à annulation en action bonus. Pendant la transformation, une fois par tour, vous pouvez rajouter votre niveau aux dégats que vous infligez en dégats nécrotique. Pour pouvoir utiliser ce trait à nouveau, vous devez finir un repos long."
                 }
             }
         }
@@ -511,7 +511,7 @@
             "Athlétisme"
         ],
         "traits": {
-            "Endurance de pierre": "Vous pouvez vous concentrer pour éviter occasionnellement une blessure. Lorsque vous subissez des dégâts, vous pouvez utiliser votre réaction pour lancer un d12. Ajoutez votre modificateur de Constitution au nombre obtenu, et réduisez les dommages de ce total. Après avoir utilisé ce trait, vous devez terminer un repos court ou long avant de pouvoir le réutiliser.",
+            "Endurance de pierre": "Vous pouvez vous concentrer pour éviter occasionnellement une blessure. Lorsque vous subissez des dégâts, vous pouvez utiliser votre réaction pour lancer un d12. Ajoutez votre modif de Con au nombre obtenu, et réduisez les dommages de ce total. Après avoir utilisé ce trait, vous devez terminer un repos court ou long avant de pouvoir le réutiliser.",
             "Carrure lourde": "Vous comptez une taille plus grande quand il s'agit de capacité de port ou du poids que vous pouvez pousser,tirer ou soulever.",
             "Né des montagnes": "Vous êtes acclimaté aux hautes altitudes, incluant des elevation au dessus de 6000m. Vous êtes aussi naturellement adapté aux climats froids."
         },
@@ -527,7 +527,7 @@
                     "Acrobaties",
                     "Discrétion",
                     "Escamotage",
-                    "Tromperie"
+                    "Supercherie"
                 ],
                 "nombre": 2
             }
@@ -539,7 +539,7 @@
         "vitesse": 9,
         "traits": {
             "Expert falsificateur": "Vous pouvez dupliquer les créations et l'ecritures d'autres créatures. Vous avez l'avantages sur les jets pour produire des faux ou des duplicats d'objets existants.",
-            "Imitation": "Vous pouvez reproduire tout son que vous avez entendu, dont les voix. Une créature qui entend ces sons peut dire qu'il s'agit d'imitation en réussissant un jet de Sagesse (Perspicacité) opposé à votre jet de Charisme (Tromperie)."
+            "Imitation": "Vous pouvez reproduire tout son que vous avez entendu, dont les voix. Une créature qui entend ces sons peut dire qu'il s'agit d'imitation en réussissant un jet de Sagesse (Perspicacité) opposé à votre jet de Charisme (Supercherie)."
         },
         "langues": [
             "Commun",
@@ -566,11 +566,11 @@
         "vitesse": 9,
         "nage": 9,
         "traits": {
-            "Morsure": "Attaque au corps à corps avec les dents : d20+(maitrise + Modif For) pour toucher. Si touché, (1d6 + Modificateur de Force) dégâts perforants.",
-            "Artisan habile": "Pendant un repos court, vous pouvez récolter des os et du cuir d'une bête,construction,dragon,monstruosité,ou une plante de taille Petite ou plus grande pour créer un des objets suivant : Un bouclier, une masse, un javelin ou 1d4 flechettes. Pour utiliser ce trait, vous devez avoir une lame comme une dague ou les outils d'artisan appropriés comme les outils de tanneur.",
+            "Morsure": "Attaque au corps à corps avec les dents : d20+(maitrise + Modif For) pour toucher. Si touché, (1d6 + modif de Force) dégâts perforants.",
+            "Artisan habile": "Pendant un repos court, vous pouvez utiliser des cadavres pour créer un des objets suivant : Un bouclier, une masse, un javelin ou 1d4 flechettes. Pour utiliser ce trait, vous devez avoir une lame comme une dague ou avoir des outils appropriés.",
             "Retenir son souffle": "Vous pouvez retenir votre souffle pendant 15 minutes",
-            "Armure naturelle": "Vos écailles vous donnent une CA de 13+modificateur de Dexterité sans armure. Vous pouvez choisir votre armure naturelle si votre armure vous donne une CA plus basse. Les bénéfices d'un bouclier s'appliquent normalement avec votre armure naturelle",
-            "Machoires affamées": "En combat, vous pouvez vous jeter dans une frénésie vicieuse d'alimentation. En action bonus, vous pouvez faire une attaque spéciale avec votre Morsure. Si l'attaque touche, elle fait les dégats normaux et vous regagner des points de vies temporaires égales à votre modificateur de Constitution (minimum 1). Après avoir utilisé ce trait, vous devez finir un repos court ou long pour l'utiliser à nouveau."
+            "Armure naturelle": "CA de 13 + modif de Dex sans armure. Vous bénéficiez quand même de cette aptitude si vous utilisez un bouclier ",
+            "Machoires affamées": "En action bonus, vous pouvez faire une attaque spéciale avec votre Morsure. Si l'attaque touche, elle fait les dégats normaux et vous gagner votre modif de Con en pv temporaires (minimum 1). Ce trait se recharge après un repos court ou long."
         },
         "langues": [
             "Commun",
@@ -609,7 +609,7 @@
         "traits": {
             "Vision dans le noir": "Dans un rayon de 18 mètres, vous pouvez voir dans une zone de lumière faible comme s'il s'agissait d'une lumière vive et dans l'obscurité comme s'il s'agissait d'une lumière faible. Par contre, vous ne distinguez pas les couleurs dans l'obscurité, seulement des nuances de gris.",
             "Agilité féline": "Vos reflexes et votre agilité vous permet de doubler votre vitesse pendant votre tour. Après avoir utilisé ce trait, vous ne pouvez pas le réuitiliser avant d'être rester statique pendant votre tour",
-            "Griffes félines": "Grâce à vos griffes, vous pouvez grimper avec une vitesse de 6m. De plus, vos griffes sont des armes naturelles que vous pouvez utilisés sans être armé. Si vous touchez, vous faites 1d4 + modificateur de Force dégats contondants"
+            "Griffes félines": "Grâce à vos griffes, vous pouvez grimper avec une vitesse de 6m. De plus, vos griffes sont des armes naturelles que vous pouvez utilisés sans être armé. Si vous touchez, vous faites 1d4 + modif de Force dégats contondants"
         },
         "maitrises": [
             "Perception",

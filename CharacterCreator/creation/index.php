@@ -307,10 +307,13 @@ $classes = json_decode(file_get_contents("classes.json"));
                 step4.removeAttribute('hidden');
                 myHistorique = historiques[historique.value];
                 let choix = [];
+
                 if (thisRace.choix != undefined)
-                    thisRace.choix.forEach(el => choix.push(el));
+                    choix = choix.concat(thisRace.choix);
                 if (myHistorique.choix != undefined)
-                    myHistorique.choix.forEach(el => choix.push(el));
+                    choix = choix.concat(myHistorique.choix);
+                if (myClass.choix != undefined)
+                    choix = choix.concat(myClass.choix);
                 if (choix.length == 0) {
                     switchToStep5();
                 }
@@ -474,13 +477,19 @@ $classes = json_decode(file_get_contents("classes.json"));
                             char.skillsProf = char.skillsProf.concat(myHistorique.maitrises);
                         char.saveProf = myClass.sauvegarde;
 
-                        char.equipmentTextArea = myHistorique.equipement;
+                        if(myClass.equipement != undefined)
+                            char.equipmentTextArea = myClass.equipement;
+                        document.getElementsByName('equipement').forEach(el =>{
+                            char.equipmentTextArea += ", "+el.value;
+                        });
+                        char.equipmentTextArea += ","+myHistorique.equipement;
+                        
 
                         switch (classe.value) {
                             case "Barbare":
                             case "Druide":
                                 //2d4*10
-                                char.po = "<?= random_int(2, 8) * 10 ?>";
+                                char.po = (myHistorique.po + <?= random_int(2, 8) * 10 ?>).toString();
                                 break;
                             case "Barde":
                             case "Clerc":
@@ -488,43 +497,43 @@ $classes = json_decode(file_get_contents("classes.json"));
                             case "Paladin":
                             case "Rôdeur":
                                 //5d4*10
-                                char.po = "<?= random_int(5, 20) * 10 ?>";
+                                char.po = (myHistorique.po + <?= random_int(5, 20) * 10 ?>).toString();
                                 break;
 
                             case "Ensorceleur":
                                 //3d4*10
-                                char.po = "<?= random_int(3, 12) * 10 ?>";
+                                char.po = (myHistorique.po + <?= random_int(3, 12) * 10 ?>).toString();
                                 break;
                             case "Magicien":
                             case "Roublard":
                             case "Sorcier":
                                 //4d4*10
-                                char.po = "<?= random_int(4, 16) * 10 ?>";
+                                char.po = (myHistorique.po + <?= random_int(4, 16) * 10 ?>).toString();
                                 break;
                             case "Moine":
                                 //5d4
-                                char.po = "<?= random_int(5, 20) ?>";
+                                char.po = (myHistorique.po + <?= random_int(5, 20) ?>).toString();
                                 break;
                         }
 
                         let fileName = Math.random().toString(36).substr(2, 9);
 
                         var myInit = {
-                            method:'POST',
-                            headers : new Headers(),
-                            mode:'cors',
-                            cache : 'default',
-                            body : JSON.stringify(char)
+                            method: 'POST',
+                            headers: new Headers(),
+                            mode: 'cors',
+                            cache: 'default',
+                            body: JSON.stringify(char)
                         };
 
-                        fetch("../../_func/saveJson.php",{
-                            method:"POST",
+                        fetch("../../_func/saveJson.php", {
+                            method: "POST",
                             body: JSON.stringify({
-                                "file":'../CharacterCreator/perso/'+fileName+'.json',
-                                "data":char
+                                "file": '../CharacterCreator/perso/' + fileName + '.json',
+                                "data": char
                             })
-                        }).then(function(res){
-                            window.location = "../perso/?jsonFile="+fileName+".json";
+                        }).then(function(res) {
+                            window.location = "../perso/?jsonFile=" + fileName + ".json";
                         });
                     });
                 }

@@ -192,7 +192,7 @@ function exportObj() {
             soonJSON.saveProf.push(el);
         }
     });
-    let arraySkills = ["Acrobaties", "Arcanes", "Athlétisme", "Discrétion", "Dressage", "Escamotage", "Histoire", "Intimidation", "Investigation", "Médecine", "Nature", "Perception", "Perspicacité", "Persuasion", "Religion", "Représentation", "Survie", "Tromperie"]
+    let arraySkills = ["Acrobaties", "Arcanes", "Athlétisme", "Discrétion", "Dressage", "Escamotage", "Histoire", "Intimidation", "Investigation", "Médecine", "Nature", "Perception", "Perspicacité", "Persuasion", "Religion", "Représentation", "Survie", "Supercherie"]
     arraySkills.forEach(el => {
 
         let isProficientSavingThrow = $('.' + el + "-prof").is(':checked');
