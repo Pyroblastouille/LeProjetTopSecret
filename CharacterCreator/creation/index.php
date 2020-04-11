@@ -415,7 +415,7 @@ $classes = json_decode(file_get_contents("classes.json"));
                         });
 
                         char.nomPerso = charName.value;
-                        char.nomJoueur = "<?= (isset($_GET['jsonFile']) ? $_GET['jsonFile'] : "") ?>";
+                        char.nomJoueur = "<?= (isset($_GET['jsonFile']) ? $_GET['jsonFile'] : "unknown") ?>";
                         char.FORscore = totFOR.innerText;
                         char.DEXscore = totDEX.innerText;
                         char.CONscore = totCON.innerText;
@@ -516,7 +516,7 @@ $classes = json_decode(file_get_contents("classes.json"));
                                 break;
                         }
 
-                        let fileName = Math.random().toString(36).substr(2, 9);
+                        let fileName = char.nomJoueur;
 
                         var myInit = {
                             method: 'POST',
@@ -530,6 +530,7 @@ $classes = json_decode(file_get_contents("classes.json"));
                             method: "POST",
                             body: JSON.stringify({
                                 "file": '../CharacterCreator/perso/' + fileName + '.json',
+                                "create":true,
                                 "data": char
                             })
                         }).then(function(res) {
