@@ -145,7 +145,7 @@ $classes = json_decode(file_get_contents("classes.json"));
                 </p>
             </div>
             <video <?= (isset($_SESSION['mute']) && $_SESSION['mute'] ? "muted" : "") ?> class="son" hidden autoplay loop>
-                <source src="../../_sounds/sweden.mp3" type="audio/mpeg" />
+                <source src="../../_sounds/lol.mp3" type="audio/mpeg" />
             </video>
         </div>
         <script>
