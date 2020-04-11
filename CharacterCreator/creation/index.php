@@ -569,7 +569,8 @@ $classes = json_decode(file_get_contents("classes.json"));
                         });
                         char.equipmentTextArea += "," + myHistorique.equipement;
 
-
+                        char.po = myHistorique.po.toString();
+                        /*
                         switch (classe.value) {
                             case "Barbare":
                             case "Druide":
@@ -599,7 +600,7 @@ $classes = json_decode(file_get_contents("classes.json"));
                                 //5d4
                                 char.po = (myHistorique.po + <?= random_int(5, 20) ?>).toString();
                                 break;
-                        }
+                        }*/
 
                         let fileName = char.nomJoueur;
 
