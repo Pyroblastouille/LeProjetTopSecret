@@ -1,4 +1,5 @@
 _img/*
+!_img/.htaccess
 booky/booked/*
 gameDB/**
 dunMak/Dungeon-Tokens-PNG/*
