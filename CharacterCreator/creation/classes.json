@@ -30,14 +30,14 @@
             {
                 "equipement":[
                     "une hache à deux mains",
-                    "une arme de guerre de corps à corps"
+                    "<CHOIX>une arme de guerre de corps à corps</CHOIX>"
                 ],
                 "nombre":1
             },
             {
                 "equipement":[
                     "deux hachettes",
-                    "une arme courante"
+                    "<CHOIX>une arme courante</CHOIX>"
                 ],
                 "nombre":1
             }
@@ -103,7 +103,7 @@
                 "equipement":[
                     "une rapière",
                     "une épée longue",
-                    "une arme courante"
+                    "<CHOIX>une arme courante</CHOIX>"
                 ],
                 "nombre":1
             },
@@ -175,7 +175,7 @@
             {
                 "equipement":[
                     "une arbalète légère et 20 carreaux",
-                    "une arme courante"
+                    "<CHOIX>une arme courante</CHOIX>"
                 ],
                 "nombre":1
             },
@@ -231,14 +231,14 @@
             {
                 "equipement":[
                     "un bouclier en bois",
-                    "une arme courante"    
+                    "<CHOIX>une arme courante</CHOIX>"    
                 ],
                 "nombre":1
             },
             {
                 "equipement":[
                     "un cimeterre",
-                    "une arme de corps à corps courante"
+                    "<CHOIX>une arme de corps à corps courante</CHOIX>"
                 ],
                 "nombre":1
             }
@@ -273,7 +273,7 @@
             {
                 "equipement":[
                     "une arbalète légère et 20 carreaux",
-                    "une arme courante"
+                    "<CHOIX>une arme courante</CHOIX>"
                 ],
                 "nombre":1
             },
@@ -330,8 +330,8 @@
             },
             {
                 "equipement":[
-                    "une arme de guerre et un bouclier",
-                    "deux armes de guerre"
+                    "<CHOIX>une arme de guerre</CHOIX> et un bouclier",
+                    "deux <CHOIX>armes de guerre</CHOIX>"
                 ],
                 "nombre":1
             },
@@ -460,7 +460,7 @@
             {
                 "equipement":[
                     "une épée courte",
-                    "une arme courante"
+                    "<CHOIX>une arme courante</CHOIX>"
                 ],
                 "nombre":1
             },
@@ -502,15 +502,15 @@
             },
             {
                 "equipement":[
-                    "une arme de guerre et un bouclier",
-                    "deux armes de guerre"
+                    "<CHOIX>une arme de guerre</CHOIX> et un bouclier",
+                    "<CHOIX>deux armes de guerre</CHOIX>"
                 ],
                 "nombre":1
             },
             {
                 "equipement":[
                     "cinq javelines",
-                    "une arme de corps à corps courante"
+                    "<CHOIX>une arme de corps à corps courante</CHOIX>"
                 ],
                 "nombre":1
             },
@@ -563,7 +563,7 @@
             {
                 "equipement":[
                     "2 épées courte",
-                    "2 armes courantes de corps à corps"
+                    "2<CHOIX> armes courantes de corps à corps</CHOIX>"
                 ],
                 "nombre":1
             },
@@ -666,7 +666,7 @@
             {
                 "equipement": [
                     "une arbalète légère et 20 carreaux",
-                    "une arme courante"
+                    "<CHOIX>une arme courante</CHOIX>"
                 ],
                 "nombre":1
             },

@@ -35,7 +35,7 @@
             "Perspicacité",
             "Persuasion"
         ],
-        "equipement": "un ensemble d'outils d'artisan (de votre choix), une lettre d'introduction émanant de votre guilde, une tenue de voyageur.",
+        "equipement": "<CHOIX>un ensemble d'outils d'artisan (de votre choix)</CHOIX>, une lettre d'introduction émanant de votre guilde, une tenue de voyageur.",
         "po": 15,
         "choix": [
             {
@@ -60,7 +60,7 @@
                 "nombre": 1
             },
             {
-                "outils d'artisan": [
+                "outils": [
                     "Matériel d'alchimiste",
                     "Matériel de brasseur",
                     "Matériel de calligraphe",
@@ -91,7 +91,7 @@
         "outils": [
             "accessoires de déguisement"
         ],
-        "equipement": "un instrument de musique (de votre choix), la faveur d'un admirateur, un costume",
+        "equipement": "<CHOIX>un instrument de musique (de votre choix)</CHOIX>, la faveur d'un admirateur, un costume",
         "po": 15,
         "choix": [
             {
@@ -120,7 +120,7 @@
             "accessoires de déguisement",
             "matériel de contrefaçon"
         ],
-        "equipement": "de beaux habits, des accessoires de déguisement, des outils d'escroc de votre choix ",
+        "equipement": "de beaux habits, des accessoires de déguisement, <CHOIX>des outils d'escroc (de votre choix)</CHOIX> ",
         "po": 15
     },
     "Criminel": {
@@ -199,7 +199,7 @@
         "outils": [
             "véhicules(terrestres)"
         ],
-        "equipement": "un ensemble d'outils d'artisan (de votre choix), une pelle, une marmite, des habits courants",
+        "equipement": "<CHOIX>un ensemble d'outils d'artisan (de votre choix)</CHOIX>, une pelle, une marmite, des habits courants",
         "po": 10,
         "choix": [
             {

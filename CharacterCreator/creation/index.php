@@ -190,6 +190,7 @@ $classes = json_decode(file_get_contents("classes.json"));
                 totCON.innerText = parseInt(InputCON.value) + parseInt(bonusCON.innerText);
             }
 
+            //Passage à l'étape 2 qui est celle des stats
             function switchToStep2() {
                 step1.hidden = true;
                 step2.removeAttribute('hidden');
@@ -293,6 +294,7 @@ $classes = json_decode(file_get_contents("classes.json"));
             }
 
 
+            //Passage à l'étape 3 qui est celle historiques
             function switchToStep3() {
                 if (parseInt(remaining.innerText) == 0) {
                     step2.hidden = true;
@@ -302,6 +304,7 @@ $classes = json_decode(file_get_contents("classes.json"));
                 }
             }
 
+            //Passage à l'étape 4 qui est celle des choix
             function switchToStep4() {
                 step3.hidden = true;
                 step4.removeAttribute('hidden');
@@ -455,25 +458,30 @@ $classes = json_decode(file_get_contents("classes.json"));
             function switchToStep5() {
                 //verify values
                 let good = true;
+                let choix = {};
                 allChoix.forEach(nm => {
                     if (good) {
                         let elements = document.getElementsByName(nm);
+                        console.log(elements);
                         let values = [];
+                        choix[nm] = [];
                         elements.forEach(el => {
                             if (values.includes(el.value)) {
                                 good = false;
                                 alert(nm + ' - La valeur "' + el.value + '" a été affectée 2 fois');
                             } else {
+                                choix[nm].push(el.value);
                                 values.push(el.value);
                             }
                         });
                     }
                 });
                 if (good) {
+                    //Récupère la valeur de chaque truc
                     step4.hidden = true;
                     //récupère le json vide
                     fetch('../perso/_empty.json').then(resp => resp.json()).then(char => {
-                        //set bonus des caracs
+                        //set les choix de carac
                         document.getElementsByName('bonus').forEach(el => {
                             switch (el.value) {
                                 case "SAG":
@@ -496,6 +504,7 @@ $classes = json_decode(file_get_contents("classes.json"));
                                     break;
                             }
                         });
+
                         //set le nom, niveau, caracs, et autres infos
                         char.nomPerso = charName.value;
                         char.nomJoueur = "<?= (isset($_GET['jsonFile']) ? $_GET['jsonFile'] : "unknown") ?>";
@@ -511,7 +520,6 @@ $classes = json_decode(file_get_contents("classes.json"));
                         char.historique = historique.value;
                         char.speed = thisRace.vitesse + "m";
                         char.pvMax = (myClass.deDeVie + Math.floor((parseInt(totCON.innerText) - 10) / 2)).toString();
-                        char.proficiencies = "armes : ";
                         char.ac = "10";
 
                         //traits
@@ -519,6 +527,7 @@ $classes = json_decode(file_get_contents("classes.json"));
                             char.traits += el + "." + thisRace.traits[el] + "\n\n";
                         });
 
+                        char.proficiencies = "armes : ";
                         //armes,armures,outils,langues
                         if (thisRace.armes != undefined) {
                             char.proficiencies += thisRace.armes.toString();
@@ -536,12 +545,15 @@ $classes = json_decode(file_get_contents("classes.json"));
                         char.proficiencies += "\noutils : ";
                         if (thisRace.outils != undefined) {
                             char.proficiencies += thisRace.outils.toString();
-                            
                         }
                         if (myClass.outils != undefined) {
                             char.proficiencies += myClass.outils.toString();
                         }
-                        char.proficiencies += "\langues : ";
+                        //set les choix 
+                        document.getElementsByName('outils').forEach(el => {
+                            char.proficiencies += el.value;+', ';
+                        });
+                        char.proficiencies += "\nlangues : ";
                         if (thisRace.langues != undefined) {
                             char.proficiencies += thisRace.langues.toString();
                         }
@@ -551,6 +563,10 @@ $classes = json_decode(file_get_contents("classes.json"));
                         if (myHistorique.langues != undefined) {
                             char.proficiencies += myHistorique.langues.toString();
                         }
+                        //set les choix 
+                        document.getElementsByName('langues').forEach(el => {
+                            char.proficiencies += el.value;+', ';
+                        });
 
                         //maitrises
                         document.getElementsByName('maitrises').forEach(el => {
@@ -571,7 +587,7 @@ $classes = json_decode(file_get_contents("classes.json"));
                         char.equipmentTextArea += "," + myHistorique.equipement;
 
                         char.po = myHistorique.po.toString();
-                        /*
+                        
                         switch (classe.value) {
                             case "Barbare":
                             case "Druide":
@@ -601,7 +617,7 @@ $classes = json_decode(file_get_contents("classes.json"));
                                 //5d4
                                 char.po = (myHistorique.po + <?= random_int(5, 20) ?>).toString();
                                 break;
-                        }*/
+                        }
 
                         let fileName = char.nomJoueur;
 

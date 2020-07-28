@@ -53,7 +53,7 @@ if(isset($_SESSION['logged'])){
                     <div class="card" onclick="addJson()" id="add">+</div>
                 </div>
 
-                <form hidden id="hiddenForm" action="creation/directCreation.php" method="GET">
+                <form hidden id="hiddenForm" action="creation/" method="GET">
                     <input type="text" value="" name="jsonFile" id="nameInput" />
                     <button id="btnSubmit"></button>
                 </form>
