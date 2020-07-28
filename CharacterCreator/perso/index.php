@@ -5,14 +5,15 @@ if ($json == false || is_null($json)) {
   if (isset($_SESSION['jsonFile'])) {
     $json == $_SESSION['jsonFile'];
   } else {
-    header("Location: index.php");
+    header("Location: ../");
   }
 } else {
   $_SESSION['jsonFile'] = $json;
 }
-$imgUrl = getDndHandbookImage();
 if (file_exists($json)) {
   $char = json_decode(file_get_contents($json));
+}else{
+  $char =json_decode(file_get_contents('_empty.json'));
 }
 ?>
 <!DOCTYPE html>
@@ -318,7 +319,7 @@ if (file_exists($json)) {
                     <input value="<?= $char->arme1->nom ?>" name="atkname1" class="arme1Nom" type="text" />
                   </td>
                   <td>
-                    <input value="<?= $char->arme2->atk ?>" name="atkbonus1" class="arme1Atk" type="text" />
+                    <input value="<?= $char->arme1->atk ?>" name="atkbonus1" class="arme1Atk" type="text" />
                   </td>
                   <td>
                     <input value="<?= $char->arme1->deg ?>" name="atkdamage1" class="arme1Deg" type="text" />
