@@ -1,12 +1,10 @@
 <?php
-define("USERNAME", 'jesuisunpervers');
-define("PASSWORD", 'teton');
+define("PASSWORD", 'Super'.date("Y"));
 
 require_once('func.inc.php');
 if (filter_input(INPUT_POST, 'submit') == "Soumettre") {
     if (
-        filter_input(INPUT_POST, 'username') == USERNAME
-        && filter_input(INPUT_POST, 'mdp') == PASSWORD
+        filter_input(INPUT_POST, 'mdp') == PASSWORD
     ) {
         $_SESSION['logged'] = true;
         header("Location: " . filter_input(INPUT_POST, 'redirect'));

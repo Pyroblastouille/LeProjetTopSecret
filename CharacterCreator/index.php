@@ -1,6 +1,10 @@
 <?php
 require_once('../_func/func.inc.php');
 $persos = glob("perso/[a-zA-Z0-9\ ]*.json");
+if(isset($_SESSION['logged'])){
+    $bg = getRandom('001');
+    $bgFullURL = $bg->path;
+}
 ?>
 
 <!DOCTYPE html>
@@ -21,6 +25,7 @@ $persos = glob("perso/[a-zA-Z0-9\ ]*.json");
             background-position-x: center;
             background-repeat: no-repeat;
             background-size: contain;
+            <?= (isset($_SESSION['logged']) ? "background-image: url('$bgFullURL');" : "") ?>
         }
 
         form {
@@ -48,7 +53,7 @@ $persos = glob("perso/[a-zA-Z0-9\ ]*.json");
                     <div class="card" onclick="addJson()" id="add">+</div>
                 </div>
 
-                <form hidden id="hiddenForm" action="creation/" method="GET">
+                <form hidden id="hiddenForm" action="creation/directCreation.php" method="GET">
                     <input type="text" value="" name="jsonFile" id="nameInput" />
                     <button id="btnSubmit"></button>
                 </form>

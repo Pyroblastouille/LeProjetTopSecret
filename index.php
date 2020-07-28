@@ -1,5 +1,9 @@
 <?php
 require_once('./_func/func.inc.php');
+if(isset($_SESSION['logged'])){
+    $bg = getRandom('001');
+    $bgFullURL = $bg->path;
+}
 
 ?>
 
@@ -21,6 +25,7 @@ require_once('./_func/func.inc.php');
             background-position-x: center;
             background-repeat: no-repeat;
             background-size: contain;
+            <?= (isset($_SESSION['logged']) ? "background-image: url('$bgFullURL');" : "") ?>
         }
 
         form {
@@ -54,7 +59,11 @@ require_once('./_func/func.inc.php');
                     endif;
                 endforeach;
                 ?>
-                <a class="card" href="https://app.roll20.net/campaigns/details/4996081/pyropartie">Roll20</a>
+                <a class="card" href="https://twitter.com/bunnydelphine">Un lien qui sert à rien</a>
+                <a class="card" href="https://twitter.com/npcprincess666">Un lien qui sert à rien 2</a>
+                <a class="card" href="https://twitter.com/OJessicaNigri">Un lien qui sert à rien 3</a>
+                <a class="card" href="https://twitter.com/kalinka_fox">Un lien qui sert à rien 4</a>
+                <a class="card" href="https://twitter.com/CosplayHeyjude">Un lien qui sert à rien 5</a>
             </div>
             <div class="social-links">
             </div>

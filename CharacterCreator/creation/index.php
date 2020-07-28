@@ -145,7 +145,7 @@ $classes = json_decode(file_get_contents("classes.json"));
                 </p>
             </div>
             <video <?= (isset($_SESSION['mute']) && $_SESSION['mute'] ? "muted" : "") ?> class="son" hidden autoplay loop>
-                <source src="../../_sounds/lol.mp3" type="audio/mpeg" />
+                <source src="../../_sounds/cringe_sound.mp3" type="audio/mpeg" />
             </video>
         </div>
         <script>
@@ -471,9 +471,9 @@ $classes = json_decode(file_get_contents("classes.json"));
                 });
                 if (good) {
                     step4.hidden = true;
-
+                    //récupère le json vide
                     fetch('../perso/_empty.json').then(resp => resp.json()).then(char => {
-
+                        //set bonus des caracs
                         document.getElementsByName('bonus').forEach(el => {
                             switch (el.value) {
                                 case "SAG":
@@ -496,7 +496,7 @@ $classes = json_decode(file_get_contents("classes.json"));
                                     break;
                             }
                         });
-
+                        //set le nom, niveau, caracs, et autres infos
                         char.nomPerso = charName.value;
                         char.nomJoueur = "<?= (isset($_GET['jsonFile']) ? $_GET['jsonFile'] : "unknown") ?>";
                         char.FORscore = totFOR.innerText;
@@ -536,6 +536,7 @@ $classes = json_decode(file_get_contents("classes.json"));
                         char.proficiencies += "\noutils : ";
                         if (thisRace.outils != undefined) {
                             char.proficiencies += thisRace.outils.toString();
+                            
                         }
                         if (myClass.outils != undefined) {
                             char.proficiencies += myClass.outils.toString();

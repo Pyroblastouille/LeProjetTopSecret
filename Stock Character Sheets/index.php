@@ -1,6 +1,10 @@
 <?php
 require_once('../_func/func.inc.php');
 $files = glob('[a-zA-Z0-9\ ]*.pdf');
+if(isset($_SESSION['logged'])){
+    $bg = getRandom('001');
+    $bgFullURL = $bg->path;
+}
 ?>
 
 <!DOCTYPE html>
@@ -21,6 +25,7 @@ $files = glob('[a-zA-Z0-9\ ]*.pdf');
             background-position-x: center;
             background-repeat: no-repeat;
             background-size: contain;
+            <?= (isset($_SESSION['logged']) ? "background-image: url('$bgFullURL');" : "") ?>
         }
 
         form {

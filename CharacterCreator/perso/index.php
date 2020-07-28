@@ -38,27 +38,27 @@ if (file_exists($json)) {
   <form class="charsheet sheetForm breakPage">
     <header>
       <section class="charname">
-        <label for="charname">Nom du personnage</label><input value="<?= $char->nomPerso ?>" class="nomPerso" name="charname" placeholder="Thoradin Forgefeu" />
+        <label for="charname">Nom du personnage</label><input value="<?= $char->nomPerso ?>" class="nomPerso" name="charname"  />
       </section>
       <section class="misc">
         <ul>
           <li>
-            <label for="classlevel">Classe & niveau</label><input value="<?= $char->classeEtNiveau ?>" class="classeEtNiveau" name="classlevel" placeholder="Paladin 2" />
+            <label for="classlevel">Classe & niveau</label><input value="<?= $char->classeEtNiveau ?>" class="classeEtNiveau" name="classlevel"  />
           </li>
           <li>
-            <label for="background">Historique</label><input value="<?= $char->historique ?>" name="background" class="historique" placeholder="Acolyte" />
+            <label for="background">Historique</label><input value="<?= $char->historique ?>" name="background" class="historique"  />
           </li>
           <li>
-            <label for="playername">Nom du joueur</label><input value="<?= $char->nomJoueur ?>" name="playername" class="nomJoueur" placeholder="Player McPlayerface">
+            <label for="playername">Nom du joueur</label><input value="<?= $char->nomJoueur ?>" name="playername" class="nomJoueur" >
           </li>
           <li>
-            <label for="race">Race</label><input value="<?= $char->race ?>" name="race" placeholder="Demi-elfe" class="race" />
+            <label for="race">Race</label><input value="<?= $char->race ?>" name="race"  class="race" />
           </li>
           <li>
-            <label for="alignment">Alignement</label><input value="<?= $char->alignement ?>" name="alignment" class="alignement" placeholder="Loyal Bon" />
+            <label for="alignment">Alignement</label><input value="<?= $char->alignement ?>" name="alignment" class="alignement"  />
           </li>
           <li>
-            <label for="experiencepoints">Points d'expérience</label><input value="<?= $char->xp ?>" class="xp" name="experiencepoints" placeholder="3240" />
+            <label for="experiencepoints">Points d'expérience</label><input value="<?= $char->xp ?>" class="xp" name="experiencepoints"  />
           </li>
         </ul>
       </section>
@@ -70,50 +70,50 @@ if (file_exists($json)) {
             <ul>
               <li>
                 <div class="score">
-                  <label for="Forcescore">Force</label><input value="<?= $char->FORscore ?>" class="stat FORscore" name="Forcescore" placeholder="10" />
+                  <label for="Forcescore">Force</label><input value="<?= $char->FORscore ?>" class="stat FORscore" name="Forcescore"  />
                 </div>
                 <div class="modifier">
-                  <input class="statmod unselectable FOR" name="Forcemod" placeholder="+0" />
+                  <input class="statmod unselectable FOR" name="Forcemod"  />
                 </div>
               </li>
               <li>
                 <div class="score">
-                  <label for="Dextéritéscore">Dextérité</label><input value="<?= $char->DEXscore ?>" class="stat DEXscore" name="Dextéritéscore" placeholder="10" />
+                  <label for="Dextéritéscore">Dextérité</label><input value="<?= $char->DEXscore ?>" class="stat DEXscore" name="Dextéritéscore"  />
                 </div>
                 <div class="modifier">
-                  <input class="statmod unselectable DEX" name="Dextéritémod" placeholder="+0" />
+                  <input class="statmod unselectable DEX" name="Dextéritémod"  />
                 </div>
               </li>
               <li>
                 <div class="score">
-                  <label for="Constitutionscore">Constitution</label><input value="<?= $char->CONscore ?>" class="stat CONscore" name="Constitutionscore" placeholder="10" />
+                  <label for="Constitutionscore">Constitution</label><input value="<?= $char->CONscore ?>" class="stat CONscore" name="Constitutionscore"  />
                 </div>
                 <div class="modifier">
-                  <input class="statmod unselectable CON" name="Constitutionmod" placeholder="+0" />
+                  <input class="statmod unselectable CON" name="Constitutionmod"  />
                 </div>
               </li>
               <li>
                 <div class="score">
-                  <label for="Intelligencescore">Intelligence</label><input value="<?= $char->INTscore ?>" class="stat INTscore" name="Intelligencescore" placeholder="10" />
+                  <label for="Intelligencescore">Intelligence</label><input value="<?= $char->INTscore ?>" class="stat INTscore" name="Intelligencescore"  />
                 </div>
                 <div class="modifier">
-                  <input class="statmod unselectable INT" name="Intelligencemod" placeholder="+0" />
+                  <input class="statmod unselectable INT" name="Intelligencemod"  />
                 </div>
               </li>
               <li>
                 <div class="score">
-                  <label for="Sagessescore">Sagesse</label><input value="<?= $char->SAGscore ?>" class="stat SAGscore" name="Sagessescore" placeholder="10" />
+                  <label for="Sagessescore">Sagesse</label><input value="<?= $char->SAGscore ?>" class="stat SAGscore" name="Sagessescore"  />
                 </div>
                 <div class="modifier">
-                  <input class="statmod unselectable SAG" name="Sagessemod" placeholder="+0" />
+                  <input class="statmod unselectable SAG" name="Sagessemod"  />
                 </div>
               </li>
               <li>
                 <div class="score">
-                  <label for="Charismescore">Charisme</label><input value="<?= $char->CHAscore ?>" class="stat CHAscore" name="Charismescore" placeholder="10" />
+                  <label for="Charismescore">Charisme</label><input value="<?= $char->CHAscore ?>" class="stat CHAscore" name="Charismescore"  />
                 </div>
                 <div class="modifier">
-                  <input class="statmod unselectable CHA" name="Charismemod" placeholder="+0" />
+                  <input class="statmod unselectable CHA" name="Charismemod"  />
                 </div>
               </li>
             </ul>
@@ -129,27 +129,27 @@ if (file_exists($json)) {
               <div class="label-container">
                 <label for="proficiencybonus">Bonus de maitrise</label>
               </div>
-              <input name="proficiencybonus" class="unselectable bonusMaitrise" placeholder="+2" />
+              <input name="proficiencybonus" class="unselectable bonusMaitrise"  />
             </div>
             <div class="saves list-section box">
               <ul>
                 <li>
-                  <label for="Force-save">Force</label><input name="Force-save" placeholder="+0" class="FORMod unselectable" type="text" /><input <?= is_prof('Force', $char->saveProf) ?> name="Force-save-prof" class="profCheck FORModCheck" type="checkbox" />
+                  <label for="Force-save">Force</label><input name="Force-save"  class="FORMod unselectable" type="text" /><input <?= is_prof('Force', $char->saveProf) ?> name="Force-save-prof" class="profCheck FORModCheck" type="checkbox" />
                 </li>
                 <li>
-                  <label for="Dextérité-save">Dextérité</label><input name="Dextérité-save" class="DEXMod unselectable" placeholder="+0" type="text" /><input <?= is_prof('Dextérité', $char->saveProf) ?> name="Dextérité-save-prof" class="profCheck DEXModCheck" type="checkbox" />
+                  <label for="Dextérité-save">Dextérité</label><input name="Dextérité-save" class="DEXMod unselectable"  type="text" /><input <?= is_prof('Dextérité', $char->saveProf) ?> name="Dextérité-save-prof" class="profCheck DEXModCheck" type="checkbox" />
                 </li>
                 <li>
-                  <label for="Constitution-save">Constitution</label><input name="Constitution-save" class="CONMod unselectable" placeholder="+0" type="text" /><input <?= is_prof('Constitution', $char->saveProf) ?> name="Constitution-save-prof" class="profCheck CONModCheck" type="checkbox" />
+                  <label for="Constitution-save">Constitution</label><input name="Constitution-save" class="CONMod unselectable"  type="text" /><input <?= is_prof('Constitution', $char->saveProf) ?> name="Constitution-save-prof" class="profCheck CONModCheck" type="checkbox" />
                 </li>
                 <li>
-                  <label for="Intelligence-save">Intelligence</label><input name="Intelligence-save" class="INTMod unselectable" placeholder="+0" type="text" /><input <?= is_prof('Intelligence', $char->saveProf) ?> name="Intelligence-save-prof" class="profCheck INTModCheck" type="checkbox" />
+                  <label for="Intelligence-save">Intelligence</label><input name="Intelligence-save" class="INTMod unselectable"  type="text" /><input <?= is_prof('Intelligence', $char->saveProf) ?> name="Intelligence-save-prof" class="profCheck INTModCheck" type="checkbox" />
                 </li>
                 <li>
-                  <label for="Sagesse-save">Sagesse</label><input name="Sagesse-save" class="SAGMod unselectable" placeholder="+0" type="text" /><input <?= is_prof('Sagesse', $char->saveProf) ?> name="Sagesse-save-prof" class="profCheck SAGModCheck" type="checkbox" />
+                  <label for="Sagesse-save">Sagesse</label><input name="Sagesse-save" class="SAGMod unselectable"  type="text" /><input <?= is_prof('Sagesse', $char->saveProf) ?> name="Sagesse-save-prof" class="profCheck SAGModCheck" type="checkbox" />
                 </li>
                 <li>
-                  <label for="Charisme-save">Charisme</label><input name="Charisme-save" class="CHAMod unselectable" placeholder="+0" type="text" /><input <?= is_prof('Charisme', $char->saveProf) ?> name="Charisme-save-prof" class="profCheck CHAModCheck" type="checkbox" />
+                  <label for="Charisme-save">Charisme</label><input name="Charisme-save" class="CHAMod unselectable"  type="text" /><input <?= is_prof('Charisme', $char->saveProf) ?> name="Charisme-save-prof" class="profCheck CHAModCheck" type="checkbox" />
                 </li>
               </ul>
               <div class="label">
@@ -159,58 +159,58 @@ if (file_exists($json)) {
             <div class="skills list-section box">
               <ul>
                 <li>
-                  <label for="Acrobaties">Acrobaties <span class="skill unselectable">(DEX)</span></label><input class="DEXMod" name="Acrobaties" placeholder="+0" type="text" /><input <?= is_prof('Acrobaties', $char->skillsProf) ?> name="Acrobaties-prof" class="profCheck Acrobaties-prof" type="checkbox" />
+                  <label for="Acrobaties">Acrobaties <span class="skill unselectable">(DEX)</span></label><input class="DEXMod" name="Acrobaties"  type="text" /><input <?= is_prof('Acrobaties', $char->skillsProf) ?> name="Acrobaties-prof" class="profCheck Acrobaties-prof" type="checkbox" />
                 </li>
                 <li>
-                  <label for="Arcanes">Arcanes <span class="skill unselectable">(INT)</span></label><input class="INTMod" name="Arcanes" placeholder="+0" type="text" /><input <?= is_prof('Arcanes', $char->skillsProf) ?> name="Arcanes-prof" class="profCheck Arcanes-prof" type="checkbox" />
+                  <label for="Arcanes">Arcanes <span class="skill unselectable">(INT)</span></label><input class="INTMod" name="Arcanes"  type="text" /><input <?= is_prof('Arcanes', $char->skillsProf) ?> name="Arcanes-prof" class="profCheck Arcanes-prof" type="checkbox" />
                 </li>
                 <li>
-                  <label for="Athlétisme">Athlétisme <span class="skill unselectable">(FOR)</span></label><input class="FORMod" name="Athlétisme" placeholder="+0" type="text" /><input <?= is_prof('Athlétisme', $char->skillsProf) ?> name="Athlétisme-prof" class="profCheck Athlétisme-prof" type="checkbox" />
+                  <label for="Athlétisme">Athlétisme <span class="skill unselectable">(FOR)</span></label><input class="FORMod" name="Athlétisme"  type="text" /><input <?= is_prof('Athlétisme', $char->skillsProf) ?> name="Athlétisme-prof" class="profCheck Athlétisme-prof" type="checkbox" />
                 </li>
                 <li>
-                  <label for="Discrétion">Discrétion <span class="skill unselectable">(DEX)</span></label><input class="DEXMod" name="Discrétion" placeholder="+0" type="text" /><input <?= is_prof('Discrétion', $char->skillsProf) ?> name="Discrétion-prof" class="profCheck Discrétion-prof" type="checkbox" />
+                  <label for="Discrétion">Discrétion <span class="skill unselectable">(DEX)</span></label><input class="DEXMod" name="Discrétion"  type="text" /><input <?= is_prof('Discrétion', $char->skillsProf) ?> name="Discrétion-prof" class="profCheck Discrétion-prof" type="checkbox" />
                 </li>
                 <li>
-                  <label for="Dressage">Dressage <span class="skill unselectable">(SAG)</span></label><input class="SAGMod" name="Dressage" placeholder="+0" type="text" /><input <?= is_prof('Dressage', $char->skillsProf) ?> name="Dressage-prof" class="profCheck Dressage-prof" type="checkbox" />
+                  <label for="Dressage">Dressage <span class="skill unselectable">(SAG)</span></label><input class="SAGMod" name="Dressage"  type="text" /><input <?= is_prof('Dressage', $char->skillsProf) ?> name="Dressage-prof" class="profCheck Dressage-prof" type="checkbox" />
                 </li>
                 <li>
-                  <label for="Escamotage">Escamotage <span class="skill unselectable">(DEX)</span></label><input class="DEXMod" name="Escamotage" placeholder="+0" type="text" /><input <?= is_prof('Escamotage', $char->skillsProf) ?> name="Escamotage-prof" class="profCheck Escamotage-prof" type="checkbox" />
+                  <label for="Escamotage">Escamotage <span class="skill unselectable">(DEX)</span></label><input class="DEXMod" name="Escamotage"  type="text" /><input <?= is_prof('Escamotage', $char->skillsProf) ?> name="Escamotage-prof" class="profCheck Escamotage-prof" type="checkbox" />
                 </li>
                 <li>
-                  <label for="Histoire">Histoire <span class="skill unselectable">(INT)</span></label><input class="INTMod" name="Histoire" placeholder="+0" type="text" /><input <?= is_prof('Histoire', $char->skillsProf) ?> name="Histoire-prof" class="profCheck Histoire-prof" type="checkbox" />
+                  <label for="Histoire">Histoire <span class="skill unselectable">(INT)</span></label><input class="INTMod" name="Histoire"  type="text" /><input <?= is_prof('Histoire', $char->skillsProf) ?> name="Histoire-prof" class="profCheck Histoire-prof" type="checkbox" />
                 </li>
                 <li>
-                  <label for="Intimidation">Intimidation <span class="skill unselectable">(FOR)</span></label><input class="FORMod" name="Intimidation" placeholder="+0" type="text" /><input <?= is_prof('Intimidation', $char->skillsProf) ?> name="Intimidation-prof" class="profCheck Intimidation-prof" type="checkbox" />
+                  <label for="Intimidation">Intimidation <span class="skill unselectable">(FOR)</span></label><input class="FORMod" name="Intimidation"  type="text" /><input <?= is_prof('Intimidation', $char->skillsProf) ?> name="Intimidation-prof" class="profCheck Intimidation-prof" type="checkbox" />
                 </li>
                 <li>
-                  <label for="Investigation">Investigation <span class="skill unselectable">(INT)</span></label><input class="INTMod" name="Investigation" placeholder="+0" type="text" /><input <?= is_prof('Investigation', $char->skillsProf) ?> name="Investigation-prof" class="profCheck Investigation-prof" type="checkbox" />
+                  <label for="Investigation">Investigation <span class="skill unselectable">(INT)</span></label><input class="INTMod" name="Investigation"  type="text" /><input <?= is_prof('Investigation', $char->skillsProf) ?> name="Investigation-prof" class="profCheck Investigation-prof" type="checkbox" />
                 </li>
                 <li>
-                  <label for="Médecine">Médecine <span class="skill unselectable">(SAG)</span></label><input class="SAGMod" name="Médecine" placeholder="+0" type="text" /><input <?= is_prof('Médecine', $char->skillsProf) ?> name="Médecine-prof" class="profCheck Médecine-prof" type="checkbox" />
+                  <label for="Médecine">Médecine <span class="skill unselectable">(SAG)</span></label><input class="SAGMod" name="Médecine"  type="text" /><input <?= is_prof('Médecine', $char->skillsProf) ?> name="Médecine-prof" class="profCheck Médecine-prof" type="checkbox" />
                 </li>
                 <li>
-                  <label for="Nature">Nature <span class="skill unselectable">(INT)</span></label><input class="INTMod" name="Nature" placeholder="+0" type="text" /><input <?= is_prof('Nature', $char->skillsProf) ?> name="Nature-prof" class="profCheck Nature-prof" type="checkbox" />
+                  <label for="Nature">Nature <span class="skill unselectable">(INT)</span></label><input class="INTMod" name="Nature"  type="text" /><input <?= is_prof('Nature', $char->skillsProf) ?> name="Nature-prof" class="profCheck Nature-prof" type="checkbox" />
                 </li>
                 <li>
-                  <label for="Perception">Perception <span class="skill unselectable">(SAG)</span></label><input class="SAGMod" name="Perception" placeholder="+0" type="text" /><input <?= is_prof('Perception', $char->skillsProf) ?> name="Perception-prof" class="profCheck Perception-prof" type="checkbox" />
+                  <label for="Perception">Perception <span class="skill unselectable">(SAG)</span></label><input class="SAGMod" name="Perception"  type="text" /><input <?= is_prof('Perception', $char->skillsProf) ?> name="Perception-prof" class="profCheck Perception-prof" type="checkbox" />
                 </li>
                 <li>
-                  <label for="Perspicacité">Perspicacité <span class="skill unselectable">(SAG)</span></label><input class="SAGMod" name="Perspicacité" placeholder="+0" type="text" /><input <?= is_prof('Perspicacité', $char->skillsProf) ?> name="Perspicacité-prof" class="profCheck Perspicacité-prof" type="checkbox" />
+                  <label for="Perspicacité">Perspicacité <span class="skill unselectable">(SAG)</span></label><input class="SAGMod" name="Perspicacité"  type="text" /><input <?= is_prof('Perspicacité', $char->skillsProf) ?> name="Perspicacité-prof" class="profCheck Perspicacité-prof" type="checkbox" />
                 </li>
                 <li>
-                  <label for="Persuasion">Persuasion <span class="skill unselectable">(CHA)</span></label><input class="CHAMod" name="Persuasion" placeholder="+0" type="text" /><input <?= is_prof('Persuasion', $char->skillsProf) ?> name="Persuasion-prof" class="profCheck Persuasion-prof" type="checkbox" />
+                  <label for="Persuasion">Persuasion <span class="skill unselectable">(CHA)</span></label><input class="CHAMod" name="Persuasion"  type="text" /><input <?= is_prof('Persuasion', $char->skillsProf) ?> name="Persuasion-prof" class="profCheck Persuasion-prof" type="checkbox" />
                 </li>
                 <li>
-                  <label for="Religion">Religion <span class="skill unselectable">(INT)</span></label><input class="INTMod" name="Religion" placeholder="+0" type="text" /><input <?= is_prof('Religion', $char->skillsProf) ?> name="Religion-prof" class="profCheck Religion-prof" type="checkbox" />
+                  <label for="Religion">Religion <span class="skill unselectable">(INT)</span></label><input class="INTMod" name="Religion"  type="text" /><input <?= is_prof('Religion', $char->skillsProf) ?> name="Religion-prof" class="profCheck Religion-prof" type="checkbox" />
                 </li>
                 <li>
-                  <label for="Représentation">Représentation <span class="skill unselectable">(CHA)</span></label><input class="CHAMod" name="Représentation" placeholder="+0" type="text" /><input <?= is_prof('Représentation', $char->skillsProf) ?> name="Représentation-prof" class="profCheck Représentation-prof" type="checkbox" />
+                  <label for="Représentation">Représentation <span class="skill unselectable">(CHA)</span></label><input class="CHAMod" name="Représentation"  type="text" /><input <?= is_prof('Représentation', $char->skillsProf) ?> name="Représentation-prof" class="profCheck Représentation-prof" type="checkbox" />
                 </li>
                 <li>
-                  <label for="Supercherie">Supercherie <span class="skill unselectable">(CHA)</span></label><input class="CHAMod" name="Supercherie" placeholder="+0" type="text" /><input <?= is_prof('Supercherie', $char->skillsProf) ?> name="Supercherie-prof" class="profCheck Supercherie-prof" type="checkbox" />
+                  <label for="Supercherie">Supercherie <span class="skill unselectable">(CHA)</span></label><input class="CHAMod" name="Supercherie"  type="text" /><input <?= is_prof('Supercherie', $char->skillsProf) ?> name="Supercherie-prof" class="profCheck Supercherie-prof" type="checkbox" />
                 </li>
                 <li>
-                  <label for="Survie">Survie <span class="skill unselectable">(SAG)</span></label><input class="SAGMod" name="Survie" placeholder="+0" type="text" /><input <?= is_prof('Survie', $char->skillsProf) ?> name="Survie-prof" class="profCheck Survie-prof" type="checkbox" />
+                  <label for="Survie">Survie <span class="skill unselectable">(SAG)</span></label><input class="SAGMod" name="Survie"  type="text" /><input <?= is_prof('Survie', $char->skillsProf) ?> name="Survie-prof" class="profCheck Survie-prof" type="checkbox" />
                 </li>
               </ul>
               <div class="label">
@@ -223,7 +223,7 @@ if (file_exists($json)) {
           <div class="label-container">
             <label for="passiveperception">Sagesse Passive (Perception)</label>
           </div>
-          <input name="passiveperception" class="unselectable sagPass" placeholder="10" />
+          <input name="passiveperception" class="unselectable sagPass"  />
         </div>
         <div class="otherprofs box textblock">
           <label for="otherprofs">Autres maitrises et langues</label><textarea name="proficiencies" class="proficiencies"><?= $char->proficiencies ?></textarea>
@@ -233,23 +233,23 @@ if (file_exists($json)) {
         <section class="combat">
           <div class="armorclass">
             <div>
-              <label for="ac">Classe d'armure</label><input value="<?= $char->ac ?>" class="ac" name="ac" placeholder="10" type="text" />
+              <label for="ac">Classe d'armure</label><input value="<?= $char->ac ?>" class="ac" name="ac"  type="text" />
             </div>
           </div>
           <div class="initiative">
             <div>
-              <label for="initiative">Initiative</label><input name="initiative" class="unselectable initiative" placeholder="+0" type="text" />
+              <label for="initiative">Initiative</label><input name="initiative" class="unselectable initiative"  type="text" />
             </div>
           </div>
           <div class="speed">
             <div>
-              <label for="speed">Vitesse</label><input value="<?= $char->speed ?>" name="speed" placeholder="9m" class="speed" type="text" />
+              <label for="speed">Vitesse</label><input value="<?= $char->speed ?>" name="speed"  class="speed" type="text" />
             </div>
           </div>
           <div class="hp">
             <div class="regular">
               <div class="max">
-                <label for="maxhp">Points de Vie Maximum</label><input value="<?= $char->pvMax ?>" name="maxhp" placeholder="10" class="pvMax" type="text" />
+                <label for="maxhp">Points de Vie Maximum</label><input value="<?= $char->pvMax ?>" name="maxhp"  class="pvMax" type="text" />
               </div>
               <div class="current">
                 <label for="currenthp">Points de Vie actuels</label><input name="currenthp" type="text" />
@@ -262,10 +262,10 @@ if (file_exists($json)) {
           <div class="hitdice">
             <div>
               <div class="total">
-                <label for="totalhd">Total</label><input name="totalhd" placeholder="2" class="totalDe" type="text" />
+                <label for="totalhd">Total</label><input name="totalhd"  class="totalDe" type="text" />
               </div>
               <div class="remaining">
-                <label for="remaininghd">Dé de vie</label><input name="Constitutionmod" class="unselectable" type="text" placeholder="+0" /><input value="<?= $char->deDeVie ?>" name="remaininghd" type="text" class="deDeVie" placeholder="1d10" />
+                <label for="remaininghd">Dé de vie</label><input name="Constitutionmod" class="unselectable" type="text"  /><input value="<?= $char->deDeVie ?>" name="remaininghd" type="text" class="deDeVie"  />
               </div>
             </div>
           </div>
@@ -375,7 +375,7 @@ if (file_exists($json)) {
                 </li>
               </ul>
             </div>
-            <textarea class="equipmentTextArea" placeholder="Liste d&#39;équipement ici"><?= $char->equipmentTextArea ?></textarea>
+            <textarea class="equipmentTextArea"><?= $char->equipmentTextArea ?></textarea>
           </div>
         </section>
       </section>
@@ -407,27 +407,27 @@ if (file_exists($json)) {
   <form class="charsheet sheetForm breakPage">
     <header>
       <section class="charname">
-        <label for="charname">Nom du personnage</label><input value="<?= $char->nomPerso ?>" class="nomPerso" name="charname" placeholder="Thoradin Forgefeu" />
+        <label for="charname">Nom du personnage</label><input value="<?= $char->nomPerso ?>" class="nomPerso" name="charname"  />
       </section>
       <section class="misc">
         <ul>
           <li>
-            <label for="age">âge</label><input value="<?= $char->age ?>" class="age" name="age" placeholder="138 ans" />
+            <label for="age">âge</label><input value="<?= $char->age ?>" class="age" name="age"  />
           </li>
           <li>
-            <label for="taille">taille</label><input value="<?= $char->taille ?>" name="taille" class="taille" placeholder="1m68" />
+            <label for="taille">taille</label><input value="<?= $char->taille ?>" name="taille" class="taille"  />
           </li>
           <li>
-            <label for="poids">poids</label><input value="<?= $char->poids ?>" name="poids" class="poids" placeholder="76kg">
+            <label for="poids">poids</label><input value="<?= $char->poids ?>" name="poids" class="poids" >
           </li>
           <li>
-            <label for="yeux">yeux</label><input value="<?= $char->yeux ?>" name="yeux" class="yeux" placeholder="Bleu" />
+            <label for="yeux">yeux</label><input value="<?= $char->yeux ?>" name="yeux" class="yeux"  />
           </li>
           <li>
-            <label for="peau">peau</label><input value="<?= $char->peau ?>" name="peau" class="peau" placeholder="Blanc mat" />
+            <label for="peau">peau</label><input value="<?= $char->peau ?>" name="peau" class="peau"  />
           </li>
           <li>
-            <label for="cheveux">cheveux</label><input value="<?= $char->cheveux ?>" name="cheveux" class="cheveux" placeholder="Bruns" />
+            <label for="cheveux">cheveux</label><input value="<?= $char->cheveux ?>" name="cheveux" class="cheveux"  />
           </li>
         </ul>
       </section>
@@ -473,18 +473,18 @@ if (file_exists($json)) {
   <form class="charsheet sheetForm">
     <header>
       <section class="charname">
-        <label for="charname">Nom du personnage</label><input value="<?= $char->nomPerso ?>" class="nomPerso" name="charname" placeholder="Thoradin Forgefeu" />
+        <label for="charname">Nom du personnage</label><input value="<?= $char->nomPerso ?>" class="nomPerso" name="charname"  />
       </section>
       <section class="misc">
         <ul>
           <li>
-            <label for="caracIncantation">Caractéristique d'incantation</label><input value="<?= $char->caracIncantation ?>" class="caracIncantation" name="caracIncantation" placeholder="SAG" />
+            <label for="caracIncantation">Caractéristique d'incantation</label><input value="<?= $char->caracIncantation ?>" class="caracIncantation" name="caracIncantation"  />
           </li>
           <li>
-            <label for="ddSauvegardeSort">DD des JdS contre les sorts</label><input value="<?= $char->ddSauvegardeSort ?>" name="ddSauvegardeSort" class="ddSauvegardeSort" placeholder="14" />
+            <label for="ddSauvegardeSort">DD des JdS contre les sorts (8+mait+carac)</label><input value="<?= $char->ddSauvegardeSort ?>" name="ddSauvegardeSort" class="ddSauvegardeSort"  />
           </li>
           <li>
-            <label for="bonusAttaqueSort">Bonus d'attaque des sorts</label><input value="<?= $char->bonusAttaqueSort ?>" name="bonusAttaqueSort" class="bonusAttaqueSort" placeholder="+5" />
+            <label for="bonusAttaqueSort">Bonus d'attaque des sorts (mait+carac)</label><input value="<?= $char->bonusAttaqueSort ?>" name="bonusAttaqueSort" class="bonusAttaqueSort"  />
           </li>
         </ul>
       </section>
@@ -498,7 +498,7 @@ if (file_exists($json)) {
         </section>
         <section class="sort sort-1">
           <div>
-            <label for="sort-1">Niveau 1</label><textarea name="sort-1" class="sort-1" placeholder="Nom du sort"><?= $char->sorts->lvl1 ?></textarea>
+            <label for="sort-1">Niveau 1</label><textarea name="sort-1" class="sort-1" ><?= $char->sorts->lvl1 ?></textarea>
           </div>
         </section>
         <section class="sort sort-2">

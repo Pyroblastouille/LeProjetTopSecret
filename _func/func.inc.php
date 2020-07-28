@@ -8,7 +8,25 @@ function exists(string $file)
     return !(!$file_headers || $file_headers[0] == 'HTTP/1.1 404 Not Found');
 }
 
-
+function dlImgs($urls)
+{
+    $fp = fopen('dt.txt', 'a+');
+    $tot = count($urls);
+    $cpt = 0;
+    fwrite($fp, "download of $tot elements\r\n");
+    foreach ($urls as $url) {
+        $cpt++;
+        $fileDest = './imgOk/' . end(explode('/', $url));
+        $contents = file_get_contents($url);
+        if (!exists($fileDest)  || filesize($fileDest) == 0) {
+            file_put_contents($fileDest, $contents);
+            fwrite($fp, "$cpt/$tot downloaded $url\r\n");
+        } else {
+            fwrite($fp, "$cpt/$tot skip download of $url\r\n");
+        }
+    }
+    fclose($fp);
+}
 
 function dlPornGIF()
 {
@@ -41,7 +59,19 @@ function dlPornGIF()
         }
     }
 }
-function getRandomGif(){
+
+function getRandomExistingImg()
+{
+    $files = glob('./imgOk/*.{jpg,png}', GLOB_BRACE);
+    $ret = $files[rand(0, count($files) - 1)];
+    return $ret;
+}
+
+/**
+ * bill
+ */
+function getRandomGif()
+{
     $url = "https://api.giphy.com/v1/gifs/random?api_key=4ZX1wXV0QB5LGOCHxcEa68f5TJb0zvvb&tag=&rating=G";
     $json = file_get_contents($url);
     $obj = json_decode($json);
@@ -50,7 +80,7 @@ function getRandomGif(){
 
 function getRandomPornGIF()
 {
-    $files = glob('../_img/*.gif');
+    $files = glob('./LeProjetTopSecret/_img/*.gif');
     $ret = $files[rand(0, count($files) - 1)];
     return $ret;
 }
