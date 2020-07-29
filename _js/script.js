@@ -7,6 +7,16 @@ function toggleUI() {
     }
 }
 
+function download(url){
+    var link = document.createElement("a");
+    link.download = "wallhaven"+url.split("/wallhaven")[1];
+    link.href = url;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    delete link;
+}
+
 function link(url) {
     fetch(url).then(function(res) {
         return res.text();

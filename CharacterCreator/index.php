@@ -72,6 +72,10 @@ if(isset($_SESSION['logged'])){
                     -
                     <a href="#" onclick="toggleUI()">Cacher/Montrer l'UI</a>
                     -
+                    <?php if(isset($_SESSION['logged'])): ?>
+                    <a href="#" onclick="download(<?=$bgFullURL?>)">DlImage</a>
+                    -
+                    <?php endif; ?>
                     <a href="#" onclick="mute()">Mute/Unmute</a>
                     -
                     <a href="../">Retour à la page d'accueil</a>
