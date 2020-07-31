@@ -1,7 +1,17 @@
 <?php
 require_once('../_func/func.inc.php');
 $persos = glob("perso/[a-zA-Z0-9\ ]*.json");
-if(isset($_SESSION['logged'])){
+if($_SERVER['HTTP_HOST'] == "localhost"){
+    $dh = opendir("./perso/");
+    while(($file = readdir()) !== false){
+        if(strpos($file,".json") !== false){
+            array_push($persos,"perso/$file");
+        }
+    }
+    
+}
+
+if (isset($_SESSION['logged'])) {
     $bg = getRandom('001');
 }
 ?>
@@ -23,7 +33,7 @@ if(isset($_SESSION['logged'])){
             background-position-x: center;
             background-repeat: no-repeat;
             background-size: contain;
-            <?= (isset($_SESSION['logged']) ? "background-image: url('".$bg->path."'), url('".$bg->thumbs->original."');" : "") ?>
+            <?= (isset($_SESSION['logged']) ? "background-image: url('" . $bg->path . "'), url('" . $bg->thumbs->original . "');" : "") ?>
         }
 
         form {
@@ -52,10 +62,10 @@ if(isset($_SESSION['logged'])){
                     <div class="card" onclick="addJson()" id="add">+</div>
                 </div>
 
-                <form hidden id="hiddenForm" action="creation/" method="GET">
-                    <input type="text" value="" name="jsonFile" id="nameInput" />
-                    <button id="btnSubmit"></button>
-                </form>
+                <div hidden id="dialog">
+                    <div>Quel sera le nom du joueur ? </div>
+                    <input type="text" value="<?= random_text(5); ?>" name="jsonFile" id="nameInput" />
+                </div>
                 <script>
                 </script>
             </div>
@@ -71,9 +81,9 @@ if(isset($_SESSION['logged'])){
                     -
                     <a href="#" onclick="toggleUI()">Cacher/Montrer l'UI</a>
                     -
-                    <?php if(isset($_SESSION['logged'])): ?>
-                    <a href="<?=$bg->path?>">Télécharger l'image</a>
-                    -
+                    <?php if (isset($_SESSION['logged'])) : ?>
+                        <a href="<?= $bg->path ?>">Télécharger l'image</a>
+                        -
                     <?php endif; ?>
                     <a href="#" onclick="mute()">Mute/Unmute</a>
                     -
@@ -84,6 +94,36 @@ if(isset($_SESSION['logged'])){
                 <source src="../_sounds/sweden.mp3" type="audio/mpeg" />
             </video>
         </div>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <script>
+            function addJson() {
+                $("#dialog").dialog({
+                    autoOpen: true,
+                    buttons: {
+                        Assisté: function() {
+                            console.log("bouloula");
+                            let newName = nameInput.value.replace("/[\ \-]/g", '_');
+                            if (newName == "") {
+                                alert("Remplir le nom du joueur est nécessaire");
+                            } else {
+                                window.location = "./creation/?jsonFile=" + newName;
+                            }
+                        },
+                        Normal: function() {
+                            console.log("bouloulou");
+                            let newName = nameInput.value.replace("/[\ \-]/g", '_');
+                            if (newName == "") {
+                                alert("Au vu de la précarité de votre demande, il nous faudrait des informations supplémentaires afin d'accéder au serveur central de la base du curicullum vitae de votre grand-mère");
+                            } else {
+                                window.location = "./creation/directCreation?jsonFile=" + newName;
+                            }
+                        }
+                    }
+                });
+            }
+        </script>
         <script src="../_js/script.js">
         </script>
         <script src="https://assets.storage.infomaniak.com/js/css_browser_selector.min.js"></script>

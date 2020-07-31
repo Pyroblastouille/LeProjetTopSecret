@@ -12,5 +12,5 @@ file_put_contents($newFileName,$val);
 
 
 
-header("Location: https://www.pyroblastouille.site/LeProjetTopSecret/CharacterCreator/perso/?jsonFile=$newFileName.json");
+header("Location: ../perso/?jsonFile=".(isset($_GET['jsonFile']) ? $_GET['jsonFile'] : "unknown").".json");
 ?>

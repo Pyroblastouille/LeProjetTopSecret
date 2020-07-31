@@ -207,7 +207,7 @@
             {
                 "equipement":[
                     "une masse d'armes",
-                    "un marteau de guerre(si maitrisé)"
+                    "un marteau de guerre (si maitrisé [race:hobgobelin ou nain])"
                 ],
                 "nombre":1
             },
@@ -215,7 +215,7 @@
                 "equipement":[
                     "une armure de cuir",
                     "une armure d'écailles",
-                    "une cotte de maille(si maitrisé)"
+                    "une cotte de maille (Domaine de la vie)"
                 ],
                 "nombre":1
             },

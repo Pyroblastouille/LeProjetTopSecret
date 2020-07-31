@@ -45,12 +45,3 @@ function mute() {
     }
     fetch('../_func/mute.php');
 }
-
-function addJson() {
-    let newName = prompt("Pour quel joueur ?");
-    newName = newName.replace("/[\ \-]/g", '_');
-    if (newName != null) {
-        nameInput.value = newName;
-        hiddenForm.submit();
-    }
-}

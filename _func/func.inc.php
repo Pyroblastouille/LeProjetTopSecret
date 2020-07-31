@@ -1,6 +1,11 @@
 <?php
 session_start();
 
+function random_text($length)
+{
+    $rand = substr(str_shuffle("abcdefghijklmnopqrstuvwxyz"), 0, $length);
+    return $rand;
+}
 
 function exists(string $file)
 {
@@ -115,13 +120,13 @@ function getSomeRandomSFW($resolution = null)
 }
 
 
-function getSomeRandomTagged($purity = '111',$tag = null, $resolution = null)
+function getSomeRandomTagged($purity = '111', $tag = null, $resolution = null)
 {
     $url = "https://wallhaven.cc/api/v1/search?apikey=9rEpO1TbRmm4OAAvmyGZseOD4EZGjZEX&purity=$purity&sorting=random";
     if (!is_null($resolution)) {
         $url .= "&resolutions=$resolution";
     }
-    if(!is_null($tag)){
+    if (!is_null($tag)) {
         $url .= "&q=$tag";
     }
     $source = file_get_contents($url);

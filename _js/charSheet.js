@@ -1,6 +1,6 @@
 $('.stat').bind('input', changeBonuses)
 $('.profCheck').bind('change', changeBonuses);
-$('.nomPerso').bind('input', function() {
+$('.nomPerso').bind('input', function () {
     $('.nomPerso').val($(this).val());
 })
 
@@ -49,6 +49,9 @@ function changeBonuses() {
             else if (modNum >= 0)
                 modTag = "+" + modNum
 
+            if (inputName == "Sagessescore") {
+                $(".sagPass").val(10 + modNum);
+            }
             //Get proficiency bonus
             let prof = $("[name=proficiencybonus]").val();
             if (prof[0] == "+") {
@@ -81,6 +84,7 @@ function changeBonuses() {
                 let isProficientChild = $('[name=' + ch.name + '-prof]');
                 if (isProficientChild.is(':checked')) {
                     if (ch.name == "Perception") {
+                        console.log("non");
                         $(".sagPass").val(10 + profNum);
                     }
                     ch.value = profMod;
@@ -201,7 +205,7 @@ function exportObj() {
 }
 
 function importJSON(filename) {
-    $.getJSON(filename, function(json) {
+    $.getJSON(filename, function (json) {
         let bonusSAGPASS = false;
         let SAGPassive = Math.floor((parseNewInt(json.SAGscore) - 10) / 2) + 10;
 

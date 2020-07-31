@@ -523,9 +523,11 @@ $classes = json_decode(file_get_contents("classes.json"));
                         char.ac = "10";
 
                         //traits
-                        Object.keys(thisRace.traits).forEach(el => {
-                            char.traits += el + "." + thisRace.traits[el] + "\n\n";
-                        });
+                        if (thisRace.traits != null && thisRace.traits != undefined) {
+                            Object.keys(thisRace.traits).forEach(el => {
+                                char.traits += el + "." + thisRace.traits[el] + "\n\n";
+                            });
+                        }
 
                         char.proficiencies = "armes : ";
                         //armes,armures,outils,langues
@@ -551,7 +553,7 @@ $classes = json_decode(file_get_contents("classes.json"));
                         }
                         //set les choix 
                         document.getElementsByName('outils').forEach(el => {
-                            char.proficiencies += el.value;+', ';
+                            char.proficiencies += el.value; + ', ';
                         });
                         char.proficiencies += "\nlangues : ";
                         if (thisRace.langues != undefined) {
@@ -565,7 +567,7 @@ $classes = json_decode(file_get_contents("classes.json"));
                         }
                         //set les choix 
                         document.getElementsByName('langues').forEach(el => {
-                            char.proficiencies += el.value;+', ';
+                            char.proficiencies += el.value; + ', ';
                         });
 
                         //maitrises
@@ -587,7 +589,7 @@ $classes = json_decode(file_get_contents("classes.json"));
                         char.equipmentTextArea += "," + myHistorique.equipement;
 
                         char.po = myHistorique.po.toString();
-                        
+
                         switch (classe.value) {
                             case "Barbare":
                             case "Druide":
