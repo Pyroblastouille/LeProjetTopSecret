@@ -115,6 +115,22 @@ function getSomeRandomSFW($resolution = null)
 }
 
 
+function getSomeRandomTagged($purity = '111',$tag = null, $resolution = null)
+{
+    $url = "https://wallhaven.cc/api/v1/search?apikey=9rEpO1TbRmm4OAAvmyGZseOD4EZGjZEX&purity=$purity&sorting=random";
+    if (!is_null($resolution)) {
+        $url .= "&resolutions=$resolution";
+    }
+    if(!is_null($tag)){
+        $url .= "&q=$tag";
+    }
+    $source = file_get_contents($url);
+    if (!$source) {
+        throw new Exception("Error, url non atteignable \"$url\"", 1);
+    }
+    $json = json_decode($source);
+    return $json->data;
+}
 function getRandomTrans()
 {
     $url = "https://wallhaven.cc/api/v1/search?apikey=9rEpO1TbRmm4OAAvmyGZseOD4EZGjZEX&purity=011&page=1&sorting=random&q=id:18116";

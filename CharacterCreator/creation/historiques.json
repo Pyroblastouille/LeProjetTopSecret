@@ -31,13 +31,35 @@
         ]
     },
     "Artisan de guilde": {
+        "description": "",
         "maitrises": [
             "Perspicacité",
             "Persuasion"
         ],
-        "equipement": "<CHOIX>un ensemble d'outils d'artisan (de votre choix)</CHOIX>, une lettre d'introduction émanant de votre guilde, une tenue de voyageur.",
+        "equipement": "une lettre d'introduction émanant de votre guilde, une tenue de voyageur.",
         "po": 15,
         "choix": [
+            {
+                "equipement":[
+                    "Matériel d'alchimiste",
+                    "Matériel de brasseur",
+                    "Matériel de calligraphe",
+                    "Matériel de peintre",
+                    "Outils de bijoutier",
+                    "Outils de bricoleur",
+                    "Outils de cartographe",
+                    "Outils de charpentier",
+                    "Outils de cordonnier",
+                    "Outils de forgeron",
+                    "Outils de maçon",
+                    "Outils de menuisier",
+                    "Outils de potier",
+                    "Outils de souffleur de verre",
+                    "Outils de tanneur",
+                    "Outils de tisserand",
+                    "Ustensiles de cuisinier"
+                ]
+            },
             {
                 "langues": [
                     "Commun",
@@ -91,9 +113,34 @@
         "outils": [
             "accessoires de déguisement"
         ],
-        "equipement": "<CHOIX>un instrument de musique (de votre choix)</CHOIX>, la faveur d'un admirateur, un costume",
+        "equipement": "un costume",
         "po": 15,
         "choix": [
+            {
+                "equipement": [
+                    "Une lettre de fan",
+                    "Les sous-vêtements d'une fan",
+                    "Une mèche de cheveux",
+                    "une urne en métal contenant les cendres d'un fan",
+                    "Un œil de verre de fan"
+                ],
+                "nombre": 1
+            },
+            {
+                "equipement": [
+                    "Chalemie",
+                    "Cor",
+                    "Cornemuse",
+                    "Flûte",
+                    "Flûte de pan",
+                    "Luth",
+                    "Lyre",
+                    "Tambour",
+                    "Tympanon",
+                    "Viole"
+                ],
+                "nombre": 1
+            },
             {
                 "outils": [
                     "Chalemie",
@@ -120,7 +167,7 @@
             "accessoires de déguisement",
             "matériel de contrefaçon"
         ],
-        "equipement": "de beaux habits, des accessoires de déguisement, <CHOIX>des outils d'escroc (de votre choix)</CHOIX> ",
+        "equipement": "de beaux habits, des accessoires de déguisement",
         "po": 15
     },
     "Criminel": {
@@ -129,6 +176,15 @@
             "Supercherie"
         ],
         "choix": [
+            {
+                "equipement":[
+                    "10 bouteilles bouchonnées remplies d'un liquide coloré",
+                    "dés truqués",
+                    "cartes marquées",
+                    "fausse chevalière de duc",
+                    "faux papiers de commerce"
+                ]
+            },
             {
                 "outils": [
                     "Dés",
@@ -199,9 +255,31 @@
         "outils": [
             "véhicules(terrestres)"
         ],
-        "equipement": "<CHOIX>un ensemble d'outils d'artisan (de votre choix)</CHOIX>, une pelle, une marmite, des habits courants",
+        "equipement": "une pelle, une marmite, des habits courants",
         "po": 10,
         "choix": [
+            {
+                "equipement": [
+                    "Matériel d'alchimiste",
+                    "Matériel de brasseur",
+                    "Matériel de calligraphe",
+                    "Matériel de peintre",
+                    "Outils de bijoutier",
+                    "Outils de bricoleur",
+                    "Outils de cartographe",
+                    "Outils de charpentier",
+                    "Outils de cordonnier",
+                    "Outils de forgeron",
+                    "Outils de maçon",
+                    "Outils de menuisier",
+                    "Outils de potier",
+                    "Outils de souffleur de verre",
+                    "Outils de tanneur",
+                    "Outils de tisserand",
+                    "Ustensiles de cuisine"
+                ],
+                "nombre": 1
+            },
             {
                 "outils": [
                     "Matériel d'alchimiste",

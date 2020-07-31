@@ -30,14 +30,48 @@
             {
                 "equipement":[
                     "une hache à deux mains",
-                    "<CHOIX>une arme de guerre de corps à corps</CHOIX>"
+                    "Cimeterre",
+                    "Coutille",
+                    "Épée à deux mains",
+                    "Épée courte",
+                    "Épée longue",
+                    "Fléau d'armes",
+                    "Fouet",
+                    "Hache d'armes",
+                    "Hallebarde",
+                    "Lance d’arçon",
+                    "Maillet",
+                    "Marteau de guerre",
+                    "Morgenstern",
+                    "Pic de guerre",
+                    "Pique",
+                    "Rapière",
+                    "Trident",
+                    "Arbalète de poing",
+                    "Arbalète lourde",
+                    "Arc long",
+                    "Filet",
+                    "Sarbacane"
                 ],
                 "nombre":1
             },
             {
                 "equipement":[
                     "deux hachettes",
-                    "<CHOIX>une arme courante</CHOIX>"
+                    "un bâton",
+                    "une dague",
+                    "un gourdin",
+                    "une hachette",
+                    "une javeline",
+                    "une lance",
+                    "un marteau léger",
+                    "une masse d'armes",
+                    "une massue",
+                    "une serpe",
+                    "une arbalète légère",
+                    "un arc court",
+                    "10 fléchettes",
+                    "une fronde"
                 ],
                 "nombre":1
             }
@@ -103,7 +137,20 @@
                 "equipement":[
                     "une rapière",
                     "une épée longue",
-                    "<CHOIX>une arme courante</CHOIX>"
+                    "un bâton",
+                    "une dague",
+                    "un gourdin",
+                    "une hachette",
+                    "une javeline",
+                    "une lance",
+                    "un marteau léger",
+                    "une masse d'armes",
+                    "une massue",
+                    "une serpe",
+                    "une arbalète légère",
+                    "un arc court",
+                    "10 fléchettes",
+                    "une fronde"
                 ],
                 "nombre":1
             },
@@ -175,7 +222,20 @@
             {
                 "equipement":[
                     "une arbalète légère et 20 carreaux",
-                    "<CHOIX>une arme courante</CHOIX>"
+                    "un bâton",
+                    "une dague",
+                    "un gourdin",
+                    "une hachette",
+                    "une javeline",
+                    "une lance",
+                    "un marteau léger",
+                    "une masse d'armes",
+                    "une massue",
+                    "une serpe",
+                    "une arbalète légère",
+                    "un arc court",
+                    "10 fléchettes",
+                    "une fronde"
                 ],
                 "nombre":1
             },
@@ -231,14 +291,36 @@
             {
                 "equipement":[
                     "un bouclier en bois",
-                    "<CHOIX>une arme courante</CHOIX>"    
+                    "un bâton",
+                    "une dague",
+                    "un gourdin",
+                    "une hachette",
+                    "une javeline",
+                    "une lance",
+                    "un marteau léger",
+                    "une masse d'armes",
+                    "une massue",
+                    "une serpe",
+                    "une arbalète légère",
+                    "un arc court",
+                    "10 fléchettes",
+                    "une fronde"
                 ],
                 "nombre":1
             },
             {
                 "equipement":[
                     "un cimeterre",
-                    "<CHOIX>une arme de corps à corps courante</CHOIX>"
+                    "un bâton",
+                    "une dague",
+                    "un gourdin",
+                    "une hachette",
+                    "une javeline",
+                    "une lance",
+                    "un marteau léger",
+                    "une masse ds",
+                    "une massue",
+                    "une serpe"
                 ],
                 "nombre":1
             }
@@ -273,7 +355,20 @@
             {
                 "equipement":[
                     "une arbalète légère et 20 carreaux",
-                    "<CHOIX>une arme courante</CHOIX>"
+                    "un bâton",
+                    "une dague",
+                    "un gourdin",
+                    "une hachette",
+                    "une javeline",
+                    "une lance",
+                    "un marteau léger",
+                    "une masse d'armes",
+                    "une massue",
+                    "une serpe",
+                    "une arbalète légère",
+                    "un arc court",
+                    "10 fléchettes",
+                    "une fronde"
                 ],
                 "nombre":1
             },
@@ -330,8 +425,58 @@
             },
             {
                 "equipement":[
-                    "<CHOIX>une arme de guerre</CHOIX> et un bouclier",
-                    "deux <CHOIX>armes de guerre</CHOIX>"
+                    "Cimeterre",
+                    "Coutille",
+                    "Épée à deux mains",
+                    "Épée courte",
+                    "Épée longue",
+                    "Fléau d'armes",
+                    "Fouet",
+                    "Hache à deux mains",
+                    "Hache d'armes",
+                    "Hallebarde",
+                    "Lance d’arçon",
+                    "Maillet",
+                    "Marteau de guerre",
+                    "Morgenstern",
+                    "Pic de guerre",
+                    "Pique",
+                    "Rapière",
+                    "Trident",
+                    "Arbalète de poing",
+                    "Arbalète lourde",
+                    "Arc long",
+                    "Filet",
+                    "Sarbacane"
+                ],
+                "nombre":1
+            },
+            {
+                "equipement":[
+                    "Bouclier",
+                    "Cimeterre",
+                    "Coutille",
+                    "Épée à deux mains",
+                    "Épée courte",
+                    "Épée longue",
+                    "Fléau d'armes",
+                    "Fouet",
+                    "Hache à deux mains",
+                    "Hache d'armes",
+                    "Hallebarde",
+                    "Lance d’arçon",
+                    "Maillet",
+                    "Marteau de guerre",
+                    "Morgenstern",
+                    "Pic de guerre",
+                    "Pique",
+                    "Rapière",
+                    "Trident",
+                    "Arbalète de poing",
+                    "Arbalète lourde",
+                    "Arc long",
+                    "Filet",
+                    "Sarbacane"
                 ],
                 "nombre":1
             },
@@ -460,7 +605,20 @@
             {
                 "equipement":[
                     "une épée courte",
-                    "<CHOIX>une arme courante</CHOIX>"
+                    "un bâton",
+                    "une dague",
+                    "un gourdin",
+                    "une hachette",
+                    "une javeline",
+                    "une lance",
+                    "un marteau léger",
+                    "une masse d'armes",
+                    "une massue",
+                    "une serpe",
+                    "une arbalète légère",
+                    "un arc court",
+                    "10 fléchettes",
+                    "une fronde"
                 ],
                 "nombre":1
             },
@@ -502,15 +660,78 @@
             },
             {
                 "equipement":[
-                    "<CHOIX>une arme de guerre</CHOIX> et un bouclier",
-                    "<CHOIX>deux armes de guerre</CHOIX>"
+                    "Cimeterre",
+                    "Coutille",
+                    "Épée à deux mains",
+                    "Épée courte",
+                    "Épée longue",
+                    "Fléau d'armes",
+                    "Fouet",
+                    "Hache à deux mains",
+                    "Hache d'armes",
+                    "Hallebarde",
+                    "Lance d’arçon",
+                    "Maillet",
+                    "Marteau de guerre",
+                    "Morgenstern",
+                    "Pic de guerre",
+                    "Pique",
+                    "Rapière",
+                    "Trident",
+                    "Arbalète de poing",
+                    "Arbalète lourde",
+                    "Arc long",
+                    "Filet",
+                    "Sarbacane"
+                ],
+                "nombre":1
+            },
+            {
+                "equipement":[
+                    "Bouclier",
+                    "Cimeterre",
+                    "Coutille",
+                    "Épée à deux mains",
+                    "Épée courte",
+                    "Épée longue",
+                    "Fléau d'armes",
+                    "Fouet",
+                    "Hache à deux mains",
+                    "Hache d'armes",
+                    "Hallebarde",
+                    "Lance d’arçon",
+                    "Maillet",
+                    "Marteau de guerre",
+                    "Morgenstern",
+                    "Pic de guerre",
+                    "Pique",
+                    "Rapière",
+                    "Trident",
+                    "Arbalète de poing",
+                    "Arbalète lourde",
+                    "Arc long",
+                    "Filet",
+                    "Sarbacane"
                 ],
                 "nombre":1
             },
             {
                 "equipement":[
                     "cinq javelines",
-                    "<CHOIX>une arme de corps à corps courante</CHOIX>"
+                    "un bâton",
+                    "une dague",
+                    "un gourdin",
+                    "une hachette",
+                    "une javeline",
+                    "une lance",
+                    "un marteau léger",
+                    "une masse d'armes",
+                    "une massue",
+                    "une serpe",
+                    "une arbalète légère",
+                    "un arc court",
+                    "10 fléchettes",
+                    "une fronde"
                 ],
                 "nombre":1
             },
@@ -562,10 +783,23 @@
             },
             {
                 "equipement":[
-                    "2 épées courte",
-                    "2<CHOIX> armes courantes de corps à corps</CHOIX>"
+                    "une épée courte",
+                    "un bâton",
+                    "une dague",
+                    "un gourdin",
+                    "une hachette",
+                    "une javeline",
+                    "une lance",
+                    "un marteau léger",
+                    "une masse d'armes",
+                    "une massue",
+                    "une serpe",
+                    "une arbalète légère",
+                    "un arc court",
+                    "10 fléchettes",
+                    "une fronde"
                 ],
-                "nombre":1
+                "nombre":2
             },
             {
                 "equipement":[
@@ -666,7 +900,20 @@
             {
                 "equipement": [
                     "une arbalète légère et 20 carreaux",
-                    "<CHOIX>une arme courante</CHOIX>"
+                    "un bâton",
+                    "une dague",
+                    "un gourdin",
+                    "une hachette",
+                    "une javeline",
+                    "une lance",
+                    "un marteau léger",
+                    "une masse d'armes",
+                    "une massue",
+                    "une serpe",
+                    "une arbalète légère",
+                    "un arc court",
+                    "10 fléchettes",
+                    "une fronde"
                 ],
                 "nombre":1
             },

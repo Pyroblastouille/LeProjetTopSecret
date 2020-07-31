@@ -3,7 +3,6 @@ require_once('../_func/func.inc.php');
 $persos = glob("perso/[a-zA-Z0-9\ ]*.json");
 if(isset($_SESSION['logged'])){
     $bg = getRandom('001');
-    $bgFullURL = $bg->path;
 }
 ?>
 
@@ -19,23 +18,23 @@ if(isset($_SESSION['logged'])){
     <meta name="og:type" content="website">
     <link rel="stylesheet" href="https://assets.storage.infomaniak.com/fonts/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
-    <link rel="stylesheet" type="text/css" href="../_css/main.css" />
     <style>
         .page {
             background-position-x: center;
             background-repeat: no-repeat;
             background-size: contain;
-            <?= (isset($_SESSION['logged']) ? "background-image: url('$bgFullURL');" : "") ?>
+            <?= (isset($_SESSION['logged']) ? "background-image: url('".$bg->path."'), url('".$bg->thumbs->original."');" : "") ?>
         }
 
         form {
             margin: auto;
         }
     </style>
+    <link rel="stylesheet" type="text/css" href="../_css/main.css" />
 </head>
 
 <body>
-    <div id="page" class="page  overlay-dark bg-position-middle">
+    <div id="page" class="page overlay-dark bg-position-middle">
         <div class="container">
             <div id="content">
                 <h1>Caractères</h1>
@@ -73,7 +72,7 @@ if(isset($_SESSION['logged'])){
                     <a href="#" onclick="toggleUI()">Cacher/Montrer l'UI</a>
                     -
                     <?php if(isset($_SESSION['logged'])): ?>
-                    <a href="#" onclick="download(<?=$bgFullURL?>)">DlImage</a>
+                    <a href="<?=$bg->path?>">Télécharger l'image</a>
                     -
                     <?php endif; ?>
                     <a href="#" onclick="mute()">Mute/Unmute</a>

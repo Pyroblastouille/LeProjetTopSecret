@@ -2,7 +2,6 @@
 require_once('./_func/func.inc.php');
 if(isset($_SESSION['logged'])){
     $bg = getRandom('001');
-    $bgFullURL = $bg->path;
 }
 
 ?>
@@ -25,7 +24,7 @@ if(isset($_SESSION['logged'])){
             background-position-x: center;
             background-repeat: no-repeat;
             background-size: contain;
-            <?= (isset($_SESSION['logged']) ? "background-image: url('$bgFullURL');" : "") ?>
+            <?= (isset($_SESSION['logged']) ? "background-image: url('".$bg->path."'), url('".$bg->thumbs->original."');" : "") ?>
         }
 
         form {
@@ -78,7 +77,7 @@ if(isset($_SESSION['logged'])){
                     <a href="#" onclick="toggleUI()">Cacher/Montrer l'UI</a>
                     -
                     <?php if(isset($_SESSION['logged'])): ?>
-                    <a href="#" onclick="download(<?=$bgFullURL?>)">DlImage</a>
+                    <a href="<?=$bg->path?>">Télécharger l'image</a>
                     -
                     <?php endif; ?>
                     <a href="#" onclick="mute()">Mute/Unmute</a>

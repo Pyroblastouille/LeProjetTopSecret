@@ -7,9 +7,9 @@ function toggleUI() {
     }
 }
 
-function download(url){
+function download(url) {
     var link = document.createElement("a");
-    link.download = "wallhaven"+url.split("/wallhaven")[1];
+    link.download = "wallhaven" + url.split("/wallhaven")[1];
     link.href = url;
     document.body.appendChild(link);
     link.click();
