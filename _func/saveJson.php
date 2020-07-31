@@ -19,7 +19,7 @@ if (isset($json_obj->create) && $json_obj->create) {
 }
 $file = fopen($newFileName, "w+");
 
-fwrite($file, json_encode($json_obj->data));
+fwrite($file, json_encode($json_obj->data,JSON_PRETTY_PRINT));
 
 fclose($file);
 ?>

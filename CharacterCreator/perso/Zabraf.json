@@ -1,1 +1,85 @@
-{"nomPerso":"Morthos","nomJoueur":"Zabraf","FORscore":"11","DEXscore":"12","CONscore":"13","INTscore":"13","SAGscore":"15","CHAscore":"18","classeEtNiveau":"Ensorceleur 1","deDeVie":"1d6","race":"Tieffelin","historique":"Ermite","TraitPersonalite":"6 - Je relie tout ce qui m'entoure","Ideaux":"5 - Vivre et laisser vivre","Liens":"3 - Je recherche encore l'isolation","defauts":"4 - Je pense \u00e0 ma gueule","alignement":"Chaotique Neutre","ac":"11","speed":"9m","pvMax":"7","inspiration":"","traits":"Vision dans le noir (18m)\n\nR\u00e9sistance infernale (r\u00e9siste  feu)\n\nAscendance infernale (1 sort\/repos long)\n    thaumaturgie\n    lvl 3 repr\u00e9sailles infernale\n    lvl 5 t\u00e9n\u00e8bres\n\nConna\u00eet l'histoire\n\n4 tour de magie\n2 sort lvl 1","arme1":{"nom":"Dague","atk":"+3","deg":"1d4+1\/perf"},"arme2":{"nom":"Arbal\u00e8te l\u00e9g\u00e8re","atk":"+3","deg":"1d8+1\/perf"},"arme3":{"nom":"Mun","atk":"RNG","deg":"24\/96"},"weaponTextArea":"Arbal\u00e8te : 2.5kg\nMun : 0.75kg (20)\nCristal (foca) : 0.5kg\nDagues : 1kg (2)","proficiencies":"Langues :\n    Commun\n    Infernal\n    Draconien\nOutils :\n    herboriste\nArmures\nArmes:\n    dague\n    fl\u00e9chette\n    fronde\n    b\u00e2ton\n    arbal\u00e8te l\u00e9g\u00e8re","skillsProf":["Arcanes","Histoire","M\u00e9decine","Persuasion","Religion"],"saveProf":["Constitution","Charisme"],"equipmentTextArea":"Paquetage d'explorateur : Sac \u00e0 dos, Sac de couchage, Gamelle, Boite d'amadou, Une outre, \u00e9tui \u00e0 parchemin avec \u00e9tudes, couverture d'hiver, habits courants, Torche (10), ration (10), 15m de corde en chanvre, mat\u00e9riel d'herboriste - 32kg","pa":"","pe":"","po":"115","pp":"","xp":"1","apparence":"","histoire":"","allies":"","traitsSup":"","tresor":"","age":"","yeux":"","taille":"","poids":"","cheveux":"","peau":"","caracIncantation":"CHA","ddSauvegardeSort":"8+Mait+CHA","bonusAttaqueSort":"Mait+CHA","sorts":{"lvl0":"","lvl1":"","lvl2":"","lvl3":"","lvl4":"","lvl5":"","lvl6":"","lvl7":"","lvl8":"","lvl9":""}}
+{
+    "nomPerso": "Morthos",
+    "nomJoueur": "Zabraf",
+    "FORscore": "11",
+    "DEXscore": "12",
+    "CONscore": "13",
+    "INTscore": "13",
+    "SAGscore": "15",
+    "CHAscore": "18",
+    "classeEtNiveau": "Ensorceleur 1",
+    "deDeVie": "1d6",
+    "race": "Tieffelin",
+    "historique": "Ermite",
+    "TraitPersonalite": "6 - Je relie tout ce qui m'entoure",
+    "Ideaux": "5 - Vivre et laisser vivre",
+    "Liens": "3 - Je recherche encore l'isolation",
+    "defauts": "4 - Je pense \u00e0 ma gueule",
+    "alignement": "Chaotique Neutre",
+    "ac": "11",
+    "speed": "9m",
+    "pvMax": "7",
+    "inspiration": "",
+    "traits": "Vision dans le noir (18m)\n\nR\u00e9sistance infernale (r\u00e9siste  feu)\n\nAscendance infernale (1 sort\/repos long)\n    thaumaturgie\n    lvl 3 repr\u00e9sailles infernale\n    lvl 5 t\u00e9n\u00e8bres\n\nConna\u00eet l'histoire\n\n4 tour de magie\n2 sort lvl 1",
+    "arme1": {
+        "nom": "Dague",
+        "atk": "+3",
+        "deg": "1d4+1\/perf"
+    },
+    "arme2": {
+        "nom": "Arbal\u00e8te l\u00e9g\u00e8re",
+        "atk": "+3",
+        "deg": "1d8+1\/perf"
+    },
+    "arme3": {
+        "nom": "Mun",
+        "atk": "RNG",
+        "deg": "24\/96"
+    },
+    "weaponTextArea": "Arbal\u00e8te : 2.5kg\nMun : 0.75kg (20)\nCristal (foca) : 0.5kg\nDagues : 1kg (2)",
+    "proficiencies": "Langues :\n    Commun\n    Infernal\n    Draconien\nOutils :\n    herboriste\nArmures\nArmes:\n    dague\n    fl\u00e9chette\n    fronde\n    b\u00e2ton\n    arbal\u00e8te l\u00e9g\u00e8re",
+    "skillsProf": [
+        "Arcanes",
+        "Histoire",
+        "M\u00e9decine",
+        "Persuasion",
+        "Religion"
+    ],
+    "saveProf": [
+        "Constitution",
+        "Charisme"
+    ],
+    "equipmentTextArea": "Paquetage d'explorateur : Sac \u00e0 dos, Sac de couchage, Gamelle, Boite d'amadou, Une outre, \u00e9tui \u00e0 parchemin avec \u00e9tudes, couverture d'hiver, habits courants, Torche (10), ration (10), 15m de corde en chanvre, mat\u00e9riel d'herboriste - 32kg",
+    "pc": "",
+    "pa": "",
+    "pe": "",
+    "po": "115",
+    "pp": "",
+    "xp": "1",
+    "apparence": "",
+    "histoire": "",
+    "allies": "",
+    "traitsSup": "",
+    "tresor": "",
+    "age": "",
+    "yeux": "",
+    "taille": "",
+    "poids": "",
+    "cheveux": "",
+    "peau": "",
+    "caracIncantation": "CHA",
+    "ddSauvegardeSort": "8+Mait+CHA",
+    "bonusAttaqueSort": "Mait+CHA",
+    "sorts": {
+        "lvl0": "",
+        "lvl1": "",
+        "lvl2": "",
+        "lvl3": "",
+        "lvl4": "",
+        "lvl5": "",
+        "lvl6": "",
+        "lvl7": "",
+        "lvl8": "",
+        "lvl9": ""
+    }
+}

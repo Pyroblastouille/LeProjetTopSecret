@@ -76,13 +76,11 @@ function changeBonuses() {
 
             //Make change for the skills
             let childs = $('.' + savingThrow[0].className.split(' ')[0]);
-
             for (let i = 0; i < childs.length; i++) {
                 const ch = childs[i];
                 let isProficientChild = $('[name=' + ch.name + '-prof]');
                 if (isProficientChild.is(':checked')) {
                     if (ch.name == "Perception") {
-
                         $(".sagPass").val(10 + profNum);
                     }
                     ch.value = profMod;
@@ -94,7 +92,6 @@ function changeBonuses() {
             $(".initiative").val($(".DEX").val());
         }
     });
-    checkPassivePercep();
 }
 
 function exportObj() {
@@ -200,7 +197,6 @@ function exportObj() {
             soonJSON.skillsProf.push(el);
         }
     })
-    console.log(soonJSON);
     return soonJSON;
 }
 
@@ -311,21 +307,6 @@ function importJSON(filename) {
     });
 }
 
-function checkPassivePercep() {
-    let isProf = $('.Perspicacité-prof').is(':checked');
-    let Sag = parseNewInt($('.SAGscore').val());
-    let modif = Math.floor((Sag - 10) / 2);
-    let sagPass = 10 + modif;
-    if (isProf) {
-        let bonusMaitrise = $('.bonusMaitrise').val();
-        if (bonusMaitrise.slice(0, 1) == '+') {
-            bonusMaitrise = bonusMaitrise.slice(1);
-        }
-        bonusMaitrise = parseNewInt(bonusMaitrise);
-        sagPass += bonusMaitrise;
-    }
-    $('.sagPass').val(sagPass);
-}
 
 function changeMastery() {
     let classes = $(".classeEtNiveau").val()

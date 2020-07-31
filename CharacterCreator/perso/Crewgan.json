@@ -1,1 +1,84 @@
-{"nomPerso":"Tilhengeren The shield Bl\u00e1r","nomJoueur":"Crewgan","FORscore":"17","DEXscore":"8","CONscore":"16","INTscore":"15","SAGscore":"8","CHAscore":"8","classeEtNiveau":"Guerrier 1","deDeVie":"3d10","race":"Goliath","historique":"Sauvageon","TraitPersonalite":"je suis bien plus \u00e0 l'aise entour\u00e9 d'animaux que de gens. Peu bavard.","Ideaux":"L'honneur se m\u00e9rite.","Liens":"Ma col\u00e8re s'abattra sur les \u00eatres mal\u00e9fiques qui ont d\u00e9truit mon foyer.","defauts":"je n'oublie aucune insulte et j'entretiens une ranc\u0153ur silencieuse \u00e0 l'\u00e9gard de tous ceux qui m'ont un jour caus\u00e9 du tort","alignement":"Neutral","ac":"16+2","speed":"9m","pvMax":"31","inspiration":"","traits":"Endurance de pierre. d\u00e9gats re\u00e7u => r\u00e9action -(1d12 + const) aux d\u00e9g\u00e2ts re\u00e7us. repos = +1\/1\n\nCarrure lourde.Vous comptez une taille plus grande quand il s'agit de capacit\u00e9 de port ou du poids que vous pouvez pousser,tirer ou soulever.\n\nN\u00e9 des montagnes.Vous \u00eates acclimat\u00e9 aux hautes altitudes, incluant des elevation au dessus de 6000m. Vous \u00eates aussi naturellement adapt\u00e9 aux climats froids.\n\nDUEL\nQuand vous maniez une arme de corps \u00e0 corps d'une main et\naucune autre arme, vous gagnez un bonus de +2 aux jets de\nd\u00e9g\u00e2ts inflig\u00e9s avec cette arme.\n\nSecond souffle (heal 1d10+const. repos = +1\/1)\n\nSURSAUT D'ACTIVIT\u00c9 ( + 1 action \u00e0 ce tour repos = +1\/1 )","arme1":{"nom":"Morgenstern ","atk":"+2 +3","deg":"1d8 +3 +2"},"arme2":{"nom":"hachettes","atk":"+2 +3","deg":"1d6 +3 +2"},"arme3":{"nom":"hachettes(lanc\u00e9)","atk":"0","deg":"1d6"},"weaponTextArea":"","proficiencies":"armes : courantes,de guerre\narmures : toutes,bouclier\nlangues : Commun,G\u00e9ant\n\nAPTITUDE : VAGABOND\nguitare","skillsProf":["Acrobaties","Athl\u00e9tisme","Intimidation","Survie"],"saveProf":["Force","Constitution"],"equipmentTextArea":"Cotte de mailles 27.5kg\nbouclier (+2CA) 3kg\nMorgenstern (1d8) 2kg\nhachettes(x2)(1d6) 2kg\npaquetage d'exploratio\nb\u00e2ton 2kg\npi\u00e8ge \u00e0 machoire 12.5kg\npeau d'ours\ntenue de voyageur 2kg\n\nP. 176 Handbook ( 75*2)","pc":"6","pa":"6","pe":"","po":"239","pp":"","xp":"","apparence":"","histoire":"Origine = nomade tribal","allies":"","traitsSup":"","tresor":"","age":"25 ans","yeux":"Vert brillant","taille":"2.40 m","poids":"154 kg","cheveux":"chauve","peau":"Blanche(tatou. noir)","caracIncantation":"","ddSauvegardeSort":"","bonusAttaqueSort":"","sorts":{"lvl0":"Glas fun\u00e8bre 1d8 \/ 1d12\nLame aux flammes vertes ","lvl1":"(Unlock LVL 3)\nCouteau de glace\nOrbe chromatique\nOnde de choc","lvl2":"Lame d'ombre","lvl3":"Animation des morts\nPas de tonnerre\nEclaire","lvl4":"Fl\u00e9trissement\nInvocation de d\u00e9mons sup\u00e9rieur\nPorte dimensionnelle","lvl5":"","lvl6":"","lvl7":"","lvl8":"","lvl9":""}}
+{
+    "nomPerso": "Tilhengeren The shield Bl\u00e1r",
+    "nomJoueur": "Crewgan",
+    "FORscore": "17",
+    "DEXscore": "8",
+    "CONscore": "16",
+    "INTscore": "15",
+    "SAGscore": "8",
+    "CHAscore": "8",
+    "classeEtNiveau": "Guerrier 1",
+    "deDeVie": "3d10",
+    "race": "Goliath",
+    "historique": "Sauvageon",
+    "TraitPersonalite": "je suis bien plus \u00e0 l'aise entour\u00e9 d'animaux que de gens. Peu bavard.",
+    "Ideaux": "L'honneur se m\u00e9rite.",
+    "Liens": "Ma col\u00e8re s'abattra sur les \u00eatres mal\u00e9fiques qui ont d\u00e9truit mon foyer.",
+    "defauts": "je n'oublie aucune insulte et j'entretiens une ranc\u0153ur silencieuse \u00e0 l'\u00e9gard de tous ceux qui m'ont un jour caus\u00e9 du tort",
+    "alignement": "Neutral",
+    "ac": "16+2",
+    "speed": "9m",
+    "pvMax": "31",
+    "inspiration": "",
+    "traits": "Endurance de pierre. d\u00e9gats re\u00e7u => r\u00e9action -(1d12 + const) aux d\u00e9g\u00e2ts re\u00e7us. repos = +1\/1\n\nCarrure lourde.Vous comptez une taille plus grande quand il s'agit de capacit\u00e9 de port ou du poids que vous pouvez pousser,tirer ou soulever.\n\nN\u00e9 des montagnes.Vous \u00eates acclimat\u00e9 aux hautes altitudes, incluant des elevation au dessus de 6000m. Vous \u00eates aussi naturellement adapt\u00e9 aux climats froids.\n\nDUEL\nQuand vous maniez une arme de corps \u00e0 corps d'une main et\naucune autre arme, vous gagnez un bonus de +2 aux jets de\nd\u00e9g\u00e2ts inflig\u00e9s avec cette arme.\n\nSecond souffle (heal 1d10+const. repos = +1\/1)\n\nSURSAUT D'ACTIVIT\u00c9 ( + 1 action \u00e0 ce tour repos = +1\/1 )",
+    "arme1": {
+        "nom": "Morgenstern ",
+        "atk": "+2 +3",
+        "deg": "1d8 +3 +2"
+    },
+    "arme2": {
+        "nom": "hachettes",
+        "atk": "+2 +3",
+        "deg": "1d6 +3 +2"
+    },
+    "arme3": {
+        "nom": "hachettes(lanc\u00e9)",
+        "atk": "0",
+        "deg": "1d6"
+    },
+    "weaponTextArea": "",
+    "proficiencies": "armes : courantes,de guerre\narmures : toutes,bouclier\nlangues : Commun,G\u00e9ant\n\nAPTITUDE : VAGABOND\nguitare",
+    "skillsProf": [
+        "Acrobaties",
+        "Athl\u00e9tisme",
+        "Intimidation",
+        "Survie"
+    ],
+    "saveProf": [
+        "Force",
+        "Constitution"
+    ],
+    "equipmentTextArea": "Cotte de mailles 27.5kg\nbouclier (+2CA) 3kg\nMorgenstern (1d8) 2kg\nhachettes(x2)(1d6) 2kg\npaquetage d'exploratio\nb\u00e2ton 2kg\npi\u00e8ge \u00e0 machoire 12.5kg\npeau d'ours\ntenue de voyageur 2kg\n\nP. 176 Handbook ( 75*2)",
+    "pc": "6",
+    "pa": "6",
+    "pe": "",
+    "po": "239",
+    "pp": "",
+    "xp": "",
+    "apparence": "",
+    "histoire": "Origine = nomade tribal",
+    "allies": "",
+    "traitsSup": "",
+    "tresor": "",
+    "age": "25 ans",
+    "yeux": "Vert brillant",
+    "taille": "2.40 m",
+    "poids": "154 kg",
+    "cheveux": "chauve",
+    "peau": "Blanche(tatou. noir)",
+    "caracIncantation": "",
+    "ddSauvegardeSort": "",
+    "bonusAttaqueSort": "",
+    "sorts": {
+        "lvl0": "Glas fun\u00e8bre 1d8 \/ 1d12\nLame aux flammes vertes ",
+        "lvl1": "(Unlock LVL 3)\nCouteau de glace\nOrbe chromatique\nOnde de choc",
+        "lvl2": "Lame d'ombre",
+        "lvl3": "Animation des morts\nPas de tonnerre\nEclaire",
+        "lvl4": "Fl\u00e9trissement\nInvocation de d\u00e9mons sup\u00e9rieur\nPorte dimensionnelle",
+        "lvl5": "",
+        "lvl6": "",
+        "lvl7": "",
+        "lvl8": "",
+        "lvl9": ""
+    }
+}

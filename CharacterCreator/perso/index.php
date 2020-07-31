@@ -222,9 +222,9 @@ if (file_exists($json)) {
         </section>
         <div class="passive-perception box">
           <div class="label-container">
-            <label for="passiveperception">Sagesse Passive (Perception)</label>
+            <label for="passiveperception">Perception passive</label>
           </div>
-          <input name="passiveperception" class="unselectable sagPass"  />
+          <input name="passiveperception" class="unselectable sagPass" />
         </div>
         <div class="otherprofs box textblock">
           <label for="otherprofs">Autres maitrises et langues</label><textarea name="proficiencies" class="proficiencies"><?= $char->proficiencies ?></textarea>
