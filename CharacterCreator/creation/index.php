@@ -532,47 +532,49 @@ $classes = json_decode(file_get_contents("classes.json"));
                         char.proficiencies = "armes : ";
                         //armes,armures,outils,langues
                         if (thisRace.armes != undefined) {
-                            char.proficiencies += thisRace.armes.toString();
+                            char.proficiencies += thisRace.armes.toString()+", ";
                         }
                         if (myClass.armes != undefined) {
-                            char.proficiencies += myClass.armes.toString();
+                            char.proficiencies += myClass.armes.toString()+", ";
                         }
+                        char.proficiencies = char.proficiencies.substr(0,char.proficiencies.length - 2);
                         char.proficiencies += "\narmures : ";
                         if (thisRace.armures != undefined) {
-                            char.proficiencies += thisRace.armures.toString();
+                            char.proficiencies += thisRace.armures.toString()+", ";
                         }
                         if (myClass.armures != undefined) {
-                            char.proficiencies += myClass.armures.toString();
+                            char.proficiencies += myClass.armures.toString()+", ";
                         }
+                        char.proficiencies = char.proficiencies.substr(0,char.proficiencies.length - 2);
                         char.proficiencies += "\noutils : ";
                         if (thisRace.outils != undefined) {
-                            char.proficiencies += thisRace.outils.toString();
+                            char.proficiencies += thisRace.outils.toString()+", ";
                         }
                         if (myClass.outils != undefined) {
-                            char.proficiencies += myClass.outils.toString();
-                        }
-                        //set les choix 
+                            char.proficiencies += myClass.outils.toString()+", ";
+                        } 
                         document.getElementsByName('outils').forEach(el => {
-                            char.proficiencies += el.value; + ', ';
+                            char.proficiencies += el.value+", ";
                         });
+                        char.proficiencies = char.proficiencies.substr(0,char.proficiencies.length - 2);
                         char.proficiencies += "\nlangues : ";
                         if (thisRace.langues != undefined) {
-                            char.proficiencies += thisRace.langues.toString();
+                            char.proficiencies += thisRace.langues.toString()+", ";
                         }
                         if (myClass.langues != undefined) {
-                            char.proficiencies += myClass.langues.toString();
+                            char.proficiencies += myClass.langues.toString()+", ";
                         }
                         if (myHistorique.langues != undefined) {
-                            char.proficiencies += myHistorique.langues.toString();
-                        }
-                        //set les choix 
+                            char.proficiencies += myHistorique.langues.toString()+", ";
+                        } 
                         document.getElementsByName('langues').forEach(el => {
-                            char.proficiencies += el.value; + ', ';
+                            char.proficiencies += el.value+", ";
                         });
+                        char.proficiencies = char.proficiencies.substr(0,char.proficiencies.length - 2);
 
                         //maitrises
                         document.getElementsByName('maitrises').forEach(el => {
-                            char.skillsProf.push(el.value);
+                            char.skillsProf.push(el.value)+", ";
                         });
                         if (thisRace.maitrises != undefined)
                             char.skillsProf = char.skillsProf.concat(thisRace.maitrises);
