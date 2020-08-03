@@ -181,7 +181,7 @@ if (file_exists($json)) {
                   <label for="Histoire">Histoire <span class="skill unselectable">(INT)</span></label><input class="INTMod" name="Histoire"  type="text" /><input <?= is_prof('Histoire', $char->skillsProf) ?> name="Histoire-prof" class="profCheck Histoire-prof" type="checkbox" />
                 </li>
                 <li>
-                  <label for="Intimidation">Intimidation <span class="skill unselectable">(FOR)</span></label><input class="FORMod" name="Intimidation"  type="text" /><input <?= is_prof('Intimidation', $char->skillsProf) ?> name="Intimidation-prof" class="profCheck Intimidation-prof" type="checkbox" />
+                  <label for="Intimidation">Intimidation <span class="skill unselectable">(CHA)</span></label><input class="CHAMod" name="Intimidation"  type="text" /><input <?= is_prof('Intimidation', $char->skillsProf) ?> name="Intimidation-prof" class="profCheck Intimidation-prof" type="checkbox" />
                 </li>
                 <li>
                   <label for="Investigation">Investigation <span class="skill unselectable">(INT)</span></label><input class="INTMod" name="Investigation"  type="text" /><input <?= is_prof('Investigation', $char->skillsProf) ?> name="Investigation-prof" class="profCheck Investigation-prof" type="checkbox" />

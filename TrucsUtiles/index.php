@@ -55,6 +55,8 @@ if ($_SERVER['HTTP_HOST'] == "localhost") {
     </style>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="//cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" href="//cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 </head>
 
@@ -118,6 +120,10 @@ if ($_SERVER['HTTP_HOST'] == "localhost") {
         <script src="../_js/script.js"></script>
         <script src="https://assets.storage.infomaniak.com/js/css_browser_selector.min.js"></script>
         <script>
+            $(document).ready(function() {
+                $('#datas').DataTable();
+            });
+
             function loadDatas(path) {
                 $.getJSON(path, function(json) {
                     var ordered = {};
@@ -162,12 +168,15 @@ if ($_SERVER['HTTP_HOST'] == "localhost") {
 
                     $.each(json, function(index, value) {
                         if (innerHTML == "") {
+                            innerHTML += "<thead>";
                             innerHTML += "<tr>";
                             innerHTML += "<th>Sorts</th>";
                             $.each(value, function(index2, value2) {
                                 innerHTML += "<th>" + index2 + "</th>";
                             });
                             innerHTML += "</tr>";
+                            innerHTML += "</thead>";
+                            innerHTML += "<tbody>";
                         }
                         let bool = false;
                         if (value['classes'].includes(uneClasse)) {
@@ -179,6 +188,7 @@ if ($_SERVER['HTTP_HOST'] == "localhost") {
                             innerHTML += "</tr>";
                         }
                     });
+                    innerHTML += "</tbody>";
                     datas.innerHTML = innerHTML;
                 });
             }
