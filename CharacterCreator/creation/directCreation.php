@@ -2,7 +2,7 @@
 require_once('../../_func/func.inc.php');
 $val = file('../perso/_empty.json');
 
-$newFileName = '../perso/'.(isset($_GET['jsonFile']) ? $_GET['jsonFile'] : "unknown");
+$newFileName = '../perso/'.(isset($_GET['jsonFile']) ? $_GET['jsonFile'] : "unknown")."json";
 
 while(file_exists($newFileName)){
     $i++;

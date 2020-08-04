@@ -7,7 +7,7 @@
     "INTscore": "15",
     "SAGscore": "8",
     "CHAscore": "8",
-    "classeEtNiveau": "Guerrier 1",
+    "classeEtNiveau": "Guerrier 3",
     "deDeVie": "3d10",
     "race": "Goliath",
     "historique": "Sauvageon",
@@ -41,8 +41,9 @@
     "skillsProf": [
         "Acrobaties",
         "Athl\u00e9tisme",
-        "Intimidation",
-        "Survie"
+        "Histoire",
+        "M\u00e9decine",
+        "Religion"
     ],
     "saveProf": [
         "Force",

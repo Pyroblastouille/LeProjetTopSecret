@@ -53,11 +53,13 @@ if ($_SERVER['HTTP_HOST'] == "localhost") {
             margin: auto;
         }
     </style>
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://www.pyroblastouille.site/js/jquery-3.5.1.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="//cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
-    <link rel="stylesheet" href="//cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
+    <script src="https://www.pyroblastouille.site/js/jquery.tablesorter.min.js"></script>
+    <script src="../_js/script.js"></script>
+    <script src="https://assets.storage.infomaniak.com/js/css_browser_selector.min.js"></script>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://www.pyroblastouille.site/css/theme.default.css">
 </head>
 
 <body>
@@ -91,7 +93,7 @@ if ($_SERVER['HTTP_HOST'] == "localhost") {
                 <a class="card" href="#" onclick="loadSortsClass('Paladin')">Sorts Paladin</a>
                 <a class="card" href="#" onclick="loadSortsClass('Rodeur')">Sorts Rodeur</a>
                 <a class="card" href="#" onclick="loadSortsClass('Sorcier')">Sorts Sorcier</a>
-                <table id="datas">
+                <table id="datas" class="tablesorter">
                 </table>
             </div>
             <div class="social-links">
@@ -111,20 +113,18 @@ if ($_SERVER['HTTP_HOST'] == "localhost") {
                         -
                     <?php endif; ?>
                     <a href="#" onclick="mute()">Mute/Unmute</a>
+                    -
+                    <a href="https://pyroblastouille.site/LeProjetTopSecret">Retour</a>
                 </p>
             </div>
             <video <?= (isset($_SESSION['mute']) && $_SESSION['mute'] ? "muted" : "") ?> class="son" hidden autoplay loop>
                 <source src="../_sounds/sweden.mp3" type="audio/mpeg" />
             </video>
         </div>
-        <script src="../_js/script.js"></script>
-        <script src="https://assets.storage.infomaniak.com/js/css_browser_selector.min.js"></script>
         <script>
-            $(document).ready(function() {
-                $('#datas').DataTable();
-            });
 
             function loadDatas(path) {
+
                 $.getJSON(path, function(json) {
                     var ordered = {};
                     Object.keys(json).sort().forEach(function(key) {
@@ -137,14 +137,18 @@ if ($_SERVER['HTTP_HOST'] == "localhost") {
                     var innerHTML = "";
 
                     $.each(json, function(index, value) {
-                        innerHTML += "<tr>";
-                        if (innerHTML == "<tr>") {
+                        if (innerHTML == "") {
+                            innerHTML += "<thead>";
+                            innerHTML += "<tr>";
                             innerHTML += "<th>" + path.replace('.json', '') + "</th>";
                             $.each(value, function(index2, value2) {
                                 innerHTML += "<th>" + index2 + "</th>";
                             });
-                            innerHTML += "<tr>";
+                            innerHTML += "</tr>";
+                            innerHTML += "</thead>";
+                            innerHTML += "<tbody>";
                         }
+                        innerHTML += "<tr>";
                         innerHTML += "<td>" + index + "</td>";
                         $.each(value, function(index2, value2) {
                             innerHTML += "<td>" + value2 + "</td>";
@@ -152,10 +156,14 @@ if ($_SERVER['HTTP_HOST'] == "localhost") {
                         innerHTML += "</tr>";
                     });
                     datas.innerHTML = innerHTML;
+
+                    $("table").tablesorter();
+                    $("#datas").trigger("updateAll");
                 });
             }
 
             function loadSortsClass(uneClasse) {
+                $("table").tablesorter();
                 $.getJSON('sorts.json', function(json) {
                     var ordered = {};
                     Object.keys(json).sort().forEach(function(key) {
@@ -190,10 +198,13 @@ if ($_SERVER['HTTP_HOST'] == "localhost") {
                     });
                     innerHTML += "</tbody>";
                     datas.innerHTML = innerHTML;
+                    $("table").tablesorter();
+                    $("#datas").trigger("updateAll");
                 });
             }
         </script>
 
+        <script src="https://www.pyroblastouille.site/js/jquery.tablesorter.widgets.js"></script>
     </div>
 
 </body>
