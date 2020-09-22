@@ -6,4 +6,3 @@ if(isset($_SESSION['logged'])){
 }else{
     echo getRandomGIF();
 }
-?>

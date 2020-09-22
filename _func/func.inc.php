@@ -83,10 +83,17 @@ function getRandomGif()
     return $obj->data->images->original->url;
 }
 
-function getRandomPornGIF()
+function getRandomPornGIF($local = false)
 {
-    $files = glob('./LeProjetTopSecret/_img/*.gif');
-    $ret = $files[rand(0, count($files) - 1)];
+    if($local){
+        $files = glob('../_img/*.gif');
+        $ret = $files[rand(0, count($files) - 1)];
+    }else{
+        $fl = file_get_contents("https://gifmixxx.com/random");
+        $part2 = explode('background-image: url(',$fl)[1];
+        $ret = explode(')',$part2)[0];
+    }
+    
     return $ret;
 }
 /**

@@ -122,7 +122,6 @@ if ($_SERVER['HTTP_HOST'] == "localhost") {
             </video>
         </div>
         <script>
-
             function loadDatas(path) {
 
                 $.getJSON(path, function(json) {
@@ -135,7 +134,6 @@ if ($_SERVER['HTTP_HOST'] == "localhost") {
                     json = ordered;
 
                     var innerHTML = "";
-
                     $.each(json, function(index, value) {
                         if (innerHTML == "") {
                             innerHTML += "<thead>";
@@ -149,8 +147,16 @@ if ($_SERVER['HTTP_HOST'] == "localhost") {
                             innerHTML += "<tbody>";
                         }
                         innerHTML += "<tr>";
-                        innerHTML += "<td>" + index + "</td>";
+                        if (path == "Monstres.json" ||path == "MonstresUTF8.json") {
+                            innerHTML += "<td><a href=\"./Monstres/?nom=" + index + "\">" + index + "</a></td>";
+                        } else {
+                            innerHTML += "<td>" + index + "</td>";
+                        }
+
                         $.each(value, function(index2, value2) {
+                            if (index2 == "nomAlternatif" && value2 == index) {
+                                value2 = "";
+                            }
                             innerHTML += "<td>" + value2 + "</td>";
                         });
                         innerHTML += "</tr>";
@@ -161,6 +167,7 @@ if ($_SERVER['HTTP_HOST'] == "localhost") {
                     $("#datas").trigger("updateAll");
                 });
             }
+
 
             function loadSortsClass(uneClasse) {
                 $("table").tablesorter();
