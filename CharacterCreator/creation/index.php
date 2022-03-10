@@ -122,6 +122,7 @@ $classes = json_decode(file_get_contents("classes.json"));
                         <div id="choices">
                         </div>
                         <div>
+                            <input type="button" value="Save" onclick="saveCharacter();"/>
                             <input type="button" value="Valider" onclick="switchToStep5();" />
                         </div>
                     </div>
@@ -477,8 +478,7 @@ $classes = json_decode(file_get_contents("classes.json"));
                     }
                 });
                 if (good) {
-                    //Récupère la valeur de chaque truc
-                    step4.hidden = true;
+                    
                     //récupère le json vide
                     fetch('../perso/_empty.json').then(resp => resp.json()).then(char => {
                         //set les choix de carac
@@ -633,20 +633,34 @@ $classes = json_decode(file_get_contents("classes.json"));
                             body: JSON.stringify(char)
                         };
 
-                        fetch("../../_func/saveJson.php", {
+                        if(!doesFileExist("../saveJson.php")){
+                            console.log("Sauvegarde du json non existant");
+                        }
+                        fetch("../saveJson.php", {
                             method: "POST",
                             body: JSON.stringify({
-                                "file": '../CharacterCreator/perso/' + fileName + '.json',
+                                "file": './perso/' + fileName + '.json',
                                 "create": true,
                                 "data": char
                             })
                         }).then(function(res) {
-                            window.location = "../perso/?jsonFile=" + fileName + ".json";
+                            if(doesFileExist('../perso/' + fileName + '.json')){
+                                console.log("Fichier créé à l'adresse " +'"../CharacterCreator/perso/' + fileName + '.json"');
+                                //window.location = "../perso/?jsonFile=" + fileName + ".json";
+                            }else{
+                                console.log("Une erreur est survenue");
+                            }
                         });
                     });
                 }
             }
-
+            function doesFileExist(urlToFile) {
+                var xhr = new XMLHttpRequest();
+                xhr.open('HEAD', urlToFile, false);
+                xhr.send();
+                
+                return xhr.status !== 404;
+            }
             function updatePoints(current) {
                 if (current.value > 15) {
                     current.value = 15;

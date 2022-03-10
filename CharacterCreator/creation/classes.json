@@ -14,7 +14,7 @@
             "courantes",
             "de guerre"
         ],
-        "equipement":"un paquetage d'explorateur et quatre javelines",
+        "equipement": "un paquetage d'explorateur et quatre javelines",
         "choix": [
             {
                 "maitrises": [
@@ -28,7 +28,7 @@
                 "nombre": 2
             },
             {
-                "equipement":[
+                "equipement": [
                     "une hache à deux mains",
                     "Cimeterre",
                     "Coutille",
@@ -53,10 +53,10 @@
                     "Filet",
                     "Sarbacane"
                 ],
-                "nombre":1
+                "nombre": 1
             },
             {
-                "equipement":[
+                "equipement": [
                     "deux hachettes",
                     "un bâton",
                     "une dague",
@@ -73,7 +73,436 @@
                     "10 fléchettes",
                     "une fronde"
                 ],
-                "nombre":1
+                "nombre": 1
+            }
+        ],
+        "paths": {
+            "lvlRequis": 3,
+            "choix": {
+                "Voie du Berserker": {
+                    "competences": [
+                        {
+                            "lvlRequis": 3,
+                            "traits": {
+                                "": {
+                                    "description": "",
+                                    "short": ""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis": 6,
+                            "traits": {
+                                "": {
+                                    "description": "",
+                                    "short": ""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis": 10,
+                            "traits": {
+                                "": {
+                                    "description": "",
+                                    "short": ""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis": 14,
+                            "traits": {
+                                "": {
+                                    "description": "",
+                                    "short": ""
+                                }
+                            }
+                        }
+                    ],
+                    "source": "PHB"
+                },
+                "Voie du Guerrier Totémique": {
+                    "competences": [
+                        {
+                            "lvlRequis": 3,
+                            "traits": {
+                                "": {
+                                    "description": "",
+                                    "short": ""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis": 6,
+                            "traits": {
+                                "": {
+                                    "description": "",
+                                    "short": ""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis": 10,
+                            "traits": {
+                                "": {
+                                    "description": "",
+                                    "short": ""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis": 14,
+                            "traits": {
+                                "": {
+                                    "description": "",
+                                    "short": ""
+                                }
+                            }
+                        }
+                    ],
+                    "source": "PHB"
+                },
+                "Voie du Gardien Ancestral": {
+                    "competences": [
+                        {
+                            "lvlRequis": 3,
+                            "traits": {
+                                "": {
+                                    "description": "",
+                                    "short": ""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis": 6,
+                            "traits": {
+                                "": {
+                                    "description": "",
+                                    "short": ""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis": 10,
+                            "traits": {
+                                "": {
+                                    "description": "",
+                                    "short": ""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis": 14,
+                            "traits": {
+                                "": {
+                                    "description": "",
+                                    "short": ""
+                                }
+                            }
+                        }
+                    ],
+                    "source": "Xanathar"
+                },
+                "Voie du Héraut des tempêtes": {
+                    "competences": [
+                        {
+                            "lvlRequis": 3,
+                            "traits": {
+                                "": {
+                                    "description": "",
+                                    "short": ""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis": 6,
+                            "traits": {
+                                "": {
+                                    "description": "",
+                                    "short": ""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis": 10,
+                            "traits": {
+                                "": {
+                                    "description": "",
+                                    "short": ""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis": 14,
+                            "traits": {
+                                "": {
+                                    "description": "",
+                                    "short": ""
+                                }
+                            }
+                        }
+                    ],
+                    "source": "Xanathar"
+                },
+                "Voie du Zélote": {
+                    "competences": [
+                        {
+                            "lvlRequis": 3,
+                            "traits": {
+                                "Fureur divine": {
+                                    "description": "À partir du moment où vous choisissez cette voie au ni­veau 3, vous pouvez canaliser votre fureur divine dans les coups que vous portez avec vos armes. Quand vous entrez en rage, la première créature que vous touchez à l'aide d'une arme à chacun de vos tours subit une quantité de points de dégâts supplémentaires égale à ld6 + la moitié de votre niveau de barbare. Ces dégâts supplémentaires sont de type nécrotique ou radiant ; vous devez choisir le type de dégâts quand vous gagnez cette aptitude",
+                                    "short": "En rage : premier coup par tour = 1d6+moitié du niveau de barde (nécrotique ou radiant)"
+                                },
+                                "Guerrier des Dieux": {
+                                    "description": "Au niveau 3, votre âme est marquée au combat pour l'éternité. Si un sort, tel que relever les morts, a comme seul effet de vous ramener à la vie (mais pas à la non-mort), celui qui lance ce sort sur vous n'a pas besoin d'utiliser de composante matérielle",
+                                    "short": "Quelqu'un qui ramène à la vie n'utilise pas de composantes matérielle"
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis": 6,
+                            "traits": {
+                                "Obstination Fanatique": {
+                                    "description": "À partir du niveau 6, la puissance divine qui nourrit votre rage peut vous protéger. Si vous ratez un jet de sauvegarde pendant que vous êtes en rage, vous pouvez refaire ce jet, mais vous de­vez alors utiliser le résultat de ce dernier jet. Vous ne pouvez utiliser cette qu'une seule fois par rage",
+                                    "short": "Une fois par rage, Relance d'un JdS"
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis": 10,
+                            "traits": {
+                                "Présence Zélatrice": {
+                                    "description": "",
+                                    "short": ""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis": 14,
+                            "traits": {
+                                "Enragé Par-delà la mort": {
+                                    "description": "",
+                                    "short": ""
+                                }
+                            }
+                        }
+                    ],
+                    "source": "Xanathar"
+                },
+                "Voie de la Bête": {
+                    "competences": [
+                        {
+                            "lvlRequis": 3,
+                            "traits": {
+                                "": {
+                                    "description": "",
+                                    "short": ""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis": 6,
+                            "traits": {
+                                "": {
+                                    "description": "",
+                                    "short": ""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis": 10,
+                            "traits": {
+                                "": {
+                                    "description": "",
+                                    "short": ""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis": 14,
+                            "traits": {
+                                "": {
+                                    "description": "",
+                                    "short": ""
+                                }
+                            }
+                        }
+                    ],
+                    "source": "Tasha"
+                },
+                "Voie de la Magie Sauvage": {
+                    "competences": [
+                        {
+                            "lvlRequis": 3,
+                            "traits": {
+                                "": {
+                                    "description": "",
+                                    "short": ""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis": 6,
+                            "traits": {
+                                "": {
+                                    "description": "",
+                                    "short": ""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis": 10,
+                            "traits": {
+                                "": {
+                                    "description": "",
+                                    "short": ""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis": 14,
+                            "traits": {
+                                "": {
+                                    "description": "",
+                                    "short": ""
+                                }
+                            }
+                        }
+                    ],
+                    "source": "Tasha"
+                },
+                "Voie du Fou de Guerre": {
+                    "competences": [
+                        {
+                            "lvlRequis": 3,
+                            "traits": {
+                                "": {
+                                    "description": "",
+                                    "short": ""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis": 6,
+                            "traits": {
+                                "": {
+                                    "description": "",
+                                    "short": ""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis": 10,
+                            "traits": {
+                                "": {
+                                    "description": "",
+                                    "short": ""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis": 14,
+                            "traits": {
+                                "": {
+                                    "description": "",
+                                    "short": ""
+                                }
+                            }
+                        }
+                    ],
+                    "source": "Cote de l'Epee"
+                }
+            }
+        },
+        "competences": [
+            {
+                "lvlRequis": 1,
+                "maitrise": "+2",
+                "traits": {
+                    "Rage": {
+                        "description": "",
+                        "short": ""
+                    },
+                    "Defense sans armure": {
+                        "description": "",
+                        "short": ""
+                    }
+                },
+                "autres": [
+                    "nbRages = 2",
+                    "Dégats de rage = +2"
+                ]
+            },
+            {
+                "lvlRequis": 2,
+                "maitrise": "+2",
+                "traits": {
+                    "Témérité": {
+                        "description": "",
+                        "short": ""
+                    },
+                    "Sens du danger": {
+                        "description": "",
+                        "short": ""
+                    }
+                },
+                "autres": [
+                    "nbRages = 2",
+                    "Dégats de rage = +2"
+                ]
+            },
+            {
+                "lvlRequis": 3,
+                "maitrise": "+2",
+                "traits": {
+                    "Voie primitive": {
+                        "description": "",
+                        "short": ""
+                    }
+                },
+                "autres": [
+                    "nbRages = 3",
+                    "Dégats de rage = +2"
+                ]
+            },
+            {
+                "lvlRequis": 4,
+                "maitrise": "+2",
+                "traits": {
+                    "Augmentation de Caractéristique": {
+                        "description": "Quand vous atteignez les niveaux 4, 8, 12, 16 et 19, vous gagnez un bonus de + 2 ou deux bonus de + 1 aux valeurs de caractéristiques de votre choix. Cette aptitude ne vous permet pas de dépasser 20 dans une valeur de caractéristique. Une règle supplémentaire permet de choisir un don à la place",
+                        "short": "+1 dans deux carac, +2 dans une carac ou un don"
+                    }
+                },
+                "autres": [
+                    "nbRages = 3",
+                    "Dégats de rage = +2"
+                ]
+            },
+            {
+                "lvlRequis": 5,
+                "maitrise": "+3",
+                "traits": {
+                    "Déplacement Rapide": {
+                        "description": "",
+                        "short": ""
+                    },
+                    "Attaque supplémentaire": {
+                        "description": "",
+                        "short": ""
+                    }
+                },
+                "autres": [
+                    "nbRages = 3",
+                    "Dégats de rage = +2"
+                ]
+            },
+            {
+                "lvlRequis": 6,
+                "maitrise": "+3",
+                "autres": [
+                    "nbRages = 4",
+                    "Dégats de rage = +2"
+                ]
             }
         ]
     },
@@ -93,7 +522,7 @@
             "rapière",
             "épée courte"
         ],
-        "equipement":"une armure de cuir et une dague",
+        "equipement": "une armure de cuir et une dague",
         "choix": [
             {
                 "outils": [
@@ -134,7 +563,7 @@
                 "nombre": 3
             },
             {
-                "equipement":[
+                "equipement": [
                     "une rapière",
                     "une épée longue",
                     "un bâton",
@@ -152,17 +581,17 @@
                     "10 fléchettes",
                     "une fronde"
                 ],
-                "nombre":1
+                "nombre": 1
             },
             {
-                "equipement":[
+                "equipement": [
                     "un paquetage de diplomate",
                     "un paquetage d'artiste"
                 ],
-                "nombre":1
+                "nombre": 1
             },
             {
-                "equipement":[
+                "equipement": [
                     "Chalemie",
                     "Cor",
                     "Cornemuse",
@@ -172,9 +601,157 @@
                     "Lyre",
                     "Tambour",
                     "Tympanon",
-                    "Viole"                    
+                    "Viole"
                 ],
-                "nombre":1
+                "nombre": 1
+            }
+        ],
+        "paths":{
+            "lvlRequis":3,
+            "choix":{
+                "Collège de la vaillance":{
+                    "compétences":[
+                        {
+                            "lvlRequis":3,
+                            "traits":{
+                                "Maitrises Supplémentaires":{
+                                    "description":"",
+                                    "short":""
+                                },
+                                "Inspiration Martiale":{
+                                    "description":"",
+                                    "short":""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis":6,
+                            "traits":{
+                                "Attaque Supplémentaire":{
+                                    "description":"",
+                                    "short":""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis":14,
+                            "traits":{
+                                "Magie Guerrière":{
+                                    "description":"",
+                                    "short":""
+                                }
+                            }
+                        }
+                    ],
+                    "source":"PHB"
+                },
+                "Collège du savoir":{
+                    "compétences":[
+                        {
+                            "lvlRequis":3,
+                            "traits":{
+                                "Maitrises Supplémentaires":{
+                                    "description":"",
+                                    "short":""
+                                },
+                                "Mots Cinglants":{
+                                    "description":"",
+                                    "short":""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis":6,
+                            "traits":{
+                                "Secrets Magiques Supplémentaires":{
+                                    "description":"",
+                                    "short":""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis":14,
+                            "traits":{
+                                "Compétence Hors-Pair":{
+                                    "description":"",
+                                    "short":""
+                                }
+                            }
+                        }
+                    ],
+                    "source":"PHB"
+                }
+            }
+        },
+        "competences":[
+            {
+                "lvlRequis":1,
+                "maitrise":"+2",
+                "magie":{
+                    "lvl1":2,
+                    "Connus":4,
+                    "Cantrips Connus":2
+                },
+                "traits":{
+                    "Incantations":{
+                        "description":"",
+                        "short":""
+                    },
+                    "Inspiration bardique":{
+                        "description":"",
+                        "short":""
+                    }
+                },
+                "autres":[
+                    "inspiration bardique = d6"
+                ]
+            },
+            {
+                "lvlRequis":2,
+                "maitrise":"+2",
+                "magie":{
+                    "lvl1":3,
+                    "Connus":5,
+                    "Cantrips Connus":2
+                },
+                "traits":{
+                    "Collège bardique":{
+                        "description":"",
+                        "short":""
+                    },
+                    "expertise":{
+                        "description":"",
+                        "short":""
+                    }
+                },
+                "autres":[
+                    "inspiration bardique = d6",
+                    "chant reposant = d6"
+                ]
+            },
+            {
+                "lvlRequis":3,
+                "maitrise":"+2",
+                "magie":{
+                    "lvl1":4,
+                    "lvl2":2,
+                    "Connus":6,
+                    "Cantrips Connus":2
+                },
+                "traits":{
+                    "Touche-à-tout":{
+                        "description":"",
+                        "short":""
+                    },
+                    "Chant reposant":{
+                        "description":"",
+                        "short":""
+                    }
+                },
+                "autres":[
+                    "inspiration bardique = d6",
+                    "chant reposant = d6"
+                ]
             }
         ]
     },
@@ -192,7 +769,7 @@
         "armes": [
             "courantes"
         ],
-        "equipement":"un bouclier et un symbole sacré",
+        "equipement": "un bouclier et un symbole sacré",
         "choix": [
             {
                 "maitrises": [
@@ -205,22 +782,22 @@
                 "nombre": 2
             },
             {
-                "equipement":[
+                "equipement": [
                     "une masse d'armes",
                     "un marteau de guerre (si maitrisé [race:hobgobelin ou nain])"
                 ],
-                "nombre":1
+                "nombre": 1
             },
             {
-                "equipement":[
+                "equipement": [
                     "une armure de cuir",
                     "une armure d'écailles",
                     "une cotte de maille (Domaine de la vie)"
                 ],
-                "nombre":1
+                "nombre": 1
             },
             {
-                "equipement":[
+                "equipement": [
                     "une arbalète légère et 20 carreaux",
                     "un bâton",
                     "une dague",
@@ -237,14 +814,634 @@
                     "10 fléchettes",
                     "une fronde"
                 ],
-                "nombre":1
+                "nombre": 1
             },
             {
-                "equipement":[
+                "equipement": [
                     "un paquetage d'ecclésiastique",
                     "un paquetage d'explorateur"
                 ],
-                "nombre":1
+                "nombre": 1
+            }
+        ],
+        "paths":{
+            "lvlRequis":1,
+            "choix":{
+                "Domaine de la Guerre":{
+                    "compétences":[
+                        {
+                            "lvlRequis":1,
+                            "traits":{
+                                "":{
+                                    "description":"",
+                                    "short":""
+                                },
+                                "Sorts de domaine":{
+                                    "description":"",
+                                    "short":""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis":3,
+                            "traits":{
+                                "Sorts de domaine":{
+                                    "description":"",
+                                    "short":""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis":5,
+                            "traits":{
+                                "Sorts de domaine":{
+                                    "description":"",
+                                    "short":""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis":6,
+                            "traits":{
+                                "":{
+                                    "description":"",
+                                    "short":""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis":7,
+                            "traits":{
+                                "Sorts de domaine":{
+                                    "description":"",
+                                    "short":""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis":8,
+                            "traits":{
+                                "":{
+                                    "description":"",
+                                    "short":""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis":9,
+                            "traits":{
+                                "Sorts de domaine":{
+                                    "description":"",
+                                    "short":""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis":17,
+                            "traits":{
+                                "":{
+                                    "description":"",
+                                    "short":""
+                                }
+                            }
+                        }
+                    ],
+                    "source":"PHB"
+                },
+                "Domaine de la Lumière":{
+                    "compétences":[
+                        {
+                            "lvlRequis":1,
+                            "traits":{
+                                "":{
+                                    "description":"",
+                                    "short":""
+                                },
+                                "Sorts de domaine":{
+                                    "description":"",
+                                    "short":""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis":3,
+                            "traits":{
+                                "Sorts de domaine":{
+                                    "description":"",
+                                    "short":""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis":5,
+                            "traits":{
+                                "Sorts de domaine":{
+                                    "description":"",
+                                    "short":""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis":6,
+                            "traits":{
+                                "":{
+                                    "description":"",
+                                    "short":""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis":7,
+                            "traits":{
+                                "Sorts de domaine":{
+                                    "description":"",
+                                    "short":""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis":8,
+                            "traits":{
+                                "":{
+                                    "description":"",
+                                    "short":""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis":9,
+                            "traits":{
+                                "Sorts de domaine":{
+                                    "description":"",
+                                    "short":""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis":17,
+                            "traits":{
+                                "":{
+                                    "description":"",
+                                    "short":""
+                                }
+                            }
+                        }
+                    ],
+                    "source":"PHB"
+                },
+                "Domaine de la Nature":{
+                    "compétences":[
+                        {
+                            "lvlRequis":1,
+                            "traits":{
+                                "":{
+                                    "description":"",
+                                    "short":""
+                                },
+                                "Sorts de domaine":{
+                                    "description":"",
+                                    "short":""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis":3,
+                            "traits":{
+                                "Sorts de domaine":{
+                                    "description":"",
+                                    "short":""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis":5,
+                            "traits":{
+                                "Sorts de domaine":{
+                                    "description":"",
+                                    "short":""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis":6,
+                            "traits":{
+                                "":{
+                                    "description":"",
+                                    "short":""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis":7,
+                            "traits":{
+                                "Sorts de domaine":{
+                                    "description":"",
+                                    "short":""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis":8,
+                            "traits":{
+                                "":{
+                                    "description":"",
+                                    "short":""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis":9,
+                            "traits":{
+                                "Sorts de domaine":{
+                                    "description":"",
+                                    "short":""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis":17,
+                            "traits":{
+                                "":{
+                                    "description":"",
+                                    "short":""
+                                }
+                            }
+                        }
+                    ],
+                    "source":"PHB"
+                },
+                "Domaine de la Ruse":{
+                    "compétences":[
+                        {
+                            "lvlRequis":1,
+                            "traits":{
+                                "":{
+                                    "description":"",
+                                    "short":""
+                                },
+                                "Sorts de domaine":{
+                                    "description":"",
+                                    "short":""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis":3,
+                            "traits":{
+                                "Sorts de domaine":{
+                                    "description":"",
+                                    "short":""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis":5,
+                            "traits":{
+                                "Sorts de domaine":{
+                                    "description":"",
+                                    "short":""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis":6,
+                            "traits":{
+                                "":{
+                                    "description":"",
+                                    "short":""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis":7,
+                            "traits":{
+                                "Sorts de domaine":{
+                                    "description":"",
+                                    "short":""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis":8,
+                            "traits":{
+                                "":{
+                                    "description":"",
+                                    "short":""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis":9,
+                            "traits":{
+                                "Sorts de domaine":{
+                                    "description":"",
+                                    "short":""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis":17,
+                            "traits":{
+                                "":{
+                                    "description":"",
+                                    "short":""
+                                }
+                            }
+                        }
+                    ],
+                    "source":"PHB"
+                },
+                "Domaine du Savoir":{
+                    "compétences":[
+                        {
+                            "lvlRequis":1,
+                            "traits":{
+                                "":{
+                                    "description":"",
+                                    "short":""
+                                },
+                                "Sorts de domaine":{
+                                    "description":"",
+                                    "short":""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis":3,
+                            "traits":{
+                                "Sorts de domaine":{
+                                    "description":"",
+                                    "short":""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis":5,
+                            "traits":{
+                                "Sorts de domaine":{
+                                    "description":"",
+                                    "short":""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis":6,
+                            "traits":{
+                                "":{
+                                    "description":"",
+                                    "short":""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis":7,
+                            "traits":{
+                                "Sorts de domaine":{
+                                    "description":"",
+                                    "short":""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis":8,
+                            "traits":{
+                                "":{
+                                    "description":"",
+                                    "short":""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis":9,
+                            "traits":{
+                                "Sorts de domaine":{
+                                    "description":"",
+                                    "short":""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis":17,
+                            "traits":{
+                                "":{
+                                    "description":"",
+                                    "short":""
+                                }
+                            }
+                        }
+                    ],
+                    "source":"PHB"
+                },
+                "Domaine de la Tempête":{
+                    "compétences":[
+                        {
+                            "lvlRequis":1,
+                            "traits":{
+                                "":{
+                                    "description":"",
+                                    "short":""
+                                },
+                                "Sorts de domaine":{
+                                    "description":"",
+                                    "short":""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis":3,
+                            "traits":{
+                                "Sorts de domaine":{
+                                    "description":"",
+                                    "short":""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis":5,
+                            "traits":{
+                                "Sorts de domaine":{
+                                    "description":"",
+                                    "short":""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis":6,
+                            "traits":{
+                                "":{
+                                    "description":"",
+                                    "short":""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis":7,
+                            "traits":{
+                                "Sorts de domaine":{
+                                    "description":"",
+                                    "short":""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis":8,
+                            "traits":{
+                                "":{
+                                    "description":"",
+                                    "short":""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis":9,
+                            "traits":{
+                                "Sorts de domaine":{
+                                    "description":"",
+                                    "short":""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis":17,
+                            "traits":{
+                                "":{
+                                    "description":"",
+                                    "short":""
+                                }
+                            }
+                        }
+                    ],
+                    "source":"PHB"
+                },
+                "Domaine de la Vie":{
+                    "compétences":[
+                        {
+                            "lvlRequis":1,
+                            "traits":{
+                                "":{
+                                    "description":"",
+                                    "short":""
+                                },
+                                "Sorts de domaine":{
+                                    "description":"",
+                                    "short":""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis":3,
+                            "traits":{
+                                "Sorts de domaine":{
+                                    "description":"",
+                                    "short":""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis":5,
+                            "traits":{
+                                "Sorts de domaine":{
+                                    "description":"",
+                                    "short":""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis":6,
+                            "traits":{
+                                "":{
+                                    "description":"",
+                                    "short":""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis":7,
+                            "traits":{
+                                "Sorts de domaine":{
+                                    "description":"",
+                                    "short":""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis":8,
+                            "traits":{
+                                "":{
+                                    "description":"",
+                                    "short":""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis":9,
+                            "traits":{
+                                "Sorts de domaine":{
+                                    "description":"",
+                                    "short":""
+                                }
+                            }
+                        },
+                        {
+                            "lvlRequis":17,
+                            "traits":{
+                                "":{
+                                    "description":"",
+                                    "short":""
+                                }
+                            }
+                        }
+                    ],
+                    "source":"PHB"
+                }
+            }
+        },
+        "competences":[
+            {
+                "lvlRequis":1,
+                "maitrise":"+2",
+                "magie":{
+                    "lvl1":2,
+                    "Cantrips Connus":3
+                },
+                "traits":{
+                    "":{
+                        "description":"",
+                        "short":""
+                    }
+                },
+                "autres":[
+                    ""
+                ]
+            },
+            {
+                "lvlRequis":2,
+                "maitrise":"+2",
+                "magie":{
+                    "lvl1":3,
+                    "Cantrips Connus":3
+                },
+                "traits":{
+                    "":{
+                        "description":"",
+                        "short":""
+                    }
+                },
+                "autres":[
+                    ""
+                ]
+            },
+            {
+                "lvlRequis":3,
+                "maitrise":"+2",
+                "magie":{
+                    "lvl1":4,
+                    "lvl2":2,
+                    "Cantrips Connus":3
+                },
+                "autres":[
+                    ""
+                ]
             }
         ]
     },
@@ -273,7 +1470,7 @@
         "outils": [
             "matériel d'herboriste"
         ],
-        "equipement":"une armure de cuir, un paquetage d'explorateur et un focaliseur druidique",
+        "equipement": "une armure de cuir, un paquetage d'explorateur et un focaliseur druidique",
         "choix": [
             {
                 "maitrises": [
@@ -289,7 +1486,7 @@
                 "nombre": 2
             },
             {
-                "equipement":[
+                "equipement": [
                     "un bouclier en bois",
                     "un bâton",
                     "une dague",
@@ -306,10 +1503,10 @@
                     "10 fléchettes",
                     "une fronde"
                 ],
-                "nombre":1
+                "nombre": 1
             },
             {
-                "equipement":[
+                "equipement": [
                     "un cimeterre",
                     "un bâton",
                     "une dague",
@@ -322,7 +1519,7 @@
                     "une massue",
                     "une serpe"
                 ],
-                "nombre":1
+                "nombre": 1
             }
         ]
     },
@@ -340,7 +1537,7 @@
             "bâton",
             "arbalète légère"
         ],
-        "equipement":"deux dagues",
+        "equipement": "deux dagues",
         "choix": [
             {
                 "maitrises": [
@@ -353,7 +1550,7 @@
                 "nombre": 2
             },
             {
-                "equipement":[
+                "equipement": [
                     "une arbalète légère et 20 carreaux",
                     "un bâton",
                     "une dague",
@@ -370,21 +1567,21 @@
                     "10 fléchettes",
                     "une fronde"
                 ],
-                "nombre":1
+                "nombre": 1
             },
             {
-                "equipement":[
+                "equipement": [
                     "une sacoche à composantes",
                     "un focaliseur arcanique"
                 ],
-                "nombre":1
+                "nombre": 1
             },
             {
-                "equipement":[
+                "equipement": [
                     "un paquetage d'exploration souterraine",
                     "un paquetage d'explorateur"
                 ],
-                "nombre":1
+                "nombre": 1
             }
         ]
     },
@@ -417,14 +1614,14 @@
                 "nombre": 2
             },
             {
-                "equipement":[
+                "equipement": [
                     "une cotte de maille",
                     "une armure de cuir,un arc long et 20 flèches"
                 ],
-                "nombre":1
+                "nombre": 1
             },
             {
-                "equipement":[
+                "equipement": [
                     "Cimeterre",
                     "Coutille",
                     "Épée à deux mains",
@@ -449,10 +1646,10 @@
                     "Filet",
                     "Sarbacane"
                 ],
-                "nombre":1
+                "nombre": 1
             },
             {
-                "equipement":[
+                "equipement": [
                     "Bouclier",
                     "Cimeterre",
                     "Coutille",
@@ -478,21 +1675,21 @@
                     "Filet",
                     "Sarbacane"
                 ],
-                "nombre":1
+                "nombre": 1
             },
             {
-                "equipement":[
+                "equipement": [
                     "une arbalète légère et 20 carreaux",
                     "deux hachettes"
                 ],
-                "nombre":1
+                "nombre": 1
             },
             {
-                "equipement":[
+                "equipement": [
                     "un paquetage d'exploration souterraine",
                     "un paquetage d'explorateur"
                 ],
-                "nombre":1
+                "nombre": 1
             }
         ]
     },
@@ -510,7 +1707,7 @@
             "bâton",
             "arbalète légère"
         ],
-        "equipement":"un grimoire",
+        "equipement": "un grimoire",
         "choix": [
             {
                 "maitrises": [
@@ -524,25 +1721,25 @@
                 "nombre": 2
             },
             {
-                "equipement":[
+                "equipement": [
                     "un bâton",
                     "une dague"
                 ],
-                "nombre":1
+                "nombre": 1
             },
             {
-                "equipement":[
+                "equipement": [
                     "une sacoche à composantes",
                     "un focaliseur arcanique"
                 ],
-                "nombre":1
+                "nombre": 1
             },
             {
-                "equipement":[
+                "equipement": [
                     "un paquetage d'érudit",
                     "un paquetage d'explorateur"
                 ],
-                "nombre":1
+                "nombre": 1
             }
         ]
     },
@@ -557,7 +1754,7 @@
             "courantes",
             "épée courte"
         ],
-        "equipement":"10 fléchettes",
+        "equipement": "10 fléchettes",
         "choix": [
             {
                 "outils": [
@@ -603,7 +1800,7 @@
                 "nombre": 2
             },
             {
-                "equipement":[
+                "equipement": [
                     "une épée courte",
                     "un bâton",
                     "une dague",
@@ -620,14 +1817,14 @@
                     "10 fléchettes",
                     "une fronde"
                 ],
-                "nombre":1
+                "nombre": 1
             },
             {
-                "equipement":[
+                "equipement": [
                     "un paquetage d'exploration souterraine",
                     "un paquetage d'explorateur"
                 ],
-                "nombre":1
+                "nombre": 1
             }
         ]
     },
@@ -645,7 +1842,7 @@
             "courantes",
             "de guerre"
         ],
-        "equipement":"une cotte de mailles et un symbole sacré",
+        "equipement": "une cotte de mailles et un symbole sacré",
         "choix": [
             {
                 "maitrises": [
@@ -659,7 +1856,7 @@
                 "nombre": 2
             },
             {
-                "equipement":[
+                "equipement": [
                     "Cimeterre",
                     "Coutille",
                     "Épée à deux mains",
@@ -684,10 +1881,10 @@
                     "Filet",
                     "Sarbacane"
                 ],
-                "nombre":1
+                "nombre": 1
             },
             {
-                "equipement":[
+                "equipement": [
                     "Bouclier",
                     "Cimeterre",
                     "Coutille",
@@ -713,10 +1910,10 @@
                     "Filet",
                     "Sarbacane"
                 ],
-                "nombre":1
+                "nombre": 1
             },
             {
-                "equipement":[
+                "equipement": [
                     "cinq javelines",
                     "un bâton",
                     "une dague",
@@ -733,14 +1930,14 @@
                     "10 fléchettes",
                     "une fronde"
                 ],
-                "nombre":1
+                "nombre": 1
             },
             {
-                "equipement":[
+                "equipement": [
                     "un paquetage d'ecclésiastique",
                     "un paquetage d'explorateur"
                 ],
-                "nombre":1
+                "nombre": 1
             }
         ]
     },
@@ -759,7 +1956,7 @@
             "courantes",
             "de guerre"
         ],
-        "equipement":"un arc long et un carquois contenant 20 flèches",
+        "equipement": "un arc long et un carquois contenant 20 flèches",
         "choix": [
             {
                 "maitrises": [
@@ -775,14 +1972,14 @@
                 "nombre": 3
             },
             {
-                "equipement":[
+                "equipement": [
                     "une armure d'écailles",
                     "une armure de cuir"
                 ],
-                "nombre":1
+                "nombre": 1
             },
             {
-                "equipement":[
+                "equipement": [
                     "une épée courte",
                     "un bâton",
                     "une dague",
@@ -799,14 +1996,14 @@
                     "10 fléchettes",
                     "une fronde"
                 ],
-                "nombre":2
+                "nombre": 2
             },
             {
-                "equipement":[
+                "equipement": [
                     "un paquetage d'exploration souterraine",
                     "un paquetage d'explorateur"
                 ],
-                "nombre":1
+                "nombre": 1
             }
         ]
     },
@@ -829,7 +2026,7 @@
         "outils": [
             "Outils de voleur"
         ],
-        "equipement":"une armure de cuir, deux dagues et des outils de voleur",
+        "equipement": "une armure de cuir, deux dagues et des outils de voleur",
         "choix": [
             {
                 "maitrises": [
@@ -848,26 +2045,26 @@
                 "nombre": 4
             },
             {
-                "equipement":[
+                "equipement": [
                     "une rapière",
                     "une épée courte"
                 ],
-                "nombre":1
+                "nombre": 1
             },
             {
-                "equipement":[
+                "equipement": [
                     "un arc court et un carquois avec 20 flèches",
                     "une épée courte"
                 ],
-                "nombre":1
+                "nombre": 1
             },
             {
-                "equipement":[
+                "equipement": [
                     "une paquetage de cambrioleur",
                     "un paquetage d'exploration souterraine",
                     "un paquetage d'explorateur"
                 ],
-                "nombre":1
+                "nombre": 1
             }
         ]
     },
@@ -883,7 +2080,7 @@
         "armes": [
             "courantes"
         ],
-        "equipement":"une armure de cuir",
+        "equipement": "une armure de cuir",
         "choix": [
             {
                 "maitrises": [
@@ -915,21 +2112,21 @@
                     "10 fléchettes",
                     "une fronde"
                 ],
-                "nombre":1
+                "nombre": 1
             },
             {
                 "equipement": [
                     "une sacoche à composantes",
                     "un focaliseur arcanique"
                 ],
-                "nombre":1
+                "nombre": 1
             },
             {
                 "equipement": [
                     "un paquetage d'érudit",
                     "un paquetage d'exploration souterraine"
                 ],
-                "nombre":1
+                "nombre": 1
             },
             {
                 "equipement": [
@@ -948,7 +2145,7 @@
                     "Fléchette",
                     "Fronde"
                 ],
-                "nombre":1
+                "nombre": 1
             }
         ]
     }

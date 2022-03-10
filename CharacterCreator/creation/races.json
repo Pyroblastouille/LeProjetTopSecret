@@ -12,31 +12,42 @@
             "Elfique"
         ],
         "traits": {
-            "Vision dans le noir": "Dans un rayon de 18 mètres, vous pouvez voir dans une zone de lumière faible comme s'il s'agissait d'une lumière vive et dans l'obscurité comme s'il s'agissait d'une lumière faible. Par contre, vous ne distinguez pas les couleurs dans l'obscurité, seulement des nuances de gris.",
-            "Ascendance féérique": "Vous êtes avantagé sur les jets de sauvegarde contre l'effet charmé et vous ne pouvez être contraint à dormir par la magie.",
-            "Transe": "Peut méditer dans une transe au lieu de dormir. 4 heures de méditations équivaut à 8 heures de sommeil"
+            "Vision dans le noir": {
+                "description": "Dans un rayon de 18 mètres, vous pouvez voir dans une zone de lumière faible comme s'il s'agissait d'une lumière vive et dans l'obscurité comme s'il s'agissait d'une lumière faible. Par contre, vous ne distinguez pas les couleurs dans l'obscurité, seulement des nuances de gris.",
+                "short": "Voit à 18m en faible lumière et des nuances dans le noir"
+            },
+            "Ascendance féérique": {
+                "description": "Vous êtes avantagé sur les jets de sauvegarde contre l'effet charmé et vous ne pouvez être contraint à dormir par la magie.",
+                "short": "Avantage sur JdS contre charme et immunisé contre sommeil magique"
+            },
+            "Transe": {
+                "description": "Peut méditer dans une transe au lieu de dormir. 4 heures de méditations équivaut à 8 heures de sommeil",
+                "short": "4 heure de méditation = 8 heures de sommeil"
+            }
         },
         "variantes": {
             "Haut-elfe": {
-                "choix": [{
-                    "langues": [
-                        "Géant",
-                        "Gnome",
-                        "Gobelin",
-                        "Halfelin",
-                        "Nain",
-                        "Orque",
-                        "Abyssal",
-                        "Céleste",
-                        "Commun des profondeurs",
-                        "Draconique",
-                        "Infernal",
-                        "Primordial",
-                        "Profond",
-                        "Sylvain"
-                    ],
-                    "nombre": 1
-                }],
+                "choix": [
+                    {
+                        "langues": [
+                            "Géant",
+                            "Gnome",
+                            "Gobelin",
+                            "Halfelin",
+                            "Nain",
+                            "Orque",
+                            "Abyssal",
+                            "Céleste",
+                            "Commun des profondeurs",
+                            "Draconique",
+                            "Infernal",
+                            "Primordial",
+                            "Profond",
+                            "Sylvain"
+                        ],
+                        "nombre": 1
+                    }
+                ],
                 "bonus": {
                     "INT": 1
                 },
@@ -117,26 +128,28 @@
     },
     "Humain": {
         "traits": {},
-        "choix": [{
-            "langues": [
-                "Elfique",
-                "Géant",
-                "Gnome",
-                "Gobelin",
-                "Halfelin",
-                "Nain",
-                "Orque",
-                "Abyssal",
-                "Céleste",
-                "Commun des profondeurs",
-                "Draconique",
-                "Infernal",
-                "Primordial",
-                "Profond",
-                "Sylvain"
-            ],
-            "nombre": 1
-        }],
+        "choix": [
+            {
+                "langues": [
+                    "Elfique",
+                    "Géant",
+                    "Gnome",
+                    "Gobelin",
+                    "Halfelin",
+                    "Nain",
+                    "Orque",
+                    "Abyssal",
+                    "Céleste",
+                    "Commun des profondeurs",
+                    "Draconique",
+                    "Infernal",
+                    "Primordial",
+                    "Profond",
+                    "Sylvain"
+                ],
+                "nombre": 1
+            }
+        ],
         "bonus": {
             "CHA": 1,
             "DEX": 1,
@@ -166,13 +179,15 @@
             "marteaux légers",
             "marteaux de guerre"
         ],
-        "choix": [{
-            "outils": [
-                "outils de forgeron",
-                "matériel de brasseur",
-                "outils de maçon"
-            ]
-        }],
+        "choix": [
+            {
+                "outils": [
+                    "outils de forgeron",
+                    "matériel de brasseur",
+                    "outils de maçon"
+                ]
+            }
+        ],
         "langues": [
             "Commun",
             "Nain"
@@ -209,7 +224,8 @@
         }
     },
     "Demi-elfe": {
-        "choix": [{
+        "choix": [
+            {
                 "bonus": [
                     "SAG",
                     "INT",
@@ -504,9 +520,18 @@
             "Athlétisme"
         ],
         "traits": {
-            "Endurance de pierre": "Vous pouvez vous concentrer pour éviter occasionnellement une blessure. Lorsque vous subissez des dégâts, vous pouvez utiliser votre réaction pour lancer un d12. Ajoutez votre modif de Con au nombre obtenu, et réduisez les dommages de ce total. Après avoir utilisé ce trait, vous devez terminer un repos court ou long avant de pouvoir le réutiliser.",
-            "Carrure lourde": "Vous comptez une taille plus grande quand il s'agit de capacité de port ou du poids que vous pouvez pousser,tirer ou soulever.",
-            "Né des montagnes": "Vous êtes acclimaté aux hautes altitudes, incluant des elevation au dessus de 6000m. Vous êtes aussi naturellement adapté aux climats froids."
+            "Endurance de pierre": {
+                "description": "Vous pouvez vous concentrer pour éviter occasionnellement une blessure. Lorsque vous subissez des dégâts, vous pouvez utiliser votre réaction pour lancer un d12. Ajoutez votre modif de Con au nombre obtenu, et réduisez les dommages de ce total. Après avoir utilisé ce trait, vous devez terminer un repos court ou long avant de pouvoir le réutiliser.",
+                "short": "Reaction sur dégats : réduire de 1d12+modCon (recharge sur repos court ou long)"
+            },
+            "Carrure lourde": {
+                "description": "Vous comptez une taille plus grande quand il s'agit de capacité de port ou du poids que vous pouvez pousser,tirer ou soulever.",
+                "short": "Porte une taille en plus"
+            },
+            "Né des montagnes": {
+                "description": "Vous êtes acclimaté aux hautes altitudes, incluant des elevation au dessus de 6000m. Vous êtes aussi naturellement adapté aux climats froids.",
+                "short": "Acclimaté hautes altitudes et climats froids"
+            }
         },
         "langues": [
             "Commun",
@@ -514,15 +539,17 @@
         ]
     },
     "Kenku": {
-        "choix": [{
-            "maitrises": [
-                "Acrobaties",
-                "Discrétion",
-                "Escamotage",
-                "Supercherie"
-            ],
-            "nombre": 2
-        }],
+        "choix": [
+            {
+                "maitrises": [
+                    "Acrobaties",
+                    "Discrétion",
+                    "Escamotage",
+                    "Supercherie"
+                ],
+                "nombre": 2
+            }
+        ],
         "bonus": {
             "DEX": 2,
             "SAG": 1
@@ -538,16 +565,18 @@
         ]
     },
     "Lezard": {
-        "choix": [{
-            "maitrises": [
-                "Dressage",
-                "Nature",
-                "Perception",
-                "Survie",
-                "Discrétion"
-            ],
-            "nombre": 2
-        }],
+        "choix": [
+            {
+                "maitrises": [
+                    "Dressage",
+                    "Nature",
+                    "Perception",
+                    "Survie",
+                    "Discrétion"
+                ],
+                "nombre": 2
+            }
+        ],
         "bonus": {
             "CON": 2,
             "SAG": 1
@@ -567,27 +596,29 @@
         ]
     },
     "Tabaxi": {
-        "choix": [{
-            "langues": [
-                "Commun",
-                "Elfique",
-                "Géant",
-                "Gnome",
-                "Gobelin",
-                "Halfelin",
-                "Nain",
-                "Orque",
-                "Abyssal",
-                "Céleste",
-                "Commun des profondeurs",
-                "Draconique",
-                "Infernal",
-                "Primordial",
-                "Profond",
-                "Sylvain"
-            ],
-            "nombre": 1
-        }],
+        "choix": [
+            {
+                "langues": [
+                    "Commun",
+                    "Elfique",
+                    "Géant",
+                    "Gnome",
+                    "Gobelin",
+                    "Halfelin",
+                    "Nain",
+                    "Orque",
+                    "Abyssal",
+                    "Céleste",
+                    "Commun des profondeurs",
+                    "Draconique",
+                    "Infernal",
+                    "Primordial",
+                    "Profond",
+                    "Sylvain"
+                ],
+                "nombre": 1
+            }
+        ],
         "bonus": {
             "DEX": 2,
             "CHA": 1
@@ -662,34 +693,36 @@
         }
     },
     "Hobgobelin": {
-        "choix": [{
-            "armes": [
-                "cimeterre",
-                "coutille",
-                "épée à deux mains",
-                "épée courtes",
-                "épée longues",
-                "fléau d'armes",
-                "fouet",
-                "hache à deux mains",
-                "hache d'armes",
-                "hallebarde",
-                "lance d'arçon",
-                "maillet",
-                "marteau de guerre",
-                "morgenstern",
-                "pic de guerre",
-                "pique",
-                "rapière",
-                "trident",
-                "arbalète de poing",
-                "arbalète lourde",
-                "arc long",
-                "filet",
-                "sarbacane"
-            ],
-            "nombre": 2
-        }],
+        "choix": [
+            {
+                "armes": [
+                    "cimeterre",
+                    "coutille",
+                    "épée à deux mains",
+                    "épée courtes",
+                    "épée longues",
+                    "fléau d'armes",
+                    "fouet",
+                    "hache à deux mains",
+                    "hache d'armes",
+                    "hallebarde",
+                    "lance d'arçon",
+                    "maillet",
+                    "marteau de guerre",
+                    "morgenstern",
+                    "pic de guerre",
+                    "pique",
+                    "rapière",
+                    "trident",
+                    "arbalète de poing",
+                    "arbalète lourde",
+                    "arc long",
+                    "filet",
+                    "sarbacane"
+                ],
+                "nombre": 2
+            }
+        ],
         "bonus": {
             "CON": 2,
             "INT": 1
